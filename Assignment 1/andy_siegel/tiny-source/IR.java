@@ -16,7 +16,6 @@ public class IR {
    public static final int SUB     = 8;
    public static final int LT      = 9;
    public static final int BRANCH  = 10;
-   public static final int BRNEO   = 11;
    public static final int MUL     = 12;
    public static final int LABEL   = 13;
    public static final int GOTO    = 14;

@@ -6,6 +6,7 @@ import java.util.*;
 public class Sem {
     AST ast;
     public SyTab sytab = new SyTab();
+    HashSet<String> declaredLabels = new HashSet<>();
 
     public Sem (AST ast) {
        this.ast = ast;
@@ -14,7 +15,20 @@ public class Sem {
 
     // Start walking the AST at the root, PROGRAM, node.
     void program(PROGRAM n) {
+       // First pass: collect all labels
+       collectLabels(n.stats);
+       // Second pass: check variable usage and label references
        stats(n.stats);
+    }
+    
+    // First pass: collect all label declarations
+    void collectLabels(STATSEQ n) {
+       if (n instanceof NULL) return;
+       if (n.stat instanceof LABEL) {
+           LABEL label = (LABEL) n.stat;
+           declaredLabels.add(label.label);
+       }
+       collectLabels(n.next);
     }
 
     // Recursively walk a sequence a statements. NULL indicates
@@ -68,14 +82,14 @@ public class Sem {
    }
 
    void jump(GOTO n) {
-      if (sytab.lookup(n.label) < 0)
+      if (!declaredLabels.contains(n.label))
          System.err.println("Label not declared: " + n.label);
    }
 
    void branch(IF n) {
       expr(n.expr);
       
-      if (sytab.lookup(n.label) < 0)
+      if (!declaredLabels.contains(n.label))
          System.err.println("Label not declared: " + n.label);
    }
 

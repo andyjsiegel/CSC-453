@@ -22,6 +22,7 @@ public class GenIR {
 
     // Start generating IR code from the AST.
     void program(PROGRAM n) {
+      //  System.out.println("sem.sytab.size() = " + sem.sytab.size());
        add(IR.HEADER);  add(IR.MAGIC); add(sem.sytab.size());
        stats(n.stats);
        add(IR.EXIT);
@@ -54,6 +55,7 @@ public class GenIR {
     void assign(ASSIGN n) {
         expr(n.expr);
         add(IR.STORE);
+      //   System.out.println("sem.sytab.lookup(n.ident) = " + sem.sytab.lookup(n.ident));
         add(sem.sytab.lookup(n.ident));
     }
 
@@ -79,12 +81,14 @@ public class GenIR {
     // Push the value of a variable.
     void ident(IDENT n) {
         add(IR.LOAD);
+      //   System.out.println("sem.sytab.lookup(n.ident) = " + sem.sytab.lookup(n.ident));
         add(sem.sytab.lookup(n.ident));
     }
 
     // Push an integer literal value.
     void intlit(INTLIT n) {
         add(IR.PUSH);
+      //   System.out.println("n.val = " + n.val);
         add(n.val);
     }
 

@@ -2,8 +2,22 @@
 
 import java.lang.*;
 import java.io.*;
-
+import java.util.Arrays;
+import java.util.HashMap;
 public class Interpreter {
+
+   static HashMap<Integer, Integer> buildLabelMap(int[] prog) {
+      HashMap<Integer, Integer> labelMap = new HashMap<>();
+      for (int i = 0; i < prog.length; i++) {
+         if (prog[i] == IR.LABEL) {
+               int labelId = prog[i + 1];
+               labelMap.put(labelId, i + 2);  
+               i++; 
+         }
+      }
+      return labelMap;
+   }
+
 
    // Evaluation stack.
    static int[] stack = new int[100];
@@ -12,6 +26,7 @@ public class Interpreter {
    static int pop() {return stack[--sp]; }
 
   static void run (int[] prog) throws Exception {
+      HashMap<Integer, Integer> labelMap = buildLabelMap(prog);
       int[] memory=null;
       int pc = 0;
       while (true) {
@@ -26,6 +41,9 @@ public class Interpreter {
       }   
       case IR.ADD    : {
          int right = pop(); int left  = pop(); push(left+right); pc++; break;
+      }
+      case IR.SUB    : {
+         int right = pop(); int left = pop(); push(left-right); pc++; break;
       }   
       case IR.MUL    : {
          int right = pop(); int left  = pop(); push(left*right); pc++; break;
@@ -48,6 +66,25 @@ public class Interpreter {
       case IR.PRINTLN: {
          System.out.println(); pc++; break;
       } 
+      case IR.LABEL: {
+         pc += 2; // skip labels
+         break;
+      }
+      case IR.GOTO : {
+         int labelId = prog[pc + 1];
+         pc = labelMap.get(labelId);  // Jump to label address
+         break;
+      }
+      case IR.BRANCH : {
+         int condition = pop();
+         int labelId = prog[pc + 1];
+         if (condition != 0) {
+            pc = labelMap.get(labelId);  // Jump if true
+         } else {
+            pc += 2;  // Skip to next instruction if false
+         }
+         break;
+      }
       case IR.EXIT   : {
         return;
       } 

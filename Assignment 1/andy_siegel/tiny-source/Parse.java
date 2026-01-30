@@ -46,25 +46,26 @@ public class Parse {
     // Build an AST subtree for an expression.
    EXPR expr() {
       EXPR f = factor();
+      
       while (lookahead(Token.PLUS) || lookahead(Token.MINUS) || lookahead(Token.LESSTHAN)) {
-         if(lookahead(Token.PLUS)) {
-            match(Token.PLUS);
-            EXPR e = factor();
-            f = new BINOP(Token.PLUS, f, e);
-         }
-         if(lookahead(Token.MINUS)) {
-            match(Token.MINUS);
-            EXPR e = factor();
-            f = new BINOP(Token.MINUS, f, e);
-         }
-         if(lookahead(Token.LESSTHAN)) {
-            match(Token.LESSTHAN);
-            EXPR e = factor();
-            f = new BINOP(Token.LESSTHAN, f, e);
+         if (lookahead(Token.PLUS)) {
+               match(Token.PLUS);
+               EXPR e = factor();
+               f = new BINOP(Token.PLUS, f, e);
+         } else if (lookahead(Token.MINUS)) {
+               match(Token.MINUS);
+               EXPR e = factor();
+               f = new BINOP(Token.MINUS, f, e);
+         } else if (lookahead(Token.LESSTHAN)) {
+               match(Token.LESSTHAN);
+               EXPR e = factor();
+               f = new BINOP(Token.LESSTHAN, f, e);
          }
       }
+      
       return f;
    }
+
 
     // Build an ASSIGN subtree.
    STAT assign() {
@@ -90,8 +91,20 @@ public class Parse {
    //goto
    STAT jump() {
       match(Token.GOTO);
-      String targetLabel = currentToken.ident;
-      match(Token.IDENT);
+      // String targetLabel = currentToken.ident;
+      // match(Token.IDENT);
+      // return new GOTO(targetLabel);
+      String targetLabel;
+      if(lookahead(Token.IDENT)) {
+         targetLabel = currentToken.ident;
+         match(Token.IDENT);
+      } else if (lookahead(Token.INTLIT)) {
+         targetLabel = String.valueOf(currentToken.value);
+         match(Token.INTLIT);
+      } else {
+         System.err.println("Expected label after GOTO");
+         targetLabel = "";
+      }
       return new GOTO(targetLabel);
    }
    //if
