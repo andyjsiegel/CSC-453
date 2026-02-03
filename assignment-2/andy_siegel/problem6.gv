@@ -1,0 +1,11 @@
+/* Compile with 'dot -Tpng graph.gv > graph.png' */
+
+digraph problem6 { 
+   node1 [label="A"; style="filled"; shape="circle"; color="black"; fillcolor="#FFFFFF";];
+   node2 [label="B"; style="filled"; shape="circle"; color="black"; fillcolor="#FFFFFF";];
+   node3 [label="C"; style="filled"; shape="circle"; color="black"; fillcolor="#FFFFFF";];
+
+   /* These are just examples. */
+   node1 -> node2 [label="a"];  
+   node1 -> node3 [label="b"];  
+} 
