@@ -1,5 +1,0 @@
-BEGIN 42
-cow5:blue,
-green,red
-91
-END

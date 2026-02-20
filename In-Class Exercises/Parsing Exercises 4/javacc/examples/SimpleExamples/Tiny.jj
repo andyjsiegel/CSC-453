@@ -1,0 +1,113 @@
+PARSER_BEGIN(Tiny)
+
+public class Tiny {
+
+  /** Main entry point. */
+  public static void main(String args[]) throws ParseException {
+    try {
+       Tiny parser = new Tiny(System.in);
+       parser.Tiny();
+       System.out.println("<PARSE SUCCEEDED>");
+    } catch (ParseException t) {
+       System.out.println("<PARSE FAILED>: " + t.getMessage());
+    }
+  }
+}
+PARSER_END(Tiny)
+
+SKIP :
+{
+  " "
+| "\t"
+| "\n"
+| "\r"
+}
+
+/** Keywords. */
+TOKEN :
+{
+  < BEGIN: "BEGIN" >
+| 
+  < END: "END" >
+| 
+  < PRINT: "PRINT" >
+}
+
+/** Operators. */
+TOKEN :
+{ 
+  < ASSIGN: ":=" >
+| 
+  < LPAREN: "(" >
+| 
+  < RPAREN: ")" >
+| 
+  < PLUS: "+" >
+| 
+  < MULT: "*" >
+| 
+  < SC: ";" >
+}
+
+/** Identifiers and numbers. */
+TOKEN :
+{
+  < ID: ["a"-"z","A"-"Z","_"] ( ["a"-"z","A"-"Z","_","0"-"9"] )* >
+|
+  < NUM: ( ["0"-"9"] )+ >
+}
+
+/** Top level production. */
+void Tiny() :
+{
+}
+{
+   <BEGIN>
+   (
+      Statement() <SC>
+   )*
+   <END>
+   <EOF>
+}
+
+void Statement() :
+{
+}
+{
+   <ID> <ASSIGN> Expression()
+| 
+   <PRINT> Expression()
+}
+
+/** An Expression. */
+void Expression() :
+{
+}
+{
+  Term()
+  ( 
+    <PLUS> Term()
+  )*
+}
+
+/** A Term. */
+void Term() :
+{
+}
+{
+  Factor()
+  ( 
+     <MULT> Factor()
+  )*
+}
+
+/** A Factor. */
+void Factor() :
+{}
+{
+  <ID>
+|
+  <NUM>
+|
+  <LPAREN> Expression() <RPAREN>
+}

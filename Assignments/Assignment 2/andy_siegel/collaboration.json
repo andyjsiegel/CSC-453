@@ -1,0 +1,13 @@
+{
+  "instructions": "List all the members of your group and the amount of work they did. Don't change the JSON structure.",
+
+  "assignment"                       : "2",
+  "number_of_students_in_your_group" : 1,
+  "student_1_firstname"              : "Andy",
+  "student_1_lastname"               : "Siegel",
+  "student_1_amount_of_work (%)"     : 100,
+  "student_2_firstname"              : "",
+  "student_2_lastname"               : "",
+  "student_2_amount_of_work (%)"     : 0,
+  "collaboration_description"        : ""
+}

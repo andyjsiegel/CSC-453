@@ -1,0 +1,7 @@
+{
+  "assignment": "3",
+  "problem2": {
+    "non_terminal_1": ["grammar_symbol_1", "grammar_symbol_2", "..."],
+    "non_terminal_2": ["grammar_symbol_1", "grammar_symbol_2", "..."]
+  }
+}

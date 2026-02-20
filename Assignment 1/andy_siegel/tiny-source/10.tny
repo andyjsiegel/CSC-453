@@ -1,3 +1,0 @@
-BEGIN
-   PRINT 45 - 9;
-END

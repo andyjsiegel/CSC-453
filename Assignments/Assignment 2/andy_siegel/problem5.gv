@@ -1,0 +1,26 @@
+/* Compile with 'dot -Tpng graph.gv > graph.png' */
+
+digraph nfa_a_star_b_or_c {
+   node [shape="circle"; style="filled"; color="black"; fillcolor="#FFFFFF"];
+   
+   /* Start state */
+   node0 [label="0"];
+   
+   /* States for (b|c) */
+   node2 [label="1"];
+   node3 [label="2"];
+   
+   /* Accept state */
+   node4 [label="3", peripheries=2];
+   
+   /* Transitions for a* loop */
+   node0 -> node0 [label="a"];
+   
+   /* Epsilon transition to (b|c) part */
+   node0 -> node2 [label="ε"];
+   node0 -> node3 [label="ε"];
+   
+   /* Transitions for (b|c) */
+   node2 -> node4 [label="b"];
+   node3 -> node4 [label="c"];
+}

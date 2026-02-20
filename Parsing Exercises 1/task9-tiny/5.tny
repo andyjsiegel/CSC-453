@@ -1,4 +1,0 @@
-BEGIN
-   x = 0;
-   PRINT 5 + 99 + 9 + x;
-END

@@ -1,3 +1,0 @@
-BEGIN
-   PRINT 4 + 10 - 16 < 0;
-END

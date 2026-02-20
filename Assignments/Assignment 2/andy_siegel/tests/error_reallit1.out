@@ -1,0 +1,5 @@
+<block>
+   <TOKEN kind="ERROR_REALLIT" line="1"/>
+   <TOKEN kind="IDENT" line="1" value="x"/>
+   <TOKEN kind="EOF" line="2"/>
+</block>

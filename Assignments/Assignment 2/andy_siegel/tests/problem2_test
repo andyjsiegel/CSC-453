@@ -1,0 +1,8 @@
+/* comment here! */ char BUF [4] ; int buff_ptr=0;
+blah blah
+more blah
+char array[10];
+char BUF[LENGTH] ;;;;
+char buffer [ 42 ] ;;;
+super blah
+char input[67];

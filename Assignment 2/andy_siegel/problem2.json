@@ -1,6 +1,0 @@
-{
-  "assignment": "2",
-  "problem_2": {
-    "regexp": "char\\s+(buf|BUF|buffer|input)\\s*\\[\\s*[0-9]+\\s*\\]\\s*;"
-  }
-}
