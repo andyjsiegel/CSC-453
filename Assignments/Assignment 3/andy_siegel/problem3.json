@@ -1,11 +1,13 @@
 {
   "assignment": "3",
   "problem3_FIRST": {
-    "non_terminal_1": ["grammar_symbol_1", "grammar_symbol_2", "..."],
-    "non_terminal_2": ["grammar_symbol_1", "grammar_symbol_2", "..."]
+    "S": ["a", "c", "b"],
+    "X": ["c", "b"],
+    "Z": ["n"]
   },
   "problem3_FOLLOW": {
-    "non_terminal_1": ["grammar_symbol_1", "grammar_symbol_2", "..."],
-    "non_terminal_2": ["grammar_symbol_1", "grammar_symbol_2", "..."]
+    "S": ["b"],
+    "X": ["b", "n"],
+    "Z": ["b", "n"]
   }
 }

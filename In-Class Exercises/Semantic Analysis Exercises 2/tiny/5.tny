@@ -1,0 +1,7 @@
+BEGIN
+   CONST x : int  = 1;
+   CONST y : int  = 1 + 2;
+   CONST z : int  = x * y;
+   VAR   v : int;
+   CONST w : int  = z - v;
+END

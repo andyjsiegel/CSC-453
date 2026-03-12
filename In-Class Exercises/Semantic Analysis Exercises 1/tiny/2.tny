@@ -1,0 +1,3 @@
+BEGIN
+   CONST y : int = 4;
+END

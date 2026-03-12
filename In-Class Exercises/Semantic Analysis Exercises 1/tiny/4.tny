@@ -1,0 +1,6 @@
+BEGIN
+   CONST x  : int = 4;
+   CONST y  : int = 5;
+   CONST z  : int = x * y;
+   PRINT z;
+END

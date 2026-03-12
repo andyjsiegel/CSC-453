@@ -1,0 +1,5 @@
+BEGIN
+   VAR x  : int;
+   VAR y  : int;
+   VAR z  : int;
+END

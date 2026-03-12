@@ -1,7 +1,70 @@
 {
   "assignment": "3",
   "problem4": {
-    "non_terminal_1": ["grammar_symbol_1", "grammar_symbol_2", "..."],
-    "non_terminal_2": ["grammar_symbol_1", "grammar_symbol_2", "..."]
+    "\\program\\":         ["PROGRAM ident ; \\declList\\ BEGIN \\statList\\ END ."],
+
+    "\\declList\\":        ["\\decl\\ \\declList\\", "|", "ε"],
+
+    "\\decl\\":            ["\\typeDecl\\", "|", "\\varDecl\\", "|", "\\constDecl\\", "|", "\\procDecl\\"],
+
+    "\\typeDecl\\":        ["TYPE ident = \\typeSpec\\ ;"],
+
+    "\\typeSpec\\":        ["RECORD [ \\fieldList\\ ]", "|", "ARRAY \\expression\\ OF ident"],
+
+    "\\fieldList\\":       ["ident : ident \\fieldListTail\\", "|", "ε"],
+
+    "\\fieldListTail\\":   ["; ident : ident \\fieldListTail\\", "|", "ε"],
+
+    "\\varDecl\\":         ["VAR ident : ident ;"],
+
+    "\\constDecl\\":       ["CONST ident : ident = \\expression\\ ;"],
+
+    "\\procDecl\\":        ["PROCEDURE ident ( \\formalList\\ ) ; \\declList\\ BEGIN \\statList\\ END ;"],
+
+    "\\formalList\\":      ["\\formal\\ \\formalListTail\\", "|", "ε"],
+
+    "\\formalListTail\\": ["; \\formal\\ \\formalListTail\\", "|", "ε"],
+
+    "\\formal\\":          ["VAR ident : ident", "|", "ident : ident"],
+
+    "\\statList\\":        ["\\stat\\ ; \\statList\\", "|", "ε"],
+
+    "\\stat\\":            ["\\designator\\ \\statTail\\", "|", "READ \\designator\\", "|", "WRITE \\expression\\", "|", "WRITELN", "|", "IF \\expression\\ THEN \\statList\\ \\ifTail\\ ENDIF", "|", "WHILE \\expression\\ DO \\statList\\ ENDDO", "|", "REPEAT \\statList\\ UNTIL \\expression\\", "|", "LOOP \\statList\\ ENDLOOP", "|", "EXIT"],
+
+    "\\statTail\\":        [":= \\expression\\", "|", "( \\actualList\\ )"],
+
+    "\\ifTail\\":          ["ELSE \\statList\\", "|", "ε"],
+
+    "\\actualList\\":      ["\\expression\\ \\actualListTail\\", "|", "ε"],
+
+    "\\actualListTail\\": [", \\expression\\ \\actualListTail\\", "|", "ε"],
+
+    "\\designator\\":      ["ident \\designatorTail\\"],
+
+    "\\designatorTail\\": [". ident \\designatorTail\\", "|", "[ \\expression\\ ] \\designatorTail\\", "|", "ε"],
+
+    "\\expression\\":      ["\\andExpr\\ \\expressionTail\\"],
+
+    "\\expressionTail\\": ["OR \\andExpr\\ \\expressionTail\\", "|", "ε"],
+
+    "\\andExpr\\":         ["\\relExpr\\ \\andExprTail\\"],
+
+    "\\andExprTail\\":     ["AND \\relExpr\\ \\andExprTail\\", "|", "ε"],
+
+    "\\relExpr\\":         ["\\addExpr\\ \\relExprTail\\"],
+
+    "\\relExprTail\\":     ["= \\addExpr\\", "|", "# \\addExpr\\", "|", "< \\addExpr\\", "|", "<= \\addExpr\\", "|", "> \\addExpr\\", "|", ">= \\addExpr\\", "|", "ε"],
+
+    "\\addExpr\\":         ["\\mulExpr\\ \\addExprTail\\"],
+
+    "\\addExprTail\\":     ["+ \\mulExpr\\ \\addExprTail\\", "|", "- \\mulExpr\\ \\addExprTail\\", "|", "ε"],
+
+    "\\mulExpr\\":         ["\\unaryExpr\\ \\mulExprTail\\"],
+
+    "\\mulExprTail\\":     ["* \\unaryExpr\\ \\mulExprTail\\", "|", "/ \\unaryExpr\\ \\mulExprTail\\", "|", "% \\unaryExpr\\ \\mulExprTail\\", "|", "ε"],
+
+    "\\unaryExpr\\":       ["NOT \\unaryExpr\\", "|", "- \\unaryExpr\\", "|", "TRUNC \\unaryExpr\\", "|", "FLOAT \\unaryExpr\\", "|", "\\primary\\"],
+
+    "\\primary\\":         ["intlit", "|", "reallit", "|", "stringlit", "|", "charlit", "|", "( \\expression\\ )", "|", "\\designator\\"]
   }
 }
