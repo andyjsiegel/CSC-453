@@ -1,0 +1,5 @@
+BEGIN
+   VAR x : int;
+   x = 5 + x*42;
+   PRINT x;
+END

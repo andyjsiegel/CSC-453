@@ -1,0 +1,6 @@
+BEGIN
+   CONST x : int = 1;
+   VAR   y : int;
+   y = x + 1;
+   PRINT y;
+END

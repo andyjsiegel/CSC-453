@@ -1,0 +1,7 @@
+BEGIN
+   CONST y  : int = 4;
+   VAR x : int;
+   IF y<2 GOTO 4;
+   PRINT x + y;
+   4:;
+END

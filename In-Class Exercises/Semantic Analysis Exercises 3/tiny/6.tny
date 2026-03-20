@@ -1,0 +1,7 @@
+BEGIN
+   CONST x : flt = 1.0;
+   CONST y : flt = 1.0 + 2.0;
+   CONST z : flt = x * y;
+   VAR   v : flt;
+   v = z;
+END

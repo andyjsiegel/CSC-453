@@ -1,0 +1,24 @@
+    void index(INDEX n) {
+       n.type = Standard.NoType;
+       Symbol sy = n.env.lookup(n.ident);
+       if ( ... ) {
+          ERROR("Identifier not declared: " + n.ident);
+       } else {
+         if ( ... )) {
+           ERROR("Variable expected: " + n.ident);
+         } else {
+            TypeSy arrType = ...;
+            if ( ... )) {
+              ERROR("Array type expected: " + n.ident);
+            } else {
+               Type check the index expression
+               if ( ... ) {
+                 ERROR("Array index type should be an integer: " + n.index.type.ident);
+               } else {
+                 n.isConst = false;
+                 n.type = ...;
+              }
+            }
+          }
+       }
+    }

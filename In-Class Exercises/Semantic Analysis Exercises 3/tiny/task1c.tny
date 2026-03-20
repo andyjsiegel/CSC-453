@@ -1,0 +1,5 @@
+BEGIN
+   VAR   x : flt;
+   VAR   y : flt;
+   PRINT x + 1.0;
+END

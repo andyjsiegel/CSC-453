@@ -1,0 +1,5 @@
+BEGIN
+   VAR   x : int;
+   VAR   y : flt;
+   y = x;
+END

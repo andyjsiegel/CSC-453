@@ -1,0 +1,3 @@
+BEGIN
+   TYPE t = ARRAY 5 OF int;
+END

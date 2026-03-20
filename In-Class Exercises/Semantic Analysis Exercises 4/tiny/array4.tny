@@ -1,0 +1,5 @@
+BEGIN
+   TYPE t = ARRAY 5 OF int;
+   VAR a : t;
+   PRINT a[4];
+END

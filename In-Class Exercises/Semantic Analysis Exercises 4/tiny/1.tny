@@ -1,0 +1,6 @@
+BEGIN
+   VAR x : int;
+   CONST y : int = 4 + 5;
+   x = 5 + y;
+   PRINT x;
+END

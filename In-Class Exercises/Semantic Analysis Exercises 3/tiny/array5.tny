@@ -1,0 +1,4 @@
+BEGIN
+   TYPE t = ARRAY 5 OF int;
+   PRINT a[4];
+END

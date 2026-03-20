@@ -1,0 +1,8 @@
+BEGIN
+   TYPE t = ARRAY 5 OF int;
+   VAR x : int;
+   VAR a : t;
+   x = a[5];
+   a[5] = x;
+   x = a[5] + a[0];
+END

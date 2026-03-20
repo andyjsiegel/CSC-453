@@ -1,0 +1,6 @@
+BEGIN
+   TYPE t = ARRAY 5 OF flt;
+   VAR x : flt;
+   VAR a : t;
+   x = a[x];
+END

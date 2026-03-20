@@ -1,0 +1,4 @@
+BEGIN
+   VAR a:int;
+   PRINT a[4];
+END

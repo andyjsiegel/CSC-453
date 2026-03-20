@@ -1,0 +1,9 @@
+BEGIN
+   TYPE t = ARRAY 5 OF int;
+   VAR x : int;
+   VAR a : t;
+   CONST c : int = 5;
+   x = a[x];
+   x = a[x+10];
+   x = a[c-1];
+END
