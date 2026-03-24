@@ -1,8 +1,0 @@
-/* Compile with 'dot -Tpng graph.gv > graph.png' */
-
-digraph problem1 { 
-   standard [
-      shape="record"; 
-      label="{int | float}";
-   ];
-}
