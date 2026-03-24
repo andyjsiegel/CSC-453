@@ -1,0 +1,22 @@
+/* Compile with 'dot -Tpng graph.gv > graph.png' */
+
+digraph problem0 { 
+   standard [
+      shape="record"; 
+      label="{int | float}";
+   ];
+
+
+   sytab2 [
+      shape="record"; 
+      label="{void foo() | void bar(char)}";
+   ];
+
+   sytab1 [
+      shape="record"; 
+      label="{char x | float y}";
+   ];
+
+   sytab1 -> sytab2; 
+   sytab2 -> standard; 
+}
