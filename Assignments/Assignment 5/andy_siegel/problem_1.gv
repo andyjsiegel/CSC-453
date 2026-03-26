@@ -6,7 +6,7 @@ digraph problem1 {
       label="{int | float}";
    ];
 
-   sytab1 [
+   sytab3 [
       shape="record"; 
       label="{int y}"
    ];
@@ -18,10 +18,10 @@ digraph problem1 {
 
    sytab1 [
       shape="record"; 
-      label="{void foo(int)}"
+      label="{void foo(char)}"
    ];
 
-   sytab1 -> sytab2
-   sytab2 -> sytab3
-   sytab3 -> standard   
+   sytab3 -> sytab2
+   sytab2 -> sytab1
+   sytab1 -> standard   
 }
