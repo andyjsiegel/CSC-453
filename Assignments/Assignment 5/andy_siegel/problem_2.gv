@@ -5,4 +5,30 @@ digraph problem2 {
       shape="record"; 
       label="{int | float}";
    ];
+
+   sytab4 [
+      shape="record";
+      label=""
+   ]
+
+   sytab3 [
+      shape="record";
+      label="{double x | short y | void zap()}"
+   ];
+
+   sytab2 [
+      shape="record";
+      label="{char x | float y | void bar(double) }";
+   ];
+
+   sytab1 [ 
+      shape="record";
+      label="{void foo(char)}";
+   ];
+
+   sytab4 -> sytab3
+   sytab3 -> sytab2
+   sytab2 -> sytab1
+   sytab1 -> standard   
 }
+

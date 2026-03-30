@@ -13,7 +13,7 @@ digraph problem1 {
 
    sytab2 [
       shape="record";
-      label="{char x | float y}"
+      label="{float x | float y}"
    ];
 
    sytab1 [

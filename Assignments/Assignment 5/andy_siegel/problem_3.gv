@@ -1,8 +1,21 @@
 /* Compile with 'dot -Tpng graph.gv > graph.png' */
 
-digraph problem2 { 
+digraph problem3 { 
    standard [
       shape="record"; 
       label="{int | float}";
    ];
+
+   sytab2 [
+      shape="record"; 
+      label="{char x | S z}";
+   ];
+
+   sytab1 [
+      shape="record"; 
+      label="{struct S | void foo(char)}";
+   ];
+
+   sytab2 -> sytab1
+   sytab1 -> standard
 }
