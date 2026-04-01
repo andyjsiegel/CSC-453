@@ -1,0 +1,14 @@
+PROGRAM P;
+
+VAR j : BOOLEAN;
+VAR i : BOOLEAN;
+BEGIN
+   i := TRUE;
+   j := FALSE;
+   IF i AND j THEN
+      WRITE 99;
+   ELSE
+      WRITE 0;
+   ENDIF;
+   WRITELN;
+END.

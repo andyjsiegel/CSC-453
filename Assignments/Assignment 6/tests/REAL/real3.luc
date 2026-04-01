@@ -1,0 +1,12 @@
+PROGRAM P;
+
+VAR s : REAL;
+VAR t : REAL;
+VAR u : REAL;
+VAR i : INTEGER;
+BEGIN
+   i:= TRUNC 314159.265;
+   t:= FLOAT i;
+   u:= 314159.0 - t;
+   WRITE u; WRITELN;
+END.

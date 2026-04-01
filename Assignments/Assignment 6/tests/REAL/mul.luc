@@ -1,0 +1,10 @@
+PROGRAM P;
+ 
+VAR I : REAL;
+VAR J : REAL;
+BEGIN
+   I := 10.0;
+   J := I * I + 15.0;
+   J := J * 2.0 - 230.0;
+   WRITE J; WRITELN;
+END.

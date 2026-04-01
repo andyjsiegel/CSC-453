@@ -1,0 +1,17 @@
+PROGRAM P;
+
+VAR jj : INTEGER;
+VAR i : INTEGER;
+VAR r : INTEGER;
+BEGIN
+   i := 1; r := 0;
+   REPEAT 
+      jj := 1;
+      REPEAT 
+         jj := jj + 1;
+         r := r + 1;
+      UNTIL jj > 20;
+      i := i + 1;
+   UNTIL i > 10;
+   WRITE r - 200; WRITELN;
+END.

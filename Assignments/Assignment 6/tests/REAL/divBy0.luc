@@ -1,0 +1,9 @@
+PROGRAM P;
+ 
+VAR I : REAL;
+VAR J : REAL;
+BEGIN
+   I := 2.0;
+   J := I / (I - 2.0) + 111.0;
+   WRITE J; WRITELN;
+END.

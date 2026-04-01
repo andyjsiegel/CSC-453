@@ -1,0 +1,211 @@
+55 16	 # [0] 0: DEF_GLOBALS;	 <ProcBegin symbol="ProcedureSy:id=0;name=$MAIN;level=0;Pos=1;formals={};locals={I,J};formalSize=0;localSize=16;" position="1"/>
+1	 # [1] 0: PROG_BEGIN;	 <ProcBegin symbol="ProcedureSy:id=0;name=$MAIN;level=0;Pos=1;formals={};locals={I,J};formalSize=0;localSize=16;" position="1"/>
+5 8	 # [2] 1: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=14;name=J;level=0;Pos=4;type=[id="1" name="INTEGER"];size=8;offset=8;" position="6"/>
+18 2	 # [3] 10: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[2]" position="6"/>
+20	 # [4] 19: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="6"/>
+5 0	 # [5] 20: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=13;name=I;level=0;Pos=3;type=[id="1" name="INTEGER"];size=8;offset=0;" position="7"/>
+5 8	 # [6] 29: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=14;name=J;level=0;Pos=4;type=[id="1" name="INTEGER"];size=8;offset=8;" position="8"/>
+19	 # [7] 38: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="8"/>
+18 1	 # [8] 39: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[1]" position="8"/>
+8	 # [9] 48: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="8"/>
+5 8	 # [10] 49: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=14;name=J;level=0;Pos=4;type=[id="1" name="INTEGER"];size=8;offset=8;" position="9"/>
+19	 # [11] 58: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="9"/>
+18 2	 # [12] 59: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[2]" position="9"/>
+8	 # [13] 68: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="9"/>
+10	 # [14] 69: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="8"/>
+5 8	 # [15] 70: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=14;name=J;level=0;Pos=4;type=[id="1" name="INTEGER"];size=8;offset=8;" position="10"/>
+19	 # [16] 79: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="10"/>
+18 3	 # [17] 80: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[3]" position="10"/>
+8	 # [18] 89: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="10"/>
+10	 # [19] 90: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="9"/>
+5 8	 # [20] 91: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=14;name=J;level=0;Pos=4;type=[id="1" name="INTEGER"];size=8;offset=8;" position="11"/>
+19	 # [21] 100: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="11"/>
+18 4	 # [22] 101: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[4]" position="11"/>
+8	 # [23] 110: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="11"/>
+10	 # [24] 111: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="10"/>
+5 8	 # [25] 112: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=14;name=J;level=0;Pos=4;type=[id="1" name="INTEGER"];size=8;offset=8;" position="12"/>
+19	 # [26] 121: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="12"/>
+18 5	 # [27] 122: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[5]" position="12"/>
+8	 # [28] 131: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="12"/>
+10	 # [29] 132: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="11"/>
+5 8	 # [30] 133: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=14;name=J;level=0;Pos=4;type=[id="1" name="INTEGER"];size=8;offset=8;" position="13"/>
+19	 # [31] 142: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="13"/>
+18 6	 # [32] 143: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[6]" position="13"/>
+8	 # [33] 152: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="13"/>
+10	 # [34] 153: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="12"/>
+5 8	 # [35] 154: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=14;name=J;level=0;Pos=4;type=[id="1" name="INTEGER"];size=8;offset=8;" position="14"/>
+19	 # [36] 163: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="14"/>
+18 7	 # [37] 164: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[7]" position="14"/>
+8	 # [38] 173: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="14"/>
+10	 # [39] 174: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="13"/>
+5 8	 # [40] 175: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=14;name=J;level=0;Pos=4;type=[id="1" name="INTEGER"];size=8;offset=8;" position="15"/>
+19	 # [41] 184: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="15"/>
+18 8	 # [42] 185: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[8]" position="15"/>
+8	 # [43] 194: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="15"/>
+10	 # [44] 195: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="14"/>
+5 8	 # [45] 196: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=14;name=J;level=0;Pos=4;type=[id="1" name="INTEGER"];size=8;offset=8;" position="16"/>
+19	 # [46] 205: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="16"/>
+18 9	 # [47] 206: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[9]" position="16"/>
+8	 # [48] 215: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="16"/>
+10	 # [49] 216: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="15"/>
+5 8	 # [50] 217: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=14;name=J;level=0;Pos=4;type=[id="1" name="INTEGER"];size=8;offset=8;" position="17"/>
+19	 # [51] 226: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="17"/>
+18 10	 # [52] 227: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[10]" position="17"/>
+8	 # [53] 236: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="17"/>
+10	 # [54] 237: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="16"/>
+5 8	 # [55] 238: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=14;name=J;level=0;Pos=4;type=[id="1" name="INTEGER"];size=8;offset=8;" position="18"/>
+19	 # [56] 247: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="18"/>
+18 11	 # [57] 248: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[11]" position="18"/>
+8	 # [58] 257: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="18"/>
+10	 # [59] 258: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="17"/>
+5 8	 # [60] 259: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=14;name=J;level=0;Pos=4;type=[id="1" name="INTEGER"];size=8;offset=8;" position="19"/>
+19	 # [61] 268: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="19"/>
+18 12	 # [62] 269: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[12]" position="19"/>
+8	 # [63] 278: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="19"/>
+10	 # [64] 279: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="18"/>
+5 8	 # [65] 280: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=14;name=J;level=0;Pos=4;type=[id="1" name="INTEGER"];size=8;offset=8;" position="20"/>
+19	 # [66] 289: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="20"/>
+18 13	 # [67] 290: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[13]" position="20"/>
+8	 # [68] 299: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="20"/>
+10	 # [69] 300: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="19"/>
+5 8	 # [70] 301: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=14;name=J;level=0;Pos=4;type=[id="1" name="INTEGER"];size=8;offset=8;" position="21"/>
+19	 # [71] 310: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="21"/>
+18 14	 # [72] 311: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[14]" position="21"/>
+8	 # [73] 320: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="21"/>
+10	 # [74] 321: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="20"/>
+5 8	 # [75] 322: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=14;name=J;level=0;Pos=4;type=[id="1" name="INTEGER"];size=8;offset=8;" position="22"/>
+19	 # [76] 331: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="22"/>
+18 15	 # [77] 332: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[15]" position="22"/>
+8	 # [78] 341: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="22"/>
+10	 # [79] 342: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="21"/>
+5 8	 # [80] 343: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=14;name=J;level=0;Pos=4;type=[id="1" name="INTEGER"];size=8;offset=8;" position="23"/>
+19	 # [81] 352: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="23"/>
+18 16	 # [82] 353: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[16]" position="23"/>
+8	 # [83] 362: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="23"/>
+10	 # [84] 363: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="22"/>
+5 8	 # [85] 364: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=14;name=J;level=0;Pos=4;type=[id="1" name="INTEGER"];size=8;offset=8;" position="24"/>
+19	 # [86] 373: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="24"/>
+18 17	 # [87] 374: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[17]" position="24"/>
+8	 # [88] 383: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="24"/>
+10	 # [89] 384: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="23"/>
+5 8	 # [90] 385: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=14;name=J;level=0;Pos=4;type=[id="1" name="INTEGER"];size=8;offset=8;" position="25"/>
+19	 # [91] 394: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="25"/>
+18 18	 # [92] 395: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[18]" position="25"/>
+8	 # [93] 404: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="25"/>
+10	 # [94] 405: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="24"/>
+5 8	 # [95] 406: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=14;name=J;level=0;Pos=4;type=[id="1" name="INTEGER"];size=8;offset=8;" position="26"/>
+19	 # [96] 415: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="26"/>
+18 19	 # [97] 416: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[19]" position="26"/>
+8	 # [98] 425: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="26"/>
+10	 # [99] 426: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="25"/>
+5 8	 # [100] 427: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=14;name=J;level=0;Pos=4;type=[id="1" name="INTEGER"];size=8;offset=8;" position="27"/>
+19	 # [101] 436: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="27"/>
+18 20	 # [102] 437: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[20]" position="27"/>
+8	 # [103] 446: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="27"/>
+10	 # [104] 447: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="26"/>
+5 8	 # [105] 448: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=14;name=J;level=0;Pos=4;type=[id="1" name="INTEGER"];size=8;offset=8;" position="28"/>
+19	 # [106] 457: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="28"/>
+18 1	 # [107] 458: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[1]" position="28"/>
+8	 # [108] 467: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="28"/>
+5 8	 # [109] 468: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=14;name=J;level=0;Pos=4;type=[id="1" name="INTEGER"];size=8;offset=8;" position="29"/>
+19	 # [110] 477: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="29"/>
+18 2	 # [111] 478: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[2]" position="29"/>
+8	 # [112] 487: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="29"/>
+10	 # [113] 488: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="28"/>
+5 8	 # [114] 489: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=14;name=J;level=0;Pos=4;type=[id="1" name="INTEGER"];size=8;offset=8;" position="30"/>
+19	 # [115] 498: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="30"/>
+18 3	 # [116] 499: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[3]" position="30"/>
+8	 # [117] 508: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="30"/>
+10	 # [118] 509: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="29"/>
+5 8	 # [119] 510: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=14;name=J;level=0;Pos=4;type=[id="1" name="INTEGER"];size=8;offset=8;" position="31"/>
+19	 # [120] 519: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="31"/>
+18 4	 # [121] 520: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[4]" position="31"/>
+8	 # [122] 529: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="31"/>
+10	 # [123] 530: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="30"/>
+5 8	 # [124] 531: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=14;name=J;level=0;Pos=4;type=[id="1" name="INTEGER"];size=8;offset=8;" position="32"/>
+19	 # [125] 540: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="32"/>
+18 5	 # [126] 541: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[5]" position="32"/>
+8	 # [127] 550: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="32"/>
+10	 # [128] 551: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="31"/>
+5 8	 # [129] 552: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=14;name=J;level=0;Pos=4;type=[id="1" name="INTEGER"];size=8;offset=8;" position="33"/>
+19	 # [130] 561: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="33"/>
+18 6	 # [131] 562: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[6]" position="33"/>
+8	 # [132] 571: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="33"/>
+10	 # [133] 572: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="32"/>
+5 8	 # [134] 573: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=14;name=J;level=0;Pos=4;type=[id="1" name="INTEGER"];size=8;offset=8;" position="34"/>
+19	 # [135] 582: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="34"/>
+18 7	 # [136] 583: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[7]" position="34"/>
+8	 # [137] 592: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="34"/>
+10	 # [138] 593: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="33"/>
+5 8	 # [139] 594: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=14;name=J;level=0;Pos=4;type=[id="1" name="INTEGER"];size=8;offset=8;" position="35"/>
+19	 # [140] 603: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="35"/>
+18 8	 # [141] 604: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[8]" position="35"/>
+8	 # [142] 613: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="35"/>
+10	 # [143] 614: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="34"/>
+5 8	 # [144] 615: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=14;name=J;level=0;Pos=4;type=[id="1" name="INTEGER"];size=8;offset=8;" position="36"/>
+19	 # [145] 624: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="36"/>
+18 9	 # [146] 625: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[9]" position="36"/>
+8	 # [147] 634: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="36"/>
+10	 # [148] 635: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="35"/>
+5 8	 # [149] 636: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=14;name=J;level=0;Pos=4;type=[id="1" name="INTEGER"];size=8;offset=8;" position="37"/>
+19	 # [150] 645: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="37"/>
+18 10	 # [151] 646: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[10]" position="37"/>
+8	 # [152] 655: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="37"/>
+10	 # [153] 656: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="36"/>
+5 8	 # [154] 657: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=14;name=J;level=0;Pos=4;type=[id="1" name="INTEGER"];size=8;offset=8;" position="38"/>
+19	 # [155] 666: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="38"/>
+18 11	 # [156] 667: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[11]" position="38"/>
+8	 # [157] 676: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="38"/>
+10	 # [158] 677: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="37"/>
+5 8	 # [159] 678: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=14;name=J;level=0;Pos=4;type=[id="1" name="INTEGER"];size=8;offset=8;" position="39"/>
+19	 # [160] 687: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="39"/>
+18 12	 # [161] 688: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[12]" position="39"/>
+8	 # [162] 697: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="39"/>
+10	 # [163] 698: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="38"/>
+5 8	 # [164] 699: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=14;name=J;level=0;Pos=4;type=[id="1" name="INTEGER"];size=8;offset=8;" position="40"/>
+19	 # [165] 708: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="40"/>
+18 13	 # [166] 709: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[13]" position="40"/>
+8	 # [167] 718: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="40"/>
+10	 # [168] 719: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="39"/>
+5 8	 # [169] 720: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=14;name=J;level=0;Pos=4;type=[id="1" name="INTEGER"];size=8;offset=8;" position="41"/>
+19	 # [170] 729: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="41"/>
+18 14	 # [171] 730: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[14]" position="41"/>
+8	 # [172] 739: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="41"/>
+10	 # [173] 740: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="40"/>
+5 8	 # [174] 741: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=14;name=J;level=0;Pos=4;type=[id="1" name="INTEGER"];size=8;offset=8;" position="42"/>
+19	 # [175] 750: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="42"/>
+18 15	 # [176] 751: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[15]" position="42"/>
+8	 # [177] 760: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="42"/>
+10	 # [178] 761: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="41"/>
+5 8	 # [179] 762: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=14;name=J;level=0;Pos=4;type=[id="1" name="INTEGER"];size=8;offset=8;" position="43"/>
+19	 # [180] 771: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="43"/>
+18 16	 # [181] 772: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[16]" position="43"/>
+8	 # [182] 781: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="43"/>
+10	 # [183] 782: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="42"/>
+5 8	 # [184] 783: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=14;name=J;level=0;Pos=4;type=[id="1" name="INTEGER"];size=8;offset=8;" position="44"/>
+19	 # [185] 792: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="44"/>
+18 17	 # [186] 793: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[17]" position="44"/>
+8	 # [187] 802: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="44"/>
+10	 # [188] 803: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="43"/>
+5 8	 # [189] 804: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=14;name=J;level=0;Pos=4;type=[id="1" name="INTEGER"];size=8;offset=8;" position="45"/>
+19	 # [190] 813: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="45"/>
+18 18	 # [191] 814: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[18]" position="45"/>
+8	 # [192] 823: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="45"/>
+10	 # [193] 824: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="44"/>
+5 8	 # [194] 825: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=14;name=J;level=0;Pos=4;type=[id="1" name="INTEGER"];size=8;offset=8;" position="46"/>
+19	 # [195] 834: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="46"/>
+18 19	 # [196] 835: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[19]" position="46"/>
+8	 # [197] 844: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="46"/>
+10	 # [198] 845: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="45"/>
+5 8	 # [199] 846: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=14;name=J;level=0;Pos=4;type=[id="1" name="INTEGER"];size=8;offset=8;" position="47"/>
+19	 # [200] 855: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="47"/>
+18 20	 # [201] 856: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[20]" position="47"/>
+8	 # [202] 865: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="47"/>
+10	 # [203] 866: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="46"/>
+9	 # [204] 867: MINUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="2" position="27"/>
+20	 # [205] 868: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="7"/>
+5 0	 # [206] 869: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=13;name=I;level=0;Pos=3;type=[id="1" name="INTEGER"];size=8;offset=0;" position="48"/>
+19	 # [207] 878: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="48"/>
+44	 # [208] 879: WRITE_i;	 <Write type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="48"/>
+51	 # [209] 880: WRITELN;	 <WriteLn position="48"/>
+2	 # [210] 881: PROG_END;	 <ProcEnd symbol="ProcedureSy:id=0;name=$MAIN;level=0;Pos=1;formals={};locals={I,J};formalSize=0;localSize=16;" position="1"/>

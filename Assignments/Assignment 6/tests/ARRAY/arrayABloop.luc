@@ -1,0 +1,25 @@
+PROGRAM P;
+
+TYPE A = ARRAY 100 OF INTEGER;
+TYPE B = ARRAY 20 OF A;
+
+VAR i : INTEGER;
+VAR k : INTEGER;
+VAR x : B;
+VAR m : INTEGER;
+VAR j : INTEGER;
+VAR r : INTEGER;
+BEGIN
+   m := 97; k := 103; 
+   i := 0; r := 1;
+   WHILE i <= 19 DO
+      j := 0;
+      WHILE j <= 99 DO
+         x[i][j] := r;
+         j := j + 1;
+         r := r + 1;
+      ENDDO;
+      i := i + 1;
+   ENDDO;
+   WRITE m + k + x[1][99] - 400; WRITELN;
+END.

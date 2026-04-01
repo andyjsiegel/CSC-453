@@ -1,0 +1,9 @@
+PROGRAM P;
+ 
+VAR I : REAL;
+VAR J : REAL;
+BEGIN
+   I := 0.0;
+   J := 0.0;
+   WRITE J+I; WRITELN;
+END.

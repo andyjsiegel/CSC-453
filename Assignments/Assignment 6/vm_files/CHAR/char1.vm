@@ -1,0 +1,6 @@
+55 1	 # [0] 0: DEF_GLOBALS;	 <ProcBegin symbol="ProcedureSy:id=0;name=$MAIN;level=0;Pos=1;formals={};locals={C};formalSize=0;localSize=1;" position="1"/>
+1	 # [1] 0: PROG_BEGIN;	 <ProcBegin symbol="ProcedureSy:id=0;name=$MAIN;level=0;Pos=1;formals={};locals={C};formalSize=0;localSize=1;" position="1"/>
+18 48	 # [2] 1: PUSHCONST_i;	 <LoadLit type="BasicType:id=3;name=CHAR;level=0;Pos=0;size=1;" value="CharValue[0]" position="4"/>
+46	 # [3] 10: WRITE_c;	 <Write type="BasicType:id=3;name=CHAR;level=0;Pos=0;size=1;" position="4"/>
+51	 # [4] 11: WRITELN;	 <WriteLn position="4"/>
+2	 # [5] 12: PROG_END;	 <ProcEnd symbol="ProcedureSy:id=0;name=$MAIN;level=0;Pos=1;formals={};locals={C};formalSize=0;localSize=1;" position="1"/>

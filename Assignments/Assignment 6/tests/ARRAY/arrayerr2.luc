@@ -1,0 +1,12 @@
+PROGRAM P;
+
+TYPE A = ARRAY 100 OF INTEGER;
+TYPE B = ARRAY 100 OF A;
+
+VAR x : B;
+VAR i : INTEGER;
+BEGIN
+   i := 50;
+   x[5][i+51] := 45;
+   WRITE 9999; WRITELN;
+END.

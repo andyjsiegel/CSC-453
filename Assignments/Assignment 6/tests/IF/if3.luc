@@ -1,0 +1,16 @@
+PROGRAM P;
+
+VAR c : CHAR;
+BEGIN
+   c := 'd';
+   IF c >= 'c' THEN
+      IF c <= 'd' THEN 
+         WRITE 0;
+      ELSE
+         WRITE 99;
+      ENDIF;
+   ELSE
+      WRITE 99;
+   ENDIF;
+   WRITELN;
+END.

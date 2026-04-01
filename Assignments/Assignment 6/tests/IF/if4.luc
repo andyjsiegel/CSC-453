@@ -1,0 +1,19 @@
+PROGRAM P;
+
+VAR s : REAL;
+VAR jj : INTEGER;
+VAR i : INTEGER;
+VAR c : CHAR;
+BEGIN
+   i := 1234; jj := 500;
+   IF i > (jj + 600) THEN
+      IF i < (jj * 10) THEN 
+         WRITE 0;
+      ELSE
+         WRITE 99;
+      ENDIF;
+   ELSE
+      WRITE 99;
+   ENDIF;
+   WRITELN;
+END.

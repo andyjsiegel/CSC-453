@@ -1,0 +1,568 @@
+55 2432	 # [0] 0: DEF_GLOBALS;	 <ProcBegin symbol="ProcedureSy:id=0;name=$MAIN;level=0;Pos=1;formals={};locals={j,B,k,C,i,A,OK};formalSize=0;localSize=2432;" position="1"/>
+1	 # [1] 0: PROG_BEGIN;	 <ProcBegin symbol="ProcedureSy:id=0;name=$MAIN;level=0;Pos=1;formals={};locals={j,B,k,C,i,A,OK};formalSize=0;localSize=2432;" position="1"/>
+5 2400	 # [2] 1: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="14"/>
+18 0	 # [3] 10: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[0]" position="14"/>
+20	 # [4] 19: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="14"/>
+5 2400	 # [5] 20: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="15"/>
+19	 # [6] 29: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="15"/>
+18 9	 # [7] 30: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[9]" position="15"/>
+16 18	 # [8] 39: LE_i;	 <Branch type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="23" label="171" position="15"/>
+41 216	 # [9] 48: JUMP;	 <Goto label="163" position="15"/>
+5 2408	 # [10] 57: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="16"/>
+18 0	 # [11] 66: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[0]" position="16"/>
+20	 # [12] 75: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="16"/>
+5 2408	 # [13] 76: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="17"/>
+19	 # [14] 85: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="17"/>
+18 9	 # [15] 86: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[9]" position="17"/>
+16 18	 # [16] 95: LE_i;	 <Branch type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="23" label="176" position="17"/>
+41 121	 # [17] 104: JUMP;	 <Goto label="17" position="17"/>
+5 800	 # [18] 113: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=16;name=B;level=0;Pos=7;type=[id="14" name="T"];size=800;offset=800;" position="18"/>
+5 2400	 # [19] 122: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="18"/>
+19	 # [20] 131: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="18"/>
+7 80 10	 # [21] 132: INDEX;	 <IndexOf type="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" array="ArrayType:id=14;name=T;level=0;Pos=4;size=800;elementType=[id="13" name="T1"];count=10;" position="18"/>
+5 2408	 # [22] 149: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="18"/>
+19	 # [23] 158: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="18"/>
+7 8 10	 # [24] 159: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" position="18"/>
+18 1	 # [25] 176: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[1]" position="18"/>
+20	 # [26] 185: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="18"/>
+5 2408	 # [27] 186: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="19"/>
+5 2408	 # [28] 195: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="19"/>
+19	 # [29] 204: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="19"/>
+18 1	 # [30] 205: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[1]" position="19"/>
+8	 # [31] 214: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="19"/>
+20	 # [32] 215: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="19"/>
+41 -140	 # [33] 216: JUMP;	 <Goto label="175" position="17"/>
+5 2400	 # [34] 225: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="21"/>
+5 2400	 # [35] 234: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="21"/>
+19	 # [36] 243: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="21"/>
+18 1	 # [37] 244: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[1]" position="21"/>
+8	 # [38] 253: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="21"/>
+20	 # [39] 254: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="21"/>
+41 -235	 # [40] 255: JUMP;	 <Goto label="170" position="15"/>
+5 2400	 # [41] 264: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="24"/>
+18 0	 # [42] 273: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[0]" position="24"/>
+20	 # [43] 282: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="24"/>
+5 2400	 # [44] 283: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="25"/>
+19	 # [45] 292: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="25"/>
+18 9	 # [46] 293: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[9]" position="25"/>
+16 18	 # [47] 302: LE_i;	 <Branch type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="23" label="190" position="25"/>
+41 216	 # [48] 311: JUMP;	 <Goto label="161" position="25"/>
+5 2408	 # [49] 320: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="26"/>
+18 0	 # [50] 329: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[0]" position="26"/>
+20	 # [51] 338: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="26"/>
+5 2408	 # [52] 339: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="27"/>
+19	 # [53] 348: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="27"/>
+18 9	 # [54] 349: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[9]" position="27"/>
+16 18	 # [55] 358: LE_i;	 <Branch type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="23" label="195" position="27"/>
+41 121	 # [56] 367: JUMP;	 <Goto label="38" position="27"/>
+5 1600	 # [57] 376: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=17;name=C;level=0;Pos=8;type=[id="14" name="T"];size=800;offset=1600;" position="28"/>
+5 2400	 # [58] 385: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="28"/>
+19	 # [59] 394: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="28"/>
+7 80 10	 # [60] 395: INDEX;	 <IndexOf type="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" array="ArrayType:id=14;name=T;level=0;Pos=4;size=800;elementType=[id="13" name="T1"];count=10;" position="28"/>
+5 2408	 # [61] 412: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="28"/>
+19	 # [62] 421: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="28"/>
+7 8 10	 # [63] 422: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" position="28"/>
+18 2	 # [64] 439: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[2]" position="28"/>
+20	 # [65] 448: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="28"/>
+5 2408	 # [66] 449: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="29"/>
+5 2408	 # [67] 458: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="29"/>
+19	 # [68] 467: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="29"/>
+18 1	 # [69] 468: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[1]" position="29"/>
+8	 # [70] 477: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="29"/>
+20	 # [71] 478: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="29"/>
+41 -140	 # [72] 479: JUMP;	 <Goto label="194" position="27"/>
+5 2400	 # [73] 488: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="31"/>
+5 2400	 # [74] 497: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="31"/>
+19	 # [75] 506: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="31"/>
+18 1	 # [76] 507: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[1]" position="31"/>
+8	 # [77] 516: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="31"/>
+20	 # [78] 517: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="31"/>
+41 -235	 # [79] 518: JUMP;	 <Goto label="189" position="25"/>
+5 2400	 # [80] 527: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="34"/>
+18 0	 # [81] 536: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[0]" position="34"/>
+20	 # [82] 545: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="34"/>
+5 2400	 # [83] 546: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="35"/>
+19	 # [84] 555: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="35"/>
+18 9	 # [85] 556: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[9]" position="35"/>
+16 18	 # [86] 565: LE_i;	 <Branch type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="23" label="209" position="35"/>
+41 3085	 # [87] 574: JUMP;	 <Goto label="159" position="35"/>
+5 2408	 # [88] 583: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="36"/>
+18 0	 # [89] 592: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[0]" position="36"/>
+20	 # [90] 601: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="36"/>
+5 2408	 # [91] 602: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="37"/>
+19	 # [92] 611: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="37"/>
+18 9	 # [93] 612: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[9]" position="37"/>
+16 18	 # [94] 621: LE_i;	 <Branch type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="23" label="214" position="37"/>
+41 2990	 # [95] 630: JUMP;	 <Goto label="119" position="37"/>
+5 0	 # [96] 639: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=15;name=A;level=0;Pos=6;type=[id="14" name="T"];size=800;offset=0;" position="38"/>
+5 2400	 # [97] 648: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="38"/>
+19	 # [98] 657: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="38"/>
+7 80 10	 # [99] 658: INDEX;	 <IndexOf type="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" array="ArrayType:id=14;name=T;level=0;Pos=4;size=800;elementType=[id="13" name="T1"];count=10;" position="38"/>
+5 2408	 # [100] 675: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="38"/>
+19	 # [101] 684: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="38"/>
+7 8 10	 # [102] 685: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" position="38"/>
+18 0	 # [103] 702: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[0]" position="38"/>
+20	 # [104] 711: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="38"/>
+5 2416	 # [105] 712: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=20;name=k;level=0;Pos=11;type=[id="1" name="INTEGER"];size=8;offset=2416;" position="39"/>
+18 0	 # [106] 721: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[0]" position="39"/>
+20	 # [107] 730: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="39"/>
+5 0	 # [108] 731: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=15;name=A;level=0;Pos=6;type=[id="14" name="T"];size=800;offset=0;" position="40"/>
+5 2400	 # [109] 740: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="40"/>
+19	 # [110] 749: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="40"/>
+7 80 10	 # [111] 750: INDEX;	 <IndexOf type="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" array="ArrayType:id=14;name=T;level=0;Pos=4;size=800;elementType=[id="13" name="T1"];count=10;" position="40"/>
+5 2408	 # [112] 767: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="40"/>
+19	 # [113] 776: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="40"/>
+7 8 10	 # [114] 777: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" position="40"/>
+5 0	 # [115] 794: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=15;name=A;level=0;Pos=6;type=[id="14" name="T"];size=800;offset=0;" position="40"/>
+5 2400	 # [116] 803: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="40"/>
+19	 # [117] 812: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="40"/>
+7 80 10	 # [118] 813: INDEX;	 <IndexOf type="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" array="ArrayType:id=14;name=T;level=0;Pos=4;size=800;elementType=[id="13" name="T1"];count=10;" position="40"/>
+5 2408	 # [119] 830: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="40"/>
+19	 # [120] 839: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="40"/>
+7 8 10	 # [121] 840: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" position="40"/>
+19	 # [122] 857: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="40"/>
+5 800	 # [123] 858: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=16;name=B;level=0;Pos=7;type=[id="14" name="T"];size=800;offset=800;" position="40"/>
+5 2400	 # [124] 867: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="40"/>
+19	 # [125] 876: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="40"/>
+7 80 10	 # [126] 877: INDEX;	 <IndexOf type="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" array="ArrayType:id=14;name=T;level=0;Pos=4;size=800;elementType=[id="13" name="T1"];count=10;" position="40"/>
+5 2416	 # [127] 894: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=20;name=k;level=0;Pos=11;type=[id="1" name="INTEGER"];size=8;offset=2416;" position="40"/>
+19	 # [128] 903: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="40"/>
+7 8 10	 # [129] 904: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" position="40"/>
+19	 # [130] 921: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="40"/>
+5 1600	 # [131] 922: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=17;name=C;level=0;Pos=8;type=[id="14" name="T"];size=800;offset=1600;" position="40"/>
+5 2416	 # [132] 931: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=20;name=k;level=0;Pos=11;type=[id="1" name="INTEGER"];size=8;offset=2416;" position="40"/>
+19	 # [133] 940: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="40"/>
+7 80 10	 # [134] 941: INDEX;	 <IndexOf type="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" array="ArrayType:id=14;name=T;level=0;Pos=4;size=800;elementType=[id="13" name="T1"];count=10;" position="40"/>
+5 2408	 # [135] 958: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="40"/>
+19	 # [136] 967: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="40"/>
+7 8 10	 # [137] 968: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" position="40"/>
+19	 # [138] 985: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="40"/>
+10	 # [139] 986: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="40"/>
+8	 # [140] 987: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="40"/>
+20	 # [141] 988: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="40"/>
+5 2416	 # [142] 989: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=20;name=k;level=0;Pos=11;type=[id="1" name="INTEGER"];size=8;offset=2416;" position="40"/>
+5 2416	 # [143] 998: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=20;name=k;level=0;Pos=11;type=[id="1" name="INTEGER"];size=8;offset=2416;" position="40"/>
+19	 # [144] 1007: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="40"/>
+18 1	 # [145] 1008: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[1]" position="40"/>
+8	 # [146] 1017: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="40"/>
+20	 # [147] 1018: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="40"/>
+5 0	 # [148] 1019: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=15;name=A;level=0;Pos=6;type=[id="14" name="T"];size=800;offset=0;" position="41"/>
+5 2400	 # [149] 1028: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="41"/>
+19	 # [150] 1037: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="41"/>
+7 80 10	 # [151] 1038: INDEX;	 <IndexOf type="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" array="ArrayType:id=14;name=T;level=0;Pos=4;size=800;elementType=[id="13" name="T1"];count=10;" position="41"/>
+5 2408	 # [152] 1055: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="41"/>
+19	 # [153] 1064: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="41"/>
+7 8 10	 # [154] 1065: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" position="41"/>
+5 0	 # [155] 1082: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=15;name=A;level=0;Pos=6;type=[id="14" name="T"];size=800;offset=0;" position="41"/>
+5 2400	 # [156] 1091: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="41"/>
+19	 # [157] 1100: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="41"/>
+7 80 10	 # [158] 1101: INDEX;	 <IndexOf type="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" array="ArrayType:id=14;name=T;level=0;Pos=4;size=800;elementType=[id="13" name="T1"];count=10;" position="41"/>
+5 2408	 # [159] 1118: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="41"/>
+19	 # [160] 1127: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="41"/>
+7 8 10	 # [161] 1128: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" position="41"/>
+19	 # [162] 1145: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="41"/>
+5 800	 # [163] 1146: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=16;name=B;level=0;Pos=7;type=[id="14" name="T"];size=800;offset=800;" position="41"/>
+5 2400	 # [164] 1155: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="41"/>
+19	 # [165] 1164: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="41"/>
+7 80 10	 # [166] 1165: INDEX;	 <IndexOf type="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" array="ArrayType:id=14;name=T;level=0;Pos=4;size=800;elementType=[id="13" name="T1"];count=10;" position="41"/>
+5 2416	 # [167] 1182: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=20;name=k;level=0;Pos=11;type=[id="1" name="INTEGER"];size=8;offset=2416;" position="41"/>
+19	 # [168] 1191: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="41"/>
+7 8 10	 # [169] 1192: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" position="41"/>
+19	 # [170] 1209: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="41"/>
+5 1600	 # [171] 1210: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=17;name=C;level=0;Pos=8;type=[id="14" name="T"];size=800;offset=1600;" position="41"/>
+5 2416	 # [172] 1219: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=20;name=k;level=0;Pos=11;type=[id="1" name="INTEGER"];size=8;offset=2416;" position="41"/>
+19	 # [173] 1228: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="41"/>
+7 80 10	 # [174] 1229: INDEX;	 <IndexOf type="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" array="ArrayType:id=14;name=T;level=0;Pos=4;size=800;elementType=[id="13" name="T1"];count=10;" position="41"/>
+5 2408	 # [175] 1246: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="41"/>
+19	 # [176] 1255: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="41"/>
+7 8 10	 # [177] 1256: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" position="41"/>
+19	 # [178] 1273: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="41"/>
+10	 # [179] 1274: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="41"/>
+8	 # [180] 1275: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="41"/>
+20	 # [181] 1276: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="41"/>
+5 2416	 # [182] 1277: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=20;name=k;level=0;Pos=11;type=[id="1" name="INTEGER"];size=8;offset=2416;" position="41"/>
+5 2416	 # [183] 1286: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=20;name=k;level=0;Pos=11;type=[id="1" name="INTEGER"];size=8;offset=2416;" position="41"/>
+19	 # [184] 1295: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="41"/>
+18 1	 # [185] 1296: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[1]" position="41"/>
+8	 # [186] 1305: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="41"/>
+20	 # [187] 1306: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="41"/>
+5 0	 # [188] 1307: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=15;name=A;level=0;Pos=6;type=[id="14" name="T"];size=800;offset=0;" position="42"/>
+5 2400	 # [189] 1316: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="42"/>
+19	 # [190] 1325: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="42"/>
+7 80 10	 # [191] 1326: INDEX;	 <IndexOf type="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" array="ArrayType:id=14;name=T;level=0;Pos=4;size=800;elementType=[id="13" name="T1"];count=10;" position="42"/>
+5 2408	 # [192] 1343: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="42"/>
+19	 # [193] 1352: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="42"/>
+7 8 10	 # [194] 1353: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" position="42"/>
+5 0	 # [195] 1370: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=15;name=A;level=0;Pos=6;type=[id="14" name="T"];size=800;offset=0;" position="42"/>
+5 2400	 # [196] 1379: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="42"/>
+19	 # [197] 1388: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="42"/>
+7 80 10	 # [198] 1389: INDEX;	 <IndexOf type="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" array="ArrayType:id=14;name=T;level=0;Pos=4;size=800;elementType=[id="13" name="T1"];count=10;" position="42"/>
+5 2408	 # [199] 1406: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="42"/>
+19	 # [200] 1415: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="42"/>
+7 8 10	 # [201] 1416: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" position="42"/>
+19	 # [202] 1433: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="42"/>
+5 800	 # [203] 1434: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=16;name=B;level=0;Pos=7;type=[id="14" name="T"];size=800;offset=800;" position="42"/>
+5 2400	 # [204] 1443: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="42"/>
+19	 # [205] 1452: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="42"/>
+7 80 10	 # [206] 1453: INDEX;	 <IndexOf type="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" array="ArrayType:id=14;name=T;level=0;Pos=4;size=800;elementType=[id="13" name="T1"];count=10;" position="42"/>
+5 2416	 # [207] 1470: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=20;name=k;level=0;Pos=11;type=[id="1" name="INTEGER"];size=8;offset=2416;" position="42"/>
+19	 # [208] 1479: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="42"/>
+7 8 10	 # [209] 1480: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" position="42"/>
+19	 # [210] 1497: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="42"/>
+5 1600	 # [211] 1498: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=17;name=C;level=0;Pos=8;type=[id="14" name="T"];size=800;offset=1600;" position="42"/>
+5 2416	 # [212] 1507: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=20;name=k;level=0;Pos=11;type=[id="1" name="INTEGER"];size=8;offset=2416;" position="42"/>
+19	 # [213] 1516: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="42"/>
+7 80 10	 # [214] 1517: INDEX;	 <IndexOf type="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" array="ArrayType:id=14;name=T;level=0;Pos=4;size=800;elementType=[id="13" name="T1"];count=10;" position="42"/>
+5 2408	 # [215] 1534: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="42"/>
+19	 # [216] 1543: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="42"/>
+7 8 10	 # [217] 1544: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" position="42"/>
+19	 # [218] 1561: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="42"/>
+10	 # [219] 1562: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="42"/>
+8	 # [220] 1563: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="42"/>
+20	 # [221] 1564: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="42"/>
+5 2416	 # [222] 1565: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=20;name=k;level=0;Pos=11;type=[id="1" name="INTEGER"];size=8;offset=2416;" position="42"/>
+5 2416	 # [223] 1574: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=20;name=k;level=0;Pos=11;type=[id="1" name="INTEGER"];size=8;offset=2416;" position="42"/>
+19	 # [224] 1583: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="42"/>
+18 1	 # [225] 1584: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[1]" position="42"/>
+8	 # [226] 1593: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="42"/>
+20	 # [227] 1594: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="42"/>
+5 0	 # [228] 1595: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=15;name=A;level=0;Pos=6;type=[id="14" name="T"];size=800;offset=0;" position="43"/>
+5 2400	 # [229] 1604: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="43"/>
+19	 # [230] 1613: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="43"/>
+7 80 10	 # [231] 1614: INDEX;	 <IndexOf type="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" array="ArrayType:id=14;name=T;level=0;Pos=4;size=800;elementType=[id="13" name="T1"];count=10;" position="43"/>
+5 2408	 # [232] 1631: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="43"/>
+19	 # [233] 1640: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="43"/>
+7 8 10	 # [234] 1641: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" position="43"/>
+5 0	 # [235] 1658: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=15;name=A;level=0;Pos=6;type=[id="14" name="T"];size=800;offset=0;" position="43"/>
+5 2400	 # [236] 1667: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="43"/>
+19	 # [237] 1676: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="43"/>
+7 80 10	 # [238] 1677: INDEX;	 <IndexOf type="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" array="ArrayType:id=14;name=T;level=0;Pos=4;size=800;elementType=[id="13" name="T1"];count=10;" position="43"/>
+5 2408	 # [239] 1694: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="43"/>
+19	 # [240] 1703: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="43"/>
+7 8 10	 # [241] 1704: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" position="43"/>
+19	 # [242] 1721: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="43"/>
+5 800	 # [243] 1722: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=16;name=B;level=0;Pos=7;type=[id="14" name="T"];size=800;offset=800;" position="43"/>
+5 2400	 # [244] 1731: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="43"/>
+19	 # [245] 1740: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="43"/>
+7 80 10	 # [246] 1741: INDEX;	 <IndexOf type="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" array="ArrayType:id=14;name=T;level=0;Pos=4;size=800;elementType=[id="13" name="T1"];count=10;" position="43"/>
+5 2416	 # [247] 1758: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=20;name=k;level=0;Pos=11;type=[id="1" name="INTEGER"];size=8;offset=2416;" position="43"/>
+19	 # [248] 1767: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="43"/>
+7 8 10	 # [249] 1768: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" position="43"/>
+19	 # [250] 1785: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="43"/>
+5 1600	 # [251] 1786: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=17;name=C;level=0;Pos=8;type=[id="14" name="T"];size=800;offset=1600;" position="43"/>
+5 2416	 # [252] 1795: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=20;name=k;level=0;Pos=11;type=[id="1" name="INTEGER"];size=8;offset=2416;" position="43"/>
+19	 # [253] 1804: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="43"/>
+7 80 10	 # [254] 1805: INDEX;	 <IndexOf type="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" array="ArrayType:id=14;name=T;level=0;Pos=4;size=800;elementType=[id="13" name="T1"];count=10;" position="43"/>
+5 2408	 # [255] 1822: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="43"/>
+19	 # [256] 1831: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="43"/>
+7 8 10	 # [257] 1832: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" position="43"/>
+19	 # [258] 1849: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="43"/>
+10	 # [259] 1850: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="43"/>
+8	 # [260] 1851: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="43"/>
+20	 # [261] 1852: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="43"/>
+5 2416	 # [262] 1853: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=20;name=k;level=0;Pos=11;type=[id="1" name="INTEGER"];size=8;offset=2416;" position="43"/>
+5 2416	 # [263] 1862: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=20;name=k;level=0;Pos=11;type=[id="1" name="INTEGER"];size=8;offset=2416;" position="43"/>
+19	 # [264] 1871: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="43"/>
+18 1	 # [265] 1872: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[1]" position="43"/>
+8	 # [266] 1881: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="43"/>
+20	 # [267] 1882: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="43"/>
+5 0	 # [268] 1883: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=15;name=A;level=0;Pos=6;type=[id="14" name="T"];size=800;offset=0;" position="44"/>
+5 2400	 # [269] 1892: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="44"/>
+19	 # [270] 1901: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="44"/>
+7 80 10	 # [271] 1902: INDEX;	 <IndexOf type="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" array="ArrayType:id=14;name=T;level=0;Pos=4;size=800;elementType=[id="13" name="T1"];count=10;" position="44"/>
+5 2408	 # [272] 1919: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="44"/>
+19	 # [273] 1928: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="44"/>
+7 8 10	 # [274] 1929: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" position="44"/>
+5 0	 # [275] 1946: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=15;name=A;level=0;Pos=6;type=[id="14" name="T"];size=800;offset=0;" position="44"/>
+5 2400	 # [276] 1955: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="44"/>
+19	 # [277] 1964: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="44"/>
+7 80 10	 # [278] 1965: INDEX;	 <IndexOf type="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" array="ArrayType:id=14;name=T;level=0;Pos=4;size=800;elementType=[id="13" name="T1"];count=10;" position="44"/>
+5 2408	 # [279] 1982: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="44"/>
+19	 # [280] 1991: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="44"/>
+7 8 10	 # [281] 1992: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" position="44"/>
+19	 # [282] 2009: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="44"/>
+5 800	 # [283] 2010: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=16;name=B;level=0;Pos=7;type=[id="14" name="T"];size=800;offset=800;" position="44"/>
+5 2400	 # [284] 2019: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="44"/>
+19	 # [285] 2028: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="44"/>
+7 80 10	 # [286] 2029: INDEX;	 <IndexOf type="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" array="ArrayType:id=14;name=T;level=0;Pos=4;size=800;elementType=[id="13" name="T1"];count=10;" position="44"/>
+5 2416	 # [287] 2046: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=20;name=k;level=0;Pos=11;type=[id="1" name="INTEGER"];size=8;offset=2416;" position="44"/>
+19	 # [288] 2055: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="44"/>
+7 8 10	 # [289] 2056: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" position="44"/>
+19	 # [290] 2073: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="44"/>
+5 1600	 # [291] 2074: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=17;name=C;level=0;Pos=8;type=[id="14" name="T"];size=800;offset=1600;" position="44"/>
+5 2416	 # [292] 2083: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=20;name=k;level=0;Pos=11;type=[id="1" name="INTEGER"];size=8;offset=2416;" position="44"/>
+19	 # [293] 2092: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="44"/>
+7 80 10	 # [294] 2093: INDEX;	 <IndexOf type="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" array="ArrayType:id=14;name=T;level=0;Pos=4;size=800;elementType=[id="13" name="T1"];count=10;" position="44"/>
+5 2408	 # [295] 2110: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="44"/>
+19	 # [296] 2119: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="44"/>
+7 8 10	 # [297] 2120: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" position="44"/>
+19	 # [298] 2137: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="44"/>
+10	 # [299] 2138: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="44"/>
+8	 # [300] 2139: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="44"/>
+20	 # [301] 2140: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="44"/>
+5 2416	 # [302] 2141: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=20;name=k;level=0;Pos=11;type=[id="1" name="INTEGER"];size=8;offset=2416;" position="44"/>
+5 2416	 # [303] 2150: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=20;name=k;level=0;Pos=11;type=[id="1" name="INTEGER"];size=8;offset=2416;" position="44"/>
+19	 # [304] 2159: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="44"/>
+18 1	 # [305] 2160: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[1]" position="44"/>
+8	 # [306] 2169: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="44"/>
+20	 # [307] 2170: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="44"/>
+5 0	 # [308] 2171: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=15;name=A;level=0;Pos=6;type=[id="14" name="T"];size=800;offset=0;" position="45"/>
+5 2400	 # [309] 2180: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="45"/>
+19	 # [310] 2189: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="45"/>
+7 80 10	 # [311] 2190: INDEX;	 <IndexOf type="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" array="ArrayType:id=14;name=T;level=0;Pos=4;size=800;elementType=[id="13" name="T1"];count=10;" position="45"/>
+5 2408	 # [312] 2207: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="45"/>
+19	 # [313] 2216: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="45"/>
+7 8 10	 # [314] 2217: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" position="45"/>
+5 0	 # [315] 2234: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=15;name=A;level=0;Pos=6;type=[id="14" name="T"];size=800;offset=0;" position="45"/>
+5 2400	 # [316] 2243: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="45"/>
+19	 # [317] 2252: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="45"/>
+7 80 10	 # [318] 2253: INDEX;	 <IndexOf type="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" array="ArrayType:id=14;name=T;level=0;Pos=4;size=800;elementType=[id="13" name="T1"];count=10;" position="45"/>
+5 2408	 # [319] 2270: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="45"/>
+19	 # [320] 2279: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="45"/>
+7 8 10	 # [321] 2280: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" position="45"/>
+19	 # [322] 2297: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="45"/>
+5 800	 # [323] 2298: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=16;name=B;level=0;Pos=7;type=[id="14" name="T"];size=800;offset=800;" position="45"/>
+5 2400	 # [324] 2307: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="45"/>
+19	 # [325] 2316: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="45"/>
+7 80 10	 # [326] 2317: INDEX;	 <IndexOf type="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" array="ArrayType:id=14;name=T;level=0;Pos=4;size=800;elementType=[id="13" name="T1"];count=10;" position="45"/>
+5 2416	 # [327] 2334: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=20;name=k;level=0;Pos=11;type=[id="1" name="INTEGER"];size=8;offset=2416;" position="45"/>
+19	 # [328] 2343: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="45"/>
+7 8 10	 # [329] 2344: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" position="45"/>
+19	 # [330] 2361: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="45"/>
+5 1600	 # [331] 2362: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=17;name=C;level=0;Pos=8;type=[id="14" name="T"];size=800;offset=1600;" position="45"/>
+5 2416	 # [332] 2371: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=20;name=k;level=0;Pos=11;type=[id="1" name="INTEGER"];size=8;offset=2416;" position="45"/>
+19	 # [333] 2380: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="45"/>
+7 80 10	 # [334] 2381: INDEX;	 <IndexOf type="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" array="ArrayType:id=14;name=T;level=0;Pos=4;size=800;elementType=[id="13" name="T1"];count=10;" position="45"/>
+5 2408	 # [335] 2398: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="45"/>
+19	 # [336] 2407: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="45"/>
+7 8 10	 # [337] 2408: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" position="45"/>
+19	 # [338] 2425: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="45"/>
+10	 # [339] 2426: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="45"/>
+8	 # [340] 2427: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="45"/>
+20	 # [341] 2428: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="45"/>
+5 2416	 # [342] 2429: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=20;name=k;level=0;Pos=11;type=[id="1" name="INTEGER"];size=8;offset=2416;" position="45"/>
+5 2416	 # [343] 2438: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=20;name=k;level=0;Pos=11;type=[id="1" name="INTEGER"];size=8;offset=2416;" position="45"/>
+19	 # [344] 2447: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="45"/>
+18 1	 # [345] 2448: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[1]" position="45"/>
+8	 # [346] 2457: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="45"/>
+20	 # [347] 2458: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="45"/>
+5 0	 # [348] 2459: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=15;name=A;level=0;Pos=6;type=[id="14" name="T"];size=800;offset=0;" position="46"/>
+5 2400	 # [349] 2468: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="46"/>
+19	 # [350] 2477: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="46"/>
+7 80 10	 # [351] 2478: INDEX;	 <IndexOf type="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" array="ArrayType:id=14;name=T;level=0;Pos=4;size=800;elementType=[id="13" name="T1"];count=10;" position="46"/>
+5 2408	 # [352] 2495: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="46"/>
+19	 # [353] 2504: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="46"/>
+7 8 10	 # [354] 2505: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" position="46"/>
+5 0	 # [355] 2522: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=15;name=A;level=0;Pos=6;type=[id="14" name="T"];size=800;offset=0;" position="46"/>
+5 2400	 # [356] 2531: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="46"/>
+19	 # [357] 2540: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="46"/>
+7 80 10	 # [358] 2541: INDEX;	 <IndexOf type="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" array="ArrayType:id=14;name=T;level=0;Pos=4;size=800;elementType=[id="13" name="T1"];count=10;" position="46"/>
+5 2408	 # [359] 2558: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="46"/>
+19	 # [360] 2567: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="46"/>
+7 8 10	 # [361] 2568: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" position="46"/>
+19	 # [362] 2585: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="46"/>
+5 800	 # [363] 2586: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=16;name=B;level=0;Pos=7;type=[id="14" name="T"];size=800;offset=800;" position="46"/>
+5 2400	 # [364] 2595: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="46"/>
+19	 # [365] 2604: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="46"/>
+7 80 10	 # [366] 2605: INDEX;	 <IndexOf type="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" array="ArrayType:id=14;name=T;level=0;Pos=4;size=800;elementType=[id="13" name="T1"];count=10;" position="46"/>
+5 2416	 # [367] 2622: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=20;name=k;level=0;Pos=11;type=[id="1" name="INTEGER"];size=8;offset=2416;" position="46"/>
+19	 # [368] 2631: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="46"/>
+7 8 10	 # [369] 2632: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" position="46"/>
+19	 # [370] 2649: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="46"/>
+5 1600	 # [371] 2650: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=17;name=C;level=0;Pos=8;type=[id="14" name="T"];size=800;offset=1600;" position="46"/>
+5 2416	 # [372] 2659: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=20;name=k;level=0;Pos=11;type=[id="1" name="INTEGER"];size=8;offset=2416;" position="46"/>
+19	 # [373] 2668: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="46"/>
+7 80 10	 # [374] 2669: INDEX;	 <IndexOf type="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" array="ArrayType:id=14;name=T;level=0;Pos=4;size=800;elementType=[id="13" name="T1"];count=10;" position="46"/>
+5 2408	 # [375] 2686: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="46"/>
+19	 # [376] 2695: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="46"/>
+7 8 10	 # [377] 2696: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" position="46"/>
+19	 # [378] 2713: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="46"/>
+10	 # [379] 2714: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="46"/>
+8	 # [380] 2715: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="46"/>
+20	 # [381] 2716: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="46"/>
+5 2416	 # [382] 2717: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=20;name=k;level=0;Pos=11;type=[id="1" name="INTEGER"];size=8;offset=2416;" position="46"/>
+5 2416	 # [383] 2726: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=20;name=k;level=0;Pos=11;type=[id="1" name="INTEGER"];size=8;offset=2416;" position="46"/>
+19	 # [384] 2735: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="46"/>
+18 1	 # [385] 2736: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[1]" position="46"/>
+8	 # [386] 2745: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="46"/>
+20	 # [387] 2746: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="46"/>
+5 0	 # [388] 2747: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=15;name=A;level=0;Pos=6;type=[id="14" name="T"];size=800;offset=0;" position="47"/>
+5 2400	 # [389] 2756: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="47"/>
+19	 # [390] 2765: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="47"/>
+7 80 10	 # [391] 2766: INDEX;	 <IndexOf type="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" array="ArrayType:id=14;name=T;level=0;Pos=4;size=800;elementType=[id="13" name="T1"];count=10;" position="47"/>
+5 2408	 # [392] 2783: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="47"/>
+19	 # [393] 2792: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="47"/>
+7 8 10	 # [394] 2793: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" position="47"/>
+5 0	 # [395] 2810: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=15;name=A;level=0;Pos=6;type=[id="14" name="T"];size=800;offset=0;" position="47"/>
+5 2400	 # [396] 2819: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="47"/>
+19	 # [397] 2828: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="47"/>
+7 80 10	 # [398] 2829: INDEX;	 <IndexOf type="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" array="ArrayType:id=14;name=T;level=0;Pos=4;size=800;elementType=[id="13" name="T1"];count=10;" position="47"/>
+5 2408	 # [399] 2846: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="47"/>
+19	 # [400] 2855: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="47"/>
+7 8 10	 # [401] 2856: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" position="47"/>
+19	 # [402] 2873: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="47"/>
+5 800	 # [403] 2874: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=16;name=B;level=0;Pos=7;type=[id="14" name="T"];size=800;offset=800;" position="47"/>
+5 2400	 # [404] 2883: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="47"/>
+19	 # [405] 2892: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="47"/>
+7 80 10	 # [406] 2893: INDEX;	 <IndexOf type="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" array="ArrayType:id=14;name=T;level=0;Pos=4;size=800;elementType=[id="13" name="T1"];count=10;" position="47"/>
+5 2416	 # [407] 2910: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=20;name=k;level=0;Pos=11;type=[id="1" name="INTEGER"];size=8;offset=2416;" position="47"/>
+19	 # [408] 2919: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="47"/>
+7 8 10	 # [409] 2920: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" position="47"/>
+19	 # [410] 2937: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="47"/>
+5 1600	 # [411] 2938: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=17;name=C;level=0;Pos=8;type=[id="14" name="T"];size=800;offset=1600;" position="47"/>
+5 2416	 # [412] 2947: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=20;name=k;level=0;Pos=11;type=[id="1" name="INTEGER"];size=8;offset=2416;" position="47"/>
+19	 # [413] 2956: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="47"/>
+7 80 10	 # [414] 2957: INDEX;	 <IndexOf type="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" array="ArrayType:id=14;name=T;level=0;Pos=4;size=800;elementType=[id="13" name="T1"];count=10;" position="47"/>
+5 2408	 # [415] 2974: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="47"/>
+19	 # [416] 2983: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="47"/>
+7 8 10	 # [417] 2984: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" position="47"/>
+19	 # [418] 3001: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="47"/>
+10	 # [419] 3002: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="47"/>
+8	 # [420] 3003: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="47"/>
+20	 # [421] 3004: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="47"/>
+5 2416	 # [422] 3005: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=20;name=k;level=0;Pos=11;type=[id="1" name="INTEGER"];size=8;offset=2416;" position="47"/>
+5 2416	 # [423] 3014: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=20;name=k;level=0;Pos=11;type=[id="1" name="INTEGER"];size=8;offset=2416;" position="47"/>
+19	 # [424] 3023: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="47"/>
+18 1	 # [425] 3024: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[1]" position="47"/>
+8	 # [426] 3033: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="47"/>
+20	 # [427] 3034: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="47"/>
+5 0	 # [428] 3035: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=15;name=A;level=0;Pos=6;type=[id="14" name="T"];size=800;offset=0;" position="48"/>
+5 2400	 # [429] 3044: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="48"/>
+19	 # [430] 3053: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="48"/>
+7 80 10	 # [431] 3054: INDEX;	 <IndexOf type="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" array="ArrayType:id=14;name=T;level=0;Pos=4;size=800;elementType=[id="13" name="T1"];count=10;" position="48"/>
+5 2408	 # [432] 3071: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="48"/>
+19	 # [433] 3080: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="48"/>
+7 8 10	 # [434] 3081: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" position="48"/>
+5 0	 # [435] 3098: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=15;name=A;level=0;Pos=6;type=[id="14" name="T"];size=800;offset=0;" position="48"/>
+5 2400	 # [436] 3107: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="48"/>
+19	 # [437] 3116: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="48"/>
+7 80 10	 # [438] 3117: INDEX;	 <IndexOf type="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" array="ArrayType:id=14;name=T;level=0;Pos=4;size=800;elementType=[id="13" name="T1"];count=10;" position="48"/>
+5 2408	 # [439] 3134: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="48"/>
+19	 # [440] 3143: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="48"/>
+7 8 10	 # [441] 3144: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" position="48"/>
+19	 # [442] 3161: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="48"/>
+5 800	 # [443] 3162: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=16;name=B;level=0;Pos=7;type=[id="14" name="T"];size=800;offset=800;" position="48"/>
+5 2400	 # [444] 3171: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="48"/>
+19	 # [445] 3180: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="48"/>
+7 80 10	 # [446] 3181: INDEX;	 <IndexOf type="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" array="ArrayType:id=14;name=T;level=0;Pos=4;size=800;elementType=[id="13" name="T1"];count=10;" position="48"/>
+5 2416	 # [447] 3198: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=20;name=k;level=0;Pos=11;type=[id="1" name="INTEGER"];size=8;offset=2416;" position="48"/>
+19	 # [448] 3207: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="48"/>
+7 8 10	 # [449] 3208: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" position="48"/>
+19	 # [450] 3225: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="48"/>
+5 1600	 # [451] 3226: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=17;name=C;level=0;Pos=8;type=[id="14" name="T"];size=800;offset=1600;" position="48"/>
+5 2416	 # [452] 3235: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=20;name=k;level=0;Pos=11;type=[id="1" name="INTEGER"];size=8;offset=2416;" position="48"/>
+19	 # [453] 3244: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="48"/>
+7 80 10	 # [454] 3245: INDEX;	 <IndexOf type="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" array="ArrayType:id=14;name=T;level=0;Pos=4;size=800;elementType=[id="13" name="T1"];count=10;" position="48"/>
+5 2408	 # [455] 3262: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="48"/>
+19	 # [456] 3271: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="48"/>
+7 8 10	 # [457] 3272: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" position="48"/>
+19	 # [458] 3289: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="48"/>
+10	 # [459] 3290: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="48"/>
+8	 # [460] 3291: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="48"/>
+20	 # [461] 3292: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="48"/>
+5 2416	 # [462] 3293: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=20;name=k;level=0;Pos=11;type=[id="1" name="INTEGER"];size=8;offset=2416;" position="48"/>
+5 2416	 # [463] 3302: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=20;name=k;level=0;Pos=11;type=[id="1" name="INTEGER"];size=8;offset=2416;" position="48"/>
+19	 # [464] 3311: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="48"/>
+18 1	 # [465] 3312: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[1]" position="48"/>
+8	 # [466] 3321: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="48"/>
+20	 # [467] 3322: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="48"/>
+5 0	 # [468] 3323: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=15;name=A;level=0;Pos=6;type=[id="14" name="T"];size=800;offset=0;" position="49"/>
+5 2400	 # [469] 3332: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="49"/>
+19	 # [470] 3341: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="49"/>
+7 80 10	 # [471] 3342: INDEX;	 <IndexOf type="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" array="ArrayType:id=14;name=T;level=0;Pos=4;size=800;elementType=[id="13" name="T1"];count=10;" position="49"/>
+5 2408	 # [472] 3359: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="49"/>
+19	 # [473] 3368: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="49"/>
+7 8 10	 # [474] 3369: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" position="49"/>
+5 0	 # [475] 3386: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=15;name=A;level=0;Pos=6;type=[id="14" name="T"];size=800;offset=0;" position="49"/>
+5 2400	 # [476] 3395: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="49"/>
+19	 # [477] 3404: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="49"/>
+7 80 10	 # [478] 3405: INDEX;	 <IndexOf type="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" array="ArrayType:id=14;name=T;level=0;Pos=4;size=800;elementType=[id="13" name="T1"];count=10;" position="49"/>
+5 2408	 # [479] 3422: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="49"/>
+19	 # [480] 3431: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="49"/>
+7 8 10	 # [481] 3432: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" position="49"/>
+19	 # [482] 3449: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="49"/>
+5 800	 # [483] 3450: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=16;name=B;level=0;Pos=7;type=[id="14" name="T"];size=800;offset=800;" position="49"/>
+5 2400	 # [484] 3459: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="49"/>
+19	 # [485] 3468: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="49"/>
+7 80 10	 # [486] 3469: INDEX;	 <IndexOf type="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" array="ArrayType:id=14;name=T;level=0;Pos=4;size=800;elementType=[id="13" name="T1"];count=10;" position="49"/>
+5 2416	 # [487] 3486: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=20;name=k;level=0;Pos=11;type=[id="1" name="INTEGER"];size=8;offset=2416;" position="49"/>
+19	 # [488] 3495: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="49"/>
+7 8 10	 # [489] 3496: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" position="49"/>
+19	 # [490] 3513: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="49"/>
+5 1600	 # [491] 3514: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=17;name=C;level=0;Pos=8;type=[id="14" name="T"];size=800;offset=1600;" position="49"/>
+5 2416	 # [492] 3523: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=20;name=k;level=0;Pos=11;type=[id="1" name="INTEGER"];size=8;offset=2416;" position="49"/>
+19	 # [493] 3532: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="49"/>
+7 80 10	 # [494] 3533: INDEX;	 <IndexOf type="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" array="ArrayType:id=14;name=T;level=0;Pos=4;size=800;elementType=[id="13" name="T1"];count=10;" position="49"/>
+5 2408	 # [495] 3550: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="49"/>
+19	 # [496] 3559: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="49"/>
+7 8 10	 # [497] 3560: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" position="49"/>
+19	 # [498] 3577: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="49"/>
+10	 # [499] 3578: MULT_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="3" position="49"/>
+8	 # [500] 3579: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="49"/>
+20	 # [501] 3580: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="49"/>
+5 2408	 # [502] 3581: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="50"/>
+5 2408	 # [503] 3590: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="50"/>
+19	 # [504] 3599: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="50"/>
+18 1	 # [505] 3600: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[1]" position="50"/>
+8	 # [506] 3609: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="50"/>
+20	 # [507] 3610: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="50"/>
+41 -3009	 # [508] 3611: JUMP;	 <Goto label="213" position="37"/>
+5 2400	 # [509] 3620: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="52"/>
+5 2400	 # [510] 3629: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="52"/>
+19	 # [511] 3638: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="52"/>
+18 1	 # [512] 3639: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[1]" position="52"/>
+8	 # [513] 3648: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="52"/>
+20	 # [514] 3649: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="52"/>
+41 -3104	 # [515] 3650: JUMP;	 <Goto label="208" position="35"/>
+5 2424	 # [516] 3659: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=21;name=OK;level=0;Pos=12;type=[id="1" name="INTEGER"];size=8;offset=2424;" position="55"/>
+18 0	 # [517] 3668: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[0]" position="55"/>
+20	 # [518] 3677: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="55"/>
+5 2400	 # [519] 3678: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="56"/>
+18 0	 # [520] 3687: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[0]" position="56"/>
+20	 # [521] 3696: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="56"/>
+5 2400	 # [522] 3697: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="57"/>
+19	 # [523] 3706: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="57"/>
+18 9	 # [524] 3707: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[9]" position="57"/>
+16 18	 # [525] 3716: LE_i;	 <Branch type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="23" label="291" position="57"/>
+41 253	 # [526] 3725: JUMP;	 <Goto label="156" position="57"/>
+5 2408	 # [527] 3734: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="58"/>
+18 0	 # [528] 3743: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[0]" position="58"/>
+20	 # [529] 3752: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="58"/>
+5 2408	 # [530] 3753: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="59"/>
+19	 # [531] 3762: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="59"/>
+18 9	 # [532] 3763: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[9]" position="59"/>
+16 18	 # [533] 3772: LE_i;	 <Branch type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="23" label="296" position="59"/>
+41 158	 # [534] 3781: JUMP;	 <Goto label="146" position="59"/>
+5 0	 # [535] 3790: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=15;name=A;level=0;Pos=6;type=[id="14" name="T"];size=800;offset=0;" position="60"/>
+5 2400	 # [536] 3799: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="60"/>
+19	 # [537] 3808: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="60"/>
+7 80 10	 # [538] 3809: INDEX;	 <IndexOf type="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" array="ArrayType:id=14;name=T;level=0;Pos=4;size=800;elementType=[id="13" name="T1"];count=10;" position="60"/>
+5 2408	 # [539] 3826: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="60"/>
+19	 # [540] 3835: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="60"/>
+7 8 10	 # [541] 3836: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=T1;level=0;Pos=3;size=80;elementType=[id="1" name="INTEGER"];count=10;" position="60"/>
+19	 # [542] 3853: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="60"/>
+18 20	 # [543] 3854: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[20]" position="60"/>
+17 18	 # [544] 3863: NE_i;	 <Branch type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="24" label="298" position="60"/>
+41 28	 # [545] 3872: JUMP;	 <Goto label="140" position="60"/>
+5 2424	 # [546] 3881: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=21;name=OK;level=0;Pos=12;type=[id="1" name="INTEGER"];size=8;offset=2424;" position="61"/>
+18 99	 # [547] 3890: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[99]" position="61"/>
+20	 # [548] 3899: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="61"/>
+5 2408	 # [549] 3900: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="63"/>
+5 2408	 # [550] 3909: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=j;level=0;Pos=10;type=[id="1" name="INTEGER"];size=8;offset=2408;" position="63"/>
+19	 # [551] 3918: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="63"/>
+18 1	 # [552] 3919: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[1]" position="63"/>
+8	 # [553] 3928: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="63"/>
+20	 # [554] 3929: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="63"/>
+41 -177	 # [555] 3930: JUMP;	 <Goto label="295" position="59"/>
+5 2400	 # [556] 3939: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="65"/>
+5 2400	 # [557] 3948: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=2400;" position="65"/>
+19	 # [558] 3957: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="65"/>
+18 1	 # [559] 3958: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[1]" position="65"/>
+8	 # [560] 3967: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="65"/>
+20	 # [561] 3968: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="65"/>
+41 -272	 # [562] 3969: JUMP;	 <Goto label="290" position="57"/>
+5 2424	 # [563] 3978: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=21;name=OK;level=0;Pos=12;type=[id="1" name="INTEGER"];size=8;offset=2424;" position="67"/>
+19	 # [564] 3987: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="67"/>
+44	 # [565] 3988: WRITE_i;	 <Write type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="67"/>
+51	 # [566] 3989: WRITELN;	 <WriteLn position="67"/>
+2	 # [567] 3990: PROG_END;	 <ProcEnd symbol="ProcedureSy:id=0;name=$MAIN;level=0;Pos=1;formals={};locals={j,B,k,C,i,A,OK};formalSize=0;localSize=2432;" position="1"/>

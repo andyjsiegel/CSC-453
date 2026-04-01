@@ -1,0 +1,12 @@
+PROGRAM P;
+
+VAR s : REAL;
+VAR t : REAL;
+VAR u : REAL;
+VAR i : INTEGER;
+BEGIN
+   s := 3.14;
+   t := s * s / s;
+   i := TRUNC t - 3;
+   WRITE i; WRITELN; 
+END.

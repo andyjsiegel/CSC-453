@@ -1,0 +1,11 @@
+PROGRAM P;
+VAR C:CHAR;
+BEGIN
+	C := 'X';
+	READ C;
+	IF C = 'X' THEN
+		WRITE 99;
+	ELSE
+		WRITE 0;
+	ENDIF;
+END.

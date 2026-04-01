@@ -1,0 +1,7 @@
+PROGRAM P;
+VAR C:CHAR;
+BEGIN
+	C := '0';
+	WRITE C;
+	WRITELN;
+END.

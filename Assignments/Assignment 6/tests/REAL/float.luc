@@ -1,0 +1,9 @@
+PROGRAM F;
+	 VAR I:INTEGER;
+	 VAR R:REAL; 
+BEGIN
+	 I:=5;
+	 R:= FLOAT I - 5.0;
+	 WRITE R;
+	WRITELN;
+END.

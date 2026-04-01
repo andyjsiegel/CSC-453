@@ -1,0 +1,29 @@
+55 16	 # [0] 0: DEF_GLOBALS;	 <ProcBegin symbol="ProcedureSy:id=0;name=$MAIN;level=0;Pos=1;formals={};locals={J,I};formalSize=0;localSize=16;" position="1"/>
+1	 # [1] 0: PROG_BEGIN;	 <ProcBegin symbol="ProcedureSy:id=0;name=$MAIN;level=0;Pos=1;formals={};locals={J,I};formalSize=0;localSize=16;" position="1"/>
+5 0	 # [2] 1: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=13;name=I;level=0;Pos=3;type=[id="2" name="REAL"];size=8;offset=0;" position="6"/>
+32 10.0	 # [3] 10: PUSHCONST_f;	 <LoadLit type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" value="RealValue[10.0]" position="6"/>
+34	 # [4] 19: STORE_f;	 <Store type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" position="6"/>
+5 0	 # [5] 20: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=13;name=I;level=0;Pos=3;type=[id="2" name="REAL"];size=8;offset=0;" position="7"/>
+5 0	 # [6] 29: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=13;name=I;level=0;Pos=3;type=[id="2" name="REAL"];size=8;offset=0;" position="7"/>
+33	 # [7] 38: LOAD_f;	 <Load type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" position="7"/>
+35	 # [8] 39: UMINUS_f;	 <UnaryExpr type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" op="2" position="7"/>
+32 10.0	 # [9] 40: PUSHCONST_f;	 <LoadLit type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" value="RealValue[10.0]" position="7"/>
+22	 # [10] 49: PLUS_f;	 <BinExpr type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" op="1" position="7"/>
+34	 # [11] 50: STORE_f;	 <Store type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" position="7"/>
+5 8	 # [12] 51: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=14;name=J;level=0;Pos=4;type=[id="2" name="REAL"];size=8;offset=8;" position="8"/>
+5 0	 # [13] 60: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=13;name=I;level=0;Pos=3;type=[id="2" name="REAL"];size=8;offset=0;" position="8"/>
+33	 # [14] 69: LOAD_f;	 <Load type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" position="8"/>
+32 10.0	 # [15] 70: PUSHCONST_f;	 <LoadLit type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" value="RealValue[10.0]" position="8"/>
+22	 # [16] 79: PLUS_f;	 <BinExpr type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" op="1" position="8"/>
+35	 # [17] 80: UMINUS_f;	 <UnaryExpr type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" op="2" position="8"/>
+32 10.0	 # [18] 81: PUSHCONST_f;	 <LoadLit type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" value="RealValue[10.0]" position="8"/>
+22	 # [19] 90: PLUS_f;	 <BinExpr type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" op="1" position="8"/>
+34	 # [20] 91: STORE_f;	 <Store type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" position="8"/>
+5 0	 # [21] 92: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=13;name=I;level=0;Pos=3;type=[id="2" name="REAL"];size=8;offset=0;" position="9"/>
+33	 # [22] 101: LOAD_f;	 <Load type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" position="9"/>
+5 8	 # [23] 102: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=14;name=J;level=0;Pos=4;type=[id="2" name="REAL"];size=8;offset=8;" position="9"/>
+33	 # [24] 111: LOAD_f;	 <Load type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" position="9"/>
+22	 # [25] 112: PLUS_f;	 <BinExpr type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" op="1" position="9"/>
+45	 # [26] 113: WRITE_f;	 <Write type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" position="9"/>
+51	 # [27] 114: WRITELN;	 <WriteLn position="9"/>
+2	 # [28] 115: PROG_END;	 <ProcEnd symbol="ProcedureSy:id=0;name=$MAIN;level=0;Pos=1;formals={};locals={J,I};formalSize=0;localSize=16;" position="1"/>

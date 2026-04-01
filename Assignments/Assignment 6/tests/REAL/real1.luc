@@ -1,0 +1,9 @@
+PROGRAM P;
+
+VAR s : REAL;
+VAR t : REAL;
+BEGIN
+   s := 3.14;
+   t := 3.14 - s;
+   WRITE t; WRITELN; 
+END.

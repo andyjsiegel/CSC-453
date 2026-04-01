@@ -1,0 +1,14 @@
+PROGRAM P;
+
+VAR s : REAL;
+VAR j : INTEGER;
+VAR i : INTEGER;
+BEGIN
+   i := 23;
+   IF i < 24 THEN
+      WRITE 0;
+   ELSE
+      WRITE 99;
+   ENDIF;
+   WRITELN;
+END.

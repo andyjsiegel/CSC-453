@@ -1,0 +1,6 @@
+PROGRAM S;
+	VAR X : INTEGER;
+BEGIN
+	X:=5;
+	WRITE "Effervescing_Elephant";
+END.

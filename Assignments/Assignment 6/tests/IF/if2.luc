@@ -1,0 +1,16 @@
+PROGRAM P;
+
+VAR s : REAL;
+BEGIN
+   s := 10.33;
+   IF s > 10.4 THEN
+      WRITE 99;
+   ELSE
+      IF s < 10.2 THEN 
+         WRITE 99;
+      ELSE
+         WRITE 0;
+      ENDIF;
+   ENDIF;
+   WRITELN;
+END.

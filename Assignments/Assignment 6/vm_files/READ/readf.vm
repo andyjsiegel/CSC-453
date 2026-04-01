@@ -1,0 +1,16 @@
+55 24	 # [0] 0: DEF_GLOBALS;	 <ProcBegin symbol="ProcedureSy:id=0;name=$MAIN;level=0;Pos=1;formals={};locals={I,K,J};formalSize=0;localSize=24;" position="1"/>
+1	 # [1] 0: PROG_BEGIN;	 <ProcBegin symbol="ProcedureSy:id=0;name=$MAIN;level=0;Pos=1;formals={};locals={I,K,J};formalSize=0;localSize=24;" position="1"/>
+5 8	 # [2] 1: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=14;name=J;level=0;Pos=4;type=[id="2" name="REAL"];size=8;offset=8;" position="7"/>
+49	 # [3] 10: READ_f;	 <Read type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" position="7"/>
+5 16	 # [4] 11: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=15;name=K;level=0;Pos=5;type=[id="2" name="REAL"];size=8;offset=16;" position="8"/>
+49	 # [5] 20: READ_f;	 <Read type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" position="8"/>
+5 8	 # [6] 21: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=14;name=J;level=0;Pos=4;type=[id="2" name="REAL"];size=8;offset=8;" position="9"/>
+33	 # [7] 30: LOAD_f;	 <Load type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" position="9"/>
+5 16	 # [8] 31: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=15;name=K;level=0;Pos=5;type=[id="2" name="REAL"];size=8;offset=16;" position="9"/>
+33	 # [9] 40: LOAD_f;	 <Load type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" position="9"/>
+22	 # [10] 41: PLUS_f;	 <BinExpr type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" op="1" position="9"/>
+32 100.0	 # [11] 42: PUSHCONST_f;	 <LoadLit type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" value="RealValue[100.0]" position="9"/>
+23	 # [12] 51: MINUS_f;	 <BinExpr type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" op="2" position="9"/>
+45	 # [13] 52: WRITE_f;	 <Write type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" position="9"/>
+51	 # [14] 53: WRITELN;	 <WriteLn position="9"/>
+2	 # [15] 54: PROG_END;	 <ProcEnd symbol="ProcedureSy:id=0;name=$MAIN;level=0;Pos=1;formals={};locals={I,K,J};formalSize=0;localSize=24;" position="1"/>

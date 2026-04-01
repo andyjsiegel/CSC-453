@@ -1,0 +1,58 @@
+55 832	 # [0] 0: DEF_GLOBALS;	 <ProcBegin symbol="ProcedureSy:id=0;name=$MAIN;level=0;Pos=1;formals={};locals={j,i,x};formalSize=0;localSize=832;" position="1"/>
+1	 # [1] 0: PROG_BEGIN;	 <ProcBegin symbol="ProcedureSy:id=0;name=$MAIN;level=0;Pos=1;formals={};locals={j,i,x};formalSize=0;localSize=832;" position="1"/>
+5 824	 # [2] 1: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=20;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=824;" position="11"/>
+18 23	 # [3] 10: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[23]" position="11"/>
+20	 # [4] 19: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="11"/>
+5 0	 # [5] 20: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=j;level=0;Pos=7;type=[id="1" name="INTEGER"];size=8;offset=0;" position="11"/>
+18 345	 # [6] 29: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[345]" position="11"/>
+20	 # [7] 38: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="11"/>
+5 8	 # [8] 39: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=x;level=0;Pos=8;type=[id="14" name="R"];size=816;offset=8;" position="12"/>
+6 0	 # [9] 48: FIELD;	 <FieldOf type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" field="FieldSy:id=15;name=a;level=0;Pos=5;type=[id="2" name="REAL"];size=8;offset=0;parent=[id="14" name="R"];" record="RecordType:id=14;name=R;level=0;Pos=5;size=816;fields={b,c,a};size=816;" position="12"/>
+32 3.14	 # [10] 57: PUSHCONST_f;	 <LoadLit type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" value="RealValue[3.14]" position="12"/>
+34	 # [11] 66: STORE_f;	 <Store type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" position="12"/>
+5 8	 # [12] 67: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=x;level=0;Pos=8;type=[id="14" name="R"];size=816;offset=8;" position="13"/>
+6 808	 # [13] 76: FIELD;	 <FieldOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" field="FieldSy:id=17;name=c;level=0;Pos=5;type=[id="1" name="INTEGER"];size=8;offset=808;parent=[id="14" name="R"];" record="RecordType:id=14;name=R;level=0;Pos=5;size=816;fields={b,c,a};size=816;" position="13"/>
+18 314	 # [14] 85: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[314]" position="13"/>
+20	 # [15] 94: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="13"/>
+5 8	 # [16] 95: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=x;level=0;Pos=8;type=[id="14" name="R"];size=816;offset=8;" position="14"/>
+6 8	 # [17] 104: FIELD;	 <FieldOf type="ArrayType:id=13;name=A;level=0;Pos=3;size=800;elementType=[id="1" name="INTEGER"];count=100;" field="FieldSy:id=16;name=b;level=0;Pos=5;type=[id="13" name="A"];size=800;offset=8;parent=[id="14" name="R"];" record="RecordType:id=14;name=R;level=0;Pos=5;size=816;fields={b,c,a};size=816;" position="14"/>
+18 1	 # [18] 113: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[1]" position="14"/>
+7 8 100	 # [19] 122: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=A;level=0;Pos=3;size=800;elementType=[id="1" name="INTEGER"];count=100;" position="14"/>
+18 15	 # [20] 139: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[15]" position="14"/>
+20	 # [21] 148: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="14"/>
+5 8	 # [22] 149: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=x;level=0;Pos=8;type=[id="14" name="R"];size=816;offset=8;" position="15"/>
+6 8	 # [23] 158: FIELD;	 <FieldOf type="ArrayType:id=13;name=A;level=0;Pos=3;size=800;elementType=[id="1" name="INTEGER"];count=100;" field="FieldSy:id=16;name=b;level=0;Pos=5;type=[id="13" name="A"];size=800;offset=8;parent=[id="14" name="R"];" record="RecordType:id=14;name=R;level=0;Pos=5;size=816;fields={b,c,a};size=816;" position="15"/>
+5 824	 # [24] 167: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=20;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=824;" position="15"/>
+19	 # [25] 176: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="15"/>
+7 8 100	 # [26] 177: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=A;level=0;Pos=3;size=800;elementType=[id="1" name="INTEGER"];count=100;" position="15"/>
+18 34	 # [27] 194: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[34]" position="15"/>
+20	 # [28] 203: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="15"/>
+5 8	 # [29] 204: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=x;level=0;Pos=8;type=[id="14" name="R"];size=816;offset=8;" position="16"/>
+6 0	 # [30] 213: FIELD;	 <FieldOf type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" field="FieldSy:id=15;name=a;level=0;Pos=5;type=[id="2" name="REAL"];size=8;offset=0;parent=[id="14" name="R"];" record="RecordType:id=14;name=R;level=0;Pos=5;size=816;fields={b,c,a};size=816;" position="16"/>
+33	 # [31] 222: LOAD_f;	 <Load type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" position="16"/>
+36	 # [32] 223: TRUNC;	 <UnaryExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="33" position="16"/>
+5 8	 # [33] 224: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=x;level=0;Pos=8;type=[id="14" name="R"];size=816;offset=8;" position="16"/>
+6 808	 # [34] 233: FIELD;	 <FieldOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" field="FieldSy:id=17;name=c;level=0;Pos=5;type=[id="1" name="INTEGER"];size=8;offset=808;parent=[id="14" name="R"];" record="RecordType:id=14;name=R;level=0;Pos=5;size=816;fields={b,c,a};size=816;" position="16"/>
+19	 # [35] 242: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="16"/>
+8	 # [36] 243: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="16"/>
+5 0	 # [37] 244: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=18;name=j;level=0;Pos=7;type=[id="1" name="INTEGER"];size=8;offset=0;" position="16"/>
+19	 # [38] 253: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="16"/>
+8	 # [39] 254: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="16"/>
+5 8	 # [40] 255: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=x;level=0;Pos=8;type=[id="14" name="R"];size=816;offset=8;" position="16"/>
+6 8	 # [41] 264: FIELD;	 <FieldOf type="ArrayType:id=13;name=A;level=0;Pos=3;size=800;elementType=[id="1" name="INTEGER"];count=100;" field="FieldSy:id=16;name=b;level=0;Pos=5;type=[id="13" name="A"];size=800;offset=8;parent=[id="14" name="R"];" record="RecordType:id=14;name=R;level=0;Pos=5;size=816;fields={b,c,a};size=816;" position="16"/>
+18 1	 # [42] 273: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[1]" position="16"/>
+7 8 100	 # [43] 282: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=A;level=0;Pos=3;size=800;elementType=[id="1" name="INTEGER"];count=100;" position="16"/>
+19	 # [44] 299: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="16"/>
+9	 # [45] 300: MINUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="2" position="16"/>
+5 8	 # [46] 301: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=19;name=x;level=0;Pos=8;type=[id="14" name="R"];size=816;offset=8;" position="16"/>
+6 8	 # [47] 310: FIELD;	 <FieldOf type="ArrayType:id=13;name=A;level=0;Pos=3;size=800;elementType=[id="1" name="INTEGER"];count=100;" field="FieldSy:id=16;name=b;level=0;Pos=5;type=[id="13" name="A"];size=800;offset=8;parent=[id="14" name="R"];" record="RecordType:id=14;name=R;level=0;Pos=5;size=816;fields={b,c,a};size=816;" position="16"/>
+5 824	 # [48] 319: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=20;name=i;level=0;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=824;" position="16"/>
+19	 # [49] 328: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="16"/>
+7 8 100	 # [50] 329: INDEX;	 <IndexOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" array="ArrayType:id=13;name=A;level=0;Pos=3;size=800;elementType=[id="1" name="INTEGER"];count=100;" position="16"/>
+19	 # [51] 346: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="16"/>
+9	 # [52] 347: MINUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="2" position="16"/>
+18 613	 # [53] 348: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[613]" position="16"/>
+9	 # [54] 357: MINUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="2" position="16"/>
+44	 # [55] 358: WRITE_i;	 <Write type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="16"/>
+51	 # [56] 359: WRITELN;	 <WriteLn position="16"/>
+2	 # [57] 360: PROG_END;	 <ProcEnd symbol="ProcedureSy:id=0;name=$MAIN;level=0;Pos=1;formals={};locals={j,i,x};formalSize=0;localSize=832;" position="1"/>

@@ -1,0 +1,46 @@
+PROGRAM P;
+
+TYPE T = ARRAY 10 OF REAL;
+
+VAR A : T;
+VAR i : INTEGER;
+VAR n : INTEGER;
+VAR j : INTEGER;
+VAR r : INTEGER;
+VAR t : REAL;
+BEGIN
+   A[0] := 10.0;
+   A[1] := 9.0;
+   A[2] := 8.0;
+   A[3] := 7.0;
+   A[4] := 6.0;
+   A[5] := 5.0;
+   A[6] := 4.0;
+   A[7] := 3.0;
+   A[8] := 2.0;
+   A[9] := 1.0;
+ 
+   n := 9;
+   i := 0;
+   WHILE i <= (n-1) DO
+      j := n;
+      WHILE j >= (i+1) DO
+        IF A[j] < A[j-1] THEN
+            t := A[j];
+            A[j] := A[j-1];
+            A[j-1] := t;
+         ENDIF;
+         j := j - 1;  
+      ENDDO;
+      i := i + 1;
+   ENDDO;
+
+   r := 0;
+   i := 0;
+   WHILE i < n DO
+      IF A[i] > A[i + 1] THEN r := 99; ENDIF;
+      i := i + 1;
+   ENDDO;
+   WRITE r; WRITELN;
+
+END.

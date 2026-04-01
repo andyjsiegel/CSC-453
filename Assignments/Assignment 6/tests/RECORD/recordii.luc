@@ -1,0 +1,11 @@
+PROGRAM P;
+ 
+TYPE R = RECORD [a: INTEGER; b : INTEGER];
+
+VAR x : R;
+VAR i : INTEGER;
+BEGIN
+   x.a := 45;
+   x.b := 90;
+   WRITE x.a - x.b + 45; WRITELN;
+END.

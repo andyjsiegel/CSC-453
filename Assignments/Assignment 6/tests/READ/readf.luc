@@ -1,0 +1,10 @@
+PROGRAM P;
+ 
+VAR I : INTEGER;
+VAR J : REAL;
+VAR K : REAL;
+BEGIN
+   READ J; 
+   READ K;
+   WRITE J + K - 100.0; WRITELN;
+END.

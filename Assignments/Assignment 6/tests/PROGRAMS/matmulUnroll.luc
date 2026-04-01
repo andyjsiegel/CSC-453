@@ -1,0 +1,68 @@
+PROGRAM MatMul;
+
+TYPE T1 = ARRAY 10 OF INTEGER;
+TYPE T  = ARRAY 10 OF T1;
+
+VAR A : T;
+VAR B : T;
+VAR C : T;
+VAR i : INTEGER;
+VAR j : INTEGER;
+VAR k : INTEGER;
+VAR OK : INTEGER;
+BEGIN
+   i := 0;
+   WHILE i <= 9 DO
+      j := 0;
+      WHILE j <= 9 DO
+          B[i][j] := 1;
+          j := j + 1;
+      ENDDO;
+      i := i + 1;
+   ENDDO;
+
+   i := 0;
+   WHILE i <= 9 DO
+      j := 0;
+      WHILE j <= 9 DO
+          C[i][j] := 2;
+          j := j + 1;
+      ENDDO;
+      i := i + 1;
+   ENDDO;
+
+   i := 0;
+   WHILE i <= 9 DO
+      j := 0;
+      WHILE j <= 9 DO
+         A[i][j] := 0;
+         k := 0;
+         A[i][j] := A[i][j] + B[i][k]*C[k][j]; k := k+1;
+         A[i][j] := A[i][j] + B[i][k]*C[k][j]; k := k+1;
+         A[i][j] := A[i][j] + B[i][k]*C[k][j]; k := k+1;
+         A[i][j] := A[i][j] + B[i][k]*C[k][j]; k := k+1;
+         A[i][j] := A[i][j] + B[i][k]*C[k][j]; k := k+1;
+         A[i][j] := A[i][j] + B[i][k]*C[k][j]; k := k+1;
+         A[i][j] := A[i][j] + B[i][k]*C[k][j]; k := k+1;
+         A[i][j] := A[i][j] + B[i][k]*C[k][j]; k := k+1;
+         A[i][j] := A[i][j] + B[i][k]*C[k][j]; k := k+1;
+         A[i][j] := A[i][j] + B[i][k]*C[k][j]; 
+         j := j + 1;
+      ENDDO;
+      i := i + 1;
+   ENDDO;
+
+   OK := 0;
+   i := 0;
+   WHILE i <= 9 DO
+      j := 0;
+      WHILE j <= 9 DO
+          IF A[i][j] # 20 THEN
+             OK := 99;
+          ENDIF;
+          j := j + 1;
+      ENDDO;
+      i := i + 1;
+   ENDDO;
+   WRITE OK; WRITELN;
+END.

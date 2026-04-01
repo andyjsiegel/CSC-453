@@ -1,0 +1,17 @@
+PROGRAM P;
+
+TYPE A = ARRAY 100 OF INTEGER;
+
+TYPE R = RECORD [a: REAL; b : A; c: INTEGER];
+
+VAR j : INTEGER;
+VAR x : R;
+VAR i : INTEGER;
+BEGIN
+   i := 23; j := 345;
+   x.a := 3.14;
+   x.c := 314;
+   x.b[1] := 15;
+   x.b[i] := 34;
+   WRITE TRUNC(x.a) + x.c + j - x.b[1] - x.b[i] - 613; WRITELN;
+END.

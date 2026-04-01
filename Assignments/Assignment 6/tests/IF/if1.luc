@@ -1,0 +1,12 @@
+PROGRAM P;
+
+VAR i : INTEGER;
+BEGIN
+   i := 10;
+   IF i = 10 THEN
+      WRITE 0;
+   ELSE
+      WRITE 99;
+   ENDIF;
+   WRITELN;
+END.

@@ -1,0 +1,9 @@
+PROGRAM P;
+ 
+VAR I : INTEGER;
+VAR J : INTEGER;
+BEGIN
+   I := 5;
+   J := I % (I - 5) + 111;
+   WRITE J; WRITELN;
+END.

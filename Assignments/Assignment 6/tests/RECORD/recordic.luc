@@ -1,0 +1,11 @@
+PROGRAM P;
+ 
+TYPE R = RECORD [a: INTEGER; b : CHAR];
+
+VAR x : R;
+VAR i : INTEGER;
+BEGIN
+   x.b := '0';
+   x.a := 256724346;
+   WRITE x.b; WRITELN;
+END.

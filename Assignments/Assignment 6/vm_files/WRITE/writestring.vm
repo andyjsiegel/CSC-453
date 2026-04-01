@@ -1,0 +1,9 @@
+55 8	 # [0] 0: DEF_GLOBALS;	 <ProcBegin symbol="ProcedureSy:id=0;name=$MAIN;level=0;Pos=1;formals={};locals={X};formalSize=0;localSize=8;" position="1"/>
+0 0 "Effervescing_Elephant"	 # [1] 0: DEF_STRING;	 <LoadLit type="BasicType:id=4;name=STRING;level=0;Pos=0;size=0;" value="StringValue[Effervescing_Elephant]" position="5"/>
+1	 # [2] 0: PROG_BEGIN;	 <ProcBegin symbol="ProcedureSy:id=0;name=$MAIN;level=0;Pos=1;formals={};locals={X};formalSize=0;localSize=8;" position="1"/>
+5 0	 # [3] 1: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=13;name=X;level=0;Pos=2;type=[id="1" name="INTEGER"];size=8;offset=0;" position="4"/>
+18 5	 # [4] 10: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[5]" position="4"/>
+20	 # [5] 19: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="4"/>
+18 0	 # [6] 20: PUSHCONST_i;	 <LoadLit type="BasicType:id=4;name=STRING;level=0;Pos=0;size=0;" value="StringValue[Effervescing_Elephant]" position="5"/>
+47	 # [7] 29: WRITE_s;	 <Write type="BasicType:id=4;name=STRING;level=0;Pos=0;size=0;" position="5"/>
+2	 # [8] 30: PROG_END;	 <ProcEnd symbol="ProcedureSy:id=0;name=$MAIN;level=0;Pos=1;formals={};locals={X};formalSize=0;localSize=8;" position="1"/>
