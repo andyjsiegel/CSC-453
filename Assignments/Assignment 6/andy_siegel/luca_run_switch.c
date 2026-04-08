@@ -3,7 +3,7 @@
 #include <string.h>
 #include <stdio.h>
 
-#define DEBUG 1
+#define DEBUG 0
 
 /*************************************************************/
 /* Opcode definitions.                                       */
@@ -234,7 +234,7 @@ int programPC = 0;
 char* strings[100];
 int globalSize = 0;
 
-#define READ_DEBUG 1
+#define READ_DEBUG 0
 
 void read(char* path, char prog[]) {
    // printf("OPEN %s\n", path);
@@ -298,7 +298,7 @@ void read(char* path, char prog[]) {
          if (READ_DEBUG) printf("READ DEF_GLOBALS: globalSize=%i\n", size);
        } else {
           *pc = op;
-          printf("READ PC=%i; OP = %d: %s\n", relativePC, op, op2string[op]);
+          if (READ_DEBUG) printf("READ PC=%i; OP = %d: %s\n", relativePC, op, op2string[op]);
           pc += OP_SIZE;
           for(int j=1; j<i; j++) {
              int arg;
@@ -330,7 +330,11 @@ void interpret(char prog[]) {
    int sp = 0;
    int pc = programPC;
 
-   char* globalMem = malloc(globalSize);
+   // luca offsets are in type-sized units (e.g., a BOOLEAN at offset 1 is one
+   // slot away from offset 0). multiplying by ARG_SIZE gives each variable a
+   // full 8-byte slot so adjacent booleans/chars don't corrupt each other when
+   // STORE_i writes 8 bytes. calloc zero-initializes so upper bytes read as 0.
+   char* globalMem = calloc(globalSize * ARG_SIZE + 16, 1);
 
    while(1) {
       int op = prog[pc];
@@ -352,190 +356,354 @@ void interpret(char prog[]) {
             return;
          }	
          case PROC_BEGIN: {
+            pc += PROC_BEGIN_SIZE;
             break;
          }
          case PROC_END: {
+            pc += PROC_END_SIZE;
             break;
          }
          /**********************************************/
          /* Designators.                               */
          /**********************************************/
          case PUSHADDR_local: {
+            INT_TP offset = (*(INT_TP*)(&prog[pc+OP_SIZE]));
+            stack[sp].a = offset * ARG_SIZE + globalMem;
+            pc += PUSHADDR_SIZE;
+            sp++;
             break;
          }
          case PUSHADDR_formal: {
+            INT_TP offset = (*(INT_TP*)(&prog[pc+OP_SIZE]));
+            stack[sp].a = offset * ARG_SIZE + globalMem;
+            pc += PUSHADDR_SIZE;
+            sp++;
             break;
          }
          case PUSHADDR_global: {
             INT_TP globalOffset = (*(INT_TP*)(&prog[pc+OP_SIZE]));
-            stack[sp].a = globalOffset + globalMem;
+            stack[sp].a = globalOffset * ARG_SIZE + globalMem;
             pc += PUSHADDR_SIZE;
-            sp++; 
+            sp++;
             break;
          }
          case FIELD : {
+            INT_TP offset = (*(INT_TP*)(&prog[pc+OP_SIZE]));
+            stack[sp-1].a += offset;
+            pc += FIELD_SIZE;
             break;
          }
          case INDEX: {
+            INT_TP elSz    = (*(INT_TP*)(&prog[pc+OP_SIZE]));
+            INT_TP elCount = (*(INT_TP*)(&prog[pc+OP_SIZE+ARG_SIZE]));
+            INT_TP I = stack[sp-1].i;   // index (top)
+            char*  B = stack[sp-2].a;   // base address (below)
+            if (I < 0 || I >= elCount) {
+               printf("<RUNTIME_ERROR pos=\"X\" message=\"Array index out of range\"/>\n");
+               exit(1);
+            }
+            stack[sp-2].a = B + elSz * I;
+            sp--;
+            pc += INDEX_SIZE;
             break;
          }
          /**********************************************/
          /* Integer arithmetic.                        */
          /**********************************************/
          case PLUS_i: {
+            INT_TP B = stack[--sp].i;
+            stack[sp-1].i += B;
+            pc += BINARITH_SIZE;
             break;
          }
          case MINUS_i: {
+            INT_TP B = stack[--sp].i;
+            stack[sp-1].i -= B;
+            pc += BINARITH_SIZE;
             break;
          }
          case MULT_i: {
+            INT_TP B = stack[--sp].i;
+            stack[sp-1].i *= B;
+            pc += BINARITH_SIZE;
             break;
          }
          case DIV_i: {
+            INT_TP B = stack[--sp].i;
+            if (B == 0) {
+               printf("<RUNTIME_ERROR pos=\"X\" message=\"Division by zero\"/>\n");
+               exit(1);
+            }
+            stack[sp-1].i /= B;
+            pc += BINARITH_SIZE;
             break;
          }
          case MOD_i: {
+            INT_TP B = stack[--sp].i;
+            if (B == 0) {
+               printf("<RUNTIME_ERROR pos=\"X\" message=\"Division by zero\"/>\n");
+               exit(1);
+            }
+            stack[sp-1].i %= B;
+            pc += BINARITH_SIZE;
             break;
          }
          case EQ_i: {
+            INT_TP offset = (*(INT_TP*)(&prog[pc+OP_SIZE]));
+            INT_TP B = stack[--sp].i;
+            INT_TP A = stack[--sp].i;
+            if (A == B) pc += offset; else pc += COND_SIZE;
             break;
          }
          case GE_i: {
+            INT_TP offset = (*(INT_TP*)(&prog[pc+OP_SIZE]));
+            INT_TP B = stack[--sp].i;
+            INT_TP A = stack[--sp].i;
+            if (A >= B) pc += offset; else pc += COND_SIZE;
             break;
          }
          case GT_i: {
+            INT_TP offset = (*(INT_TP*)(&prog[pc+OP_SIZE]));
+            INT_TP B = stack[--sp].i;
+            INT_TP A = stack[--sp].i;
+            if (A > B) pc += offset; else pc += COND_SIZE;
             break;
          }
          case LT_i: {
+            INT_TP offset = (*(INT_TP*)(&prog[pc+OP_SIZE]));
+            INT_TP B = stack[--sp].i;
+            INT_TP A = stack[--sp].i;
+            if (A < B) pc += offset; else pc += COND_SIZE;
             break;
          }
          case LE_i: {
+            INT_TP offset = (*(INT_TP*)(&prog[pc+OP_SIZE]));
+            INT_TP B = stack[--sp].i;
+            INT_TP A = stack[--sp].i;
+            if (A <= B) pc += offset; else pc += COND_SIZE;
             break;
          }
          case NE_i: {
+            INT_TP offset = (*(INT_TP*)(&prog[pc+OP_SIZE]));
+            INT_TP B = stack[--sp].i;
+            INT_TP A = stack[--sp].i;
+            if (A != B) pc += offset; else pc += COND_SIZE;
             break;
          }
          case PUSHCONST_i: {
+            stack[sp].i = (*(INT_TP*)(&prog[pc+OP_SIZE]));
+            sp++;
+            pc += PUSHCONST_SIZE;
             break;
          }
          case LOAD_i: {
+            stack[sp-1].i = *(INT_TP*)(stack[sp-1].a);
+            pc += LOAD_SIZE;
             break;
          }
          case STORE_i: {
+            INT_TP val  = stack[--sp].i;
+            *(INT_TP*)(stack[--sp].a) = val;
+            pc += STORE_i_SIZE;
             break;
          }
          case UMINUS_i: {
+            stack[sp-1].i = -stack[sp-1].i;
+            pc += UNARITH_SIZE;
             break;
          }
          /**********************************************/
          /* Float arithmetic.                          */
          /**********************************************/
          case PLUS_f: {
+            FLOAT_TP B = stack[--sp].f;
+            stack[sp-1].f += B;
+            pc += BINARITH_SIZE;
             break;
          }
          case MINUS_f: {
+            FLOAT_TP B = stack[--sp].f;
+            stack[sp-1].f -= B;
+            pc += BINARITH_SIZE;
             break;
          }
          case MULT_f: {
+            FLOAT_TP B = stack[--sp].f;
+            stack[sp-1].f *= B;
+            pc += BINARITH_SIZE;
             break;
          }
          case DIV_f: {
+            FLOAT_TP B = stack[--sp].f;
+            if (B == 0.0) {
+               printf("<RUNTIME_ERROR pos=\"X\" message=\"Division by zero\"/>\n");
+               exit(1);
+            }
+            stack[sp-1].f /= B;
+            pc += BINARITH_SIZE;
             break;
          }
          case EQ_f: {
+            INT_TP offset = (*(INT_TP*)(&prog[pc+OP_SIZE]));
+            FLOAT_TP B = stack[--sp].f;
+            FLOAT_TP A = stack[--sp].f;
+            if (A == B) pc += offset; else pc += COND_SIZE;
             break;
          }
          case GE_f: {
+            INT_TP offset = (*(INT_TP*)(&prog[pc+OP_SIZE]));
+            FLOAT_TP B = stack[--sp].f;
+            FLOAT_TP A = stack[--sp].f;
+            if (A >= B) pc += offset; else pc += COND_SIZE;
             break;
          }
          case GT_f: {
+            INT_TP offset = (*(INT_TP*)(&prog[pc+OP_SIZE]));
+            FLOAT_TP B = stack[--sp].f;
+            FLOAT_TP A = stack[--sp].f;
+            if (A > B) pc += offset; else pc += COND_SIZE;
             break;
          }
          case LT_f: {
+            INT_TP offset = (*(INT_TP*)(&prog[pc+OP_SIZE]));
+            FLOAT_TP B = stack[--sp].f;
+            FLOAT_TP A = stack[--sp].f;
+            if (A < B) pc += offset; else pc += COND_SIZE;
             break;
          }
          case LE_f: {
+            INT_TP offset = (*(INT_TP*)(&prog[pc+OP_SIZE]));
+            FLOAT_TP B = stack[--sp].f;
+            FLOAT_TP A = stack[--sp].f;
+            if (A <= B) pc += offset; else pc += COND_SIZE;
             break;
          }
          case NE_f: {
+            INT_TP offset = (*(INT_TP*)(&prog[pc+OP_SIZE]));
+            FLOAT_TP B = stack[--sp].f;
+            FLOAT_TP A = stack[--sp].f;
+            if (A != B) pc += offset; else pc += COND_SIZE;
             break;
          }
          case PUSHCONST_f: {
+            stack[sp].f = *(FLOAT_TP*)(&prog[pc+OP_SIZE]);
+            sp++;
+            pc += PUSHCONST_SIZE;
             break;
          }
          case LOAD_f: {
+            stack[sp-1].f = *(FLOAT_TP*)(stack[sp-1].a);
+            pc += LOAD_f_SIZE;
             break;
          }
          case STORE_f: {
+            FLOAT_TP val  = stack[--sp].f;
+            *(FLOAT_TP*)(stack[--sp].a) = val;
+            pc += STORE_f_SIZE;
             break;
          }
          case UMINUS_f: {
+            stack[sp-1].f = -stack[sp-1].f;
+            pc += UNARITH_SIZE;
             break;
          }
          /**********************************************/
          /* TRUNC/FLOAT.                               */
          /**********************************************/
          case TRUNC: {
-             break;
+            stack[sp-1].i = (INT_TP)stack[sp-1].f;
+            pc += TRUNC_SIZE;
+            break;
          }
          case FLOAT: {
-             break;
+            stack[sp-1].f = (FLOAT_TP)stack[sp-1].i;
+            pc += FLOAT_SIZE;
+            break;
          }
          /**********************************************/
          /* PROCEDURE CALL.                            */
          /**********************************************/
          case CALL: {
+            pc += CALL_SIZE;
             break;
          }
          case ACTUAL_i: {
+            pc += ACTUAL_SIZE;
             break;
          }
          case ACTUAL_f: {
+            pc += ACTUAL_SIZE;
             break;
          }
          /**********************************************/
          /* Branches.                                  */
          /**********************************************/
          case JUMP: {
+            INT_TP offset = (*(INT_TP*)(&prog[pc+OP_SIZE]));
+            pc += offset;
             break;
          }
          /**********************************************/
          /* IO.                                        */
          /**********************************************/
          case WRITE_i: {
+            printf("%ld", stack[--sp].i);
+            pc += WRITE_SIZE;
             break;
          }
          case WRITE_f: {
+            printf("%lf", stack[--sp].f);
+            pc += WRITE_SIZE;
             break;
          }
          case WRITE_c: {
+            printf("%c", (char)stack[--sp].i);
+            pc += WRITE_SIZE;
             break;
          }
          case WRITE_s: {
+            printf("%s", strings[(int)stack[--sp].i]);
+            pc += WRITE_SIZE;
             break;
          }
          case READ_i: {
+            char* addr = stack[--sp].a;
+            scanf("%ld", (INT_TP*)addr);
+            pc += READ_SIZE;
             break;
          }
          case READ_f: {
+            char* addr = stack[--sp].a;
+            scanf("%lf", (FLOAT_TP*)addr);
+            pc += READ_SIZE;
             break;
          }
          case READ_c: {
+            char* addr = stack[--sp].a;
+            char c;
+            scanf(" %c", &c);
+            *(INT_TP*)addr = (INT_TP)(unsigned char)c;
+            pc += READ_SIZE;
             break;
          }
          case WRITELN: {
+            printf("\n");
+            pc += WRITELN_SIZE;
             break;
          }
          /**********************************************/
          /* OO.  IGNORE.                               */
          /**********************************************/
          case ISA: {
+            pc += OP_SIZE;
             break;
          }
          case NARROW: {
+            pc += OP_SIZE;
             break;
          }
          case NEW: {
+            pc += OP_SIZE;
             break;
          }
       };
