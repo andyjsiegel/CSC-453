@@ -3,7 +3,7 @@
 #include <string.h>
 #include <stdio.h>
 
-#define DEBUG 1
+#define DEBUG 0
 
 /*************************************************************/
 /* Opcode definitions.                                       */
@@ -234,10 +234,10 @@ int programPC = 0;
 char* strings[100];
 int globalSize = 0;
 
-#define READ_DEBUG 1
+#define READ_DEBUG 0
 
 void read(char* path, char prog[]) {
-   // printf("OPEN %s\n", path);
+   
    FILE *fptr = fopen(path, "r");
    if (fptr == NULL) {
       printf("Error opening file %s\n", path);
@@ -248,7 +248,7 @@ void read(char* path, char prog[]) {
    char *dest[10];
    while(1) {
       char* r = fgets(buf, 1000, fptr);
-      //if (READ_DEBUG) printf("READ %s\n", buf);
+      
       if (r == NULL) return;
       char *st = buf;
       int i=0;
@@ -298,7 +298,7 @@ void read(char* path, char prog[]) {
          if (READ_DEBUG) printf("READ DEF_GLOBALS: globalSize=%i\n", size);
        } else {
           *pc = op;
-          printf("READ PC=%i; OP = %d: %s\n", relativePC, op, op2string[op]);
+          if (READ_DEBUG) printf("READ PC=%i; OP = %d: %s\n", relativePC, op, op2string[op]);
           pc += OP_SIZE;
           for(int j=1; j<i; j++) {
              int arg;
@@ -330,216 +330,430 @@ void interpret(char prog[]) {
    int sp = 0;
    int pc = programPC;
 
-   char* globalMem = malloc(globalSize);
+   char* globalMem = calloc(globalSize * ARG_SIZE + 16, 1);
+   
+   void* dispatch_table[60];
+   dispatch_table[PROG_BEGIN]      = &&L_PROG_BEGIN;
+   dispatch_table[PROG_END]        = &&L_PROG_END;
+   dispatch_table[PROC_BEGIN]      = &&L_PROC_BEGIN;
+   dispatch_table[PROC_END]        = &&L_PROC_END;
+   dispatch_table[PUSHADDR_local]  = &&L_PUSHADDR_local;
+   dispatch_table[PUSHADDR_formal] = &&L_PUSHADDR_formal;
+   dispatch_table[PUSHADDR_global] = &&L_PUSHADDR_global;
+   dispatch_table[FIELD]           = &&L_FIELD;
+   dispatch_table[INDEX]           = &&L_INDEX;
+   dispatch_table[PLUS_i]          = &&L_PLUS_i;
+   dispatch_table[MINUS_i]         = &&L_MINUS_i;
+   dispatch_table[MULT_i]          = &&L_MULT_i;
+   dispatch_table[DIV_i]           = &&L_DIV_i;
+   dispatch_table[MOD_i]           = &&L_MOD_i;
+   dispatch_table[EQ_i]            = &&L_EQ_i;
+   dispatch_table[GE_i]            = &&L_GE_i;
+   dispatch_table[GT_i]            = &&L_GT_i;
+   dispatch_table[LT_i]            = &&L_LT_i;
+   dispatch_table[LE_i]            = &&L_LE_i;
+   dispatch_table[NE_i]            = &&L_NE_i;
+   dispatch_table[PUSHCONST_i]     = &&L_PUSHCONST_i;
+   dispatch_table[LOAD_i]          = &&L_LOAD_i;
+   dispatch_table[STORE_i]         = &&L_STORE_i;
+   dispatch_table[UMINUS_i]        = &&L_UMINUS_i;
+   dispatch_table[PLUS_f]          = &&L_PLUS_f;
+   dispatch_table[MINUS_f]         = &&L_MINUS_f;
+   dispatch_table[MULT_f]          = &&L_MULT_f;
+   dispatch_table[DIV_f]           = &&L_DIV_f;
+   dispatch_table[EQ_f]            = &&L_EQ_f;
+   dispatch_table[GE_f]            = &&L_GE_f;
+   dispatch_table[GT_f]            = &&L_GT_f;
+   dispatch_table[LT_f]            = &&L_LT_f;
+   dispatch_table[LE_f]            = &&L_LE_f;
+   dispatch_table[NE_f]            = &&L_NE_f;
+   dispatch_table[PUSHCONST_f]     = &&L_PUSHCONST_f;
+   dispatch_table[LOAD_f]          = &&L_LOAD_f;
+   dispatch_table[STORE_f]         = &&L_STORE_f;
+   dispatch_table[UMINUS_f]        = &&L_UMINUS_f;
+   dispatch_table[TRUNC]           = &&L_TRUNC;
+   dispatch_table[FLOAT]           = &&L_FLOAT;
+   dispatch_table[CALL]            = &&L_CALL;
+   dispatch_table[ACTUAL_i]        = &&L_ACTUAL_i;
+   dispatch_table[ACTUAL_f]        = &&L_ACTUAL_f;
+   dispatch_table[JUMP]            = &&L_JUMP;
+   dispatch_table[WRITE_i]         = &&L_WRITE_i;
+   dispatch_table[WRITE_f]         = &&L_WRITE_f;
+   dispatch_table[WRITE_c]         = &&L_WRITE_c;
+   dispatch_table[WRITE_s]         = &&L_WRITE_s;
+   dispatch_table[READ_i]          = &&L_READ_i;
+   dispatch_table[READ_f]          = &&L_READ_f;
+   dispatch_table[READ_c]          = &&L_READ_c;
+   dispatch_table[WRITELN]         = &&L_WRITELN;
+   dispatch_table[ISA]             = &&L_ISA;
+   dispatch_table[NARROW]          = &&L_NARROW;
+   dispatch_table[NEW]             = &&L_NEW;
 
-   while(1) {
-      int op = prog[pc];
-      if (DEBUG) {
-         printf("TRACE pc=%i sp=%i : %s\n", pc, sp, op2string[op]);
-         for (int i=0; i<sp; i++) {
-            printf("   STACK[%i] = [%p,%ld,%lf]\n", i, stack[i].a, stack[i].i, stack[i].f);
-         }
-      };
-      switch (op) {
-         /**********************************************/
-         /* Main program declaration.                  */
-         /**********************************************/
-         case PROG_BEGIN: {
-            pc += PROG_BEGIN_SIZE;
-            break;
-         }	
-         case PROG_END: {
-            return;
-         }	
-         case PROC_BEGIN: {
-            break;
-         }
-         case PROC_END: {
-            break;
-         }
-         /**********************************************/
-         /* Designators.                               */
-         /**********************************************/
-         case PUSHADDR_local: {
-            break;
-         }
-         case PUSHADDR_formal: {
-            break;
-         }
-         case PUSHADDR_global: {
-            INT_TP globalOffset = (*(INT_TP*)(&prog[pc+OP_SIZE]));
-            stack[sp].a = globalOffset + globalMem;
-            pc += PUSHADDR_SIZE;
-            sp++; 
-            break;
-         }
-         case FIELD : {
-            break;
-         }
-         case INDEX: {
-            break;
-         }
-         /**********************************************/
-         /* Integer arithmetic.                        */
-         /**********************************************/
-         case PLUS_i: {
-            break;
-         }
-         case MINUS_i: {
-            break;
-         }
-         case MULT_i: {
-            break;
-         }
-         case DIV_i: {
-            break;
-         }
-         case MOD_i: {
-            break;
-         }
-         case EQ_i: {
-            break;
-         }
-         case GE_i: {
-            break;
-         }
-         case GT_i: {
-            break;
-         }
-         case LT_i: {
-            break;
-         }
-         case LE_i: {
-            break;
-         }
-         case NE_i: {
-            break;
-         }
-         case PUSHCONST_i: {
-            break;
-         }
-         case LOAD_i: {
-            break;
-         }
-         case STORE_i: {
-            break;
-         }
-         case UMINUS_i: {
-            break;
-         }
-         /**********************************************/
-         /* Float arithmetic.                          */
-         /**********************************************/
-         case PLUS_f: {
-            break;
-         }
-         case MINUS_f: {
-            break;
-         }
-         case MULT_f: {
-            break;
-         }
-         case DIV_f: {
-            break;
-         }
-         case EQ_f: {
-            break;
-         }
-         case GE_f: {
-            break;
-         }
-         case GT_f: {
-            break;
-         }
-         case LT_f: {
-            break;
-         }
-         case LE_f: {
-            break;
-         }
-         case NE_f: {
-            break;
-         }
-         case PUSHCONST_f: {
-            break;
-         }
-         case LOAD_f: {
-            break;
-         }
-         case STORE_f: {
-            break;
-         }
-         case UMINUS_f: {
-            break;
-         }
-         /**********************************************/
-         /* TRUNC/FLOAT.                               */
-         /**********************************************/
-         case TRUNC: {
-             break;
-         }
-         case FLOAT: {
-             break;
-         }
-         /**********************************************/
-         /* PROCEDURE CALL.                            */
-         /**********************************************/
-         case CALL: {
-            break;
-         }
-         case ACTUAL_i: {
-            break;
-         }
-         case ACTUAL_f: {
-            break;
-         }
-         /**********************************************/
-         /* Branches.                                  */
-         /**********************************************/
-         case JUMP: {
-            break;
-         }
-         /**********************************************/
-         /* IO.                                        */
-         /**********************************************/
-         case WRITE_i: {
-            break;
-         }
-         case WRITE_f: {
-            break;
-         }
-         case WRITE_c: {
-            break;
-         }
-         case WRITE_s: {
-            break;
-         }
-         case READ_i: {
-            break;
-         }
-         case READ_f: {
-            break;
-         }
-         case READ_c: {
-            break;
-         }
-         case WRITELN: {
-            break;
-         }
-         /**********************************************/
-         /* OO.  IGNORE.                               */
-         /**********************************************/
-         case ISA: {
-            break;
-         }
-         case NARROW: {
-            break;
-         }
-         case NEW: {
-            break;
-         }
-      };
+   
+   #define DISPATCH() goto *dispatch_table[(unsigned char)prog[pc]]
+
+   DISPATCH();
+
+   /**********************************************/
+   /* Main program declaration.                  */
+   /**********************************************/
+   L_PROG_BEGIN:
+      pc += PROG_BEGIN_SIZE;
+      DISPATCH();
+   L_PROG_END:
+      free(globalMem);
+      return;
+   L_PROC_BEGIN:
+      pc += PROC_BEGIN_SIZE;
+      DISPATCH();
+   L_PROC_END:
+      pc += PROC_END_SIZE;
+      DISPATCH();
+
+   /**********************************************/
+   /* Designators.                               */
+   /**********************************************/
+   
+   L_PUSHADDR_local: {
+      INT_TP offset = (*(INT_TP*)(&prog[pc+OP_SIZE]));
+      stack[sp].a = offset * ARG_SIZE + globalMem;
+      pc += PUSHADDR_SIZE;
+      sp++;
+      DISPATCH();
    }
+   L_PUSHADDR_formal: {
+      INT_TP offset = (*(INT_TP*)(&prog[pc+OP_SIZE]));
+      stack[sp].a = offset * ARG_SIZE + globalMem;
+      pc += PUSHADDR_SIZE;
+      sp++;
+      DISPATCH();
+   }
+   L_PUSHADDR_global: {
+      INT_TP globalOffset = (*(INT_TP*)(&prog[pc+OP_SIZE]));
+      stack[sp].a = globalOffset * ARG_SIZE + globalMem;
+      pc += PUSHADDR_SIZE;
+      sp++;
+      DISPATCH();
+   }
+   
+   L_FIELD: {
+      INT_TP offset = (*(INT_TP*)(&prog[pc+OP_SIZE]));
+      stack[sp-1].a += offset;
+      pc += FIELD_SIZE;
+      DISPATCH();
+   }
+   
+   L_INDEX: {
+      INT_TP elSz    = (*(INT_TP*)(&prog[pc+OP_SIZE]));
+      INT_TP elCount = (*(INT_TP*)(&prog[pc+OP_SIZE+ARG_SIZE]));
+      INT_TP I = stack[sp-1].i;
+      char*  B = stack[sp-2].a;
+      if (I < 0 || I >= elCount) {
+         printf("<RUNTIME_ERROR pos=\"X\" message=\"Array index out of range\"/>\n");
+         exit(1);
+      }
+      stack[sp-2].a = B + elSz * I;
+      sp--;
+      pc += INDEX_SIZE;
+      DISPATCH();
+   }
+
+   /**********************************************/
+   /* Integer arithmetic.                        */
+   /**********************************************/
+   
+   L_PLUS_i: {
+      INT_TP B = stack[--sp].i;
+      stack[sp-1].i += B;
+      pc += BINARITH_SIZE;
+      DISPATCH();
+   }
+   L_MINUS_i: {
+      INT_TP B = stack[--sp].i;
+      stack[sp-1].i -= B;
+      pc += BINARITH_SIZE;
+      DISPATCH();
+   }
+   L_MULT_i: {
+      INT_TP B = stack[--sp].i;
+      stack[sp-1].i *= B;
+      pc += BINARITH_SIZE;
+      DISPATCH();
+   }
+   
+   L_DIV_i: {
+      INT_TP B = stack[--sp].i;
+      if (B == 0) {
+         printf("<RUNTIME_ERROR pos=\"X\" message=\"Division by zero\"/>\n");
+         exit(1);
+      }
+      stack[sp-1].i /= B;
+      pc += BINARITH_SIZE;
+      DISPATCH();
+   }
+   L_MOD_i: {
+      INT_TP B = stack[--sp].i;
+      if (B == 0) {
+         printf("<RUNTIME_ERROR pos=\"X\" message=\"Division by zero\"/>\n");
+         exit(1);
+      }
+      stack[sp-1].i %= B;
+      pc += BINARITH_SIZE;
+      DISPATCH();
+   }
+   
+   
+   L_EQ_i: {
+      INT_TP offset = (*(INT_TP*)(&prog[pc+OP_SIZE]));
+      INT_TP B = stack[--sp].i; INT_TP A = stack[--sp].i;
+      if (A == B) pc += offset; else pc += COND_SIZE;
+      DISPATCH();
+   }
+   L_GE_i: {
+      INT_TP offset = (*(INT_TP*)(&prog[pc+OP_SIZE]));
+      INT_TP B = stack[--sp].i; INT_TP A = stack[--sp].i;
+      if (A >= B) pc += offset; else pc += COND_SIZE;
+      DISPATCH();
+   }
+   L_GT_i: {
+      INT_TP offset = (*(INT_TP*)(&prog[pc+OP_SIZE]));
+      INT_TP B = stack[--sp].i; INT_TP A = stack[--sp].i;
+      if (A > B) pc += offset; else pc += COND_SIZE;
+      DISPATCH();
+   }
+   L_LT_i: {
+      INT_TP offset = (*(INT_TP*)(&prog[pc+OP_SIZE]));
+      INT_TP B = stack[--sp].i; INT_TP A = stack[--sp].i;
+      if (A < B) pc += offset; else pc += COND_SIZE;
+      DISPATCH();
+   }
+   L_LE_i: {
+      INT_TP offset = (*(INT_TP*)(&prog[pc+OP_SIZE]));
+      INT_TP B = stack[--sp].i; INT_TP A = stack[--sp].i;
+      if (A <= B) pc += offset; else pc += COND_SIZE;
+      DISPATCH();
+   }
+   L_NE_i: {
+      INT_TP offset = (*(INT_TP*)(&prog[pc+OP_SIZE]));
+      INT_TP B = stack[--sp].i; INT_TP A = stack[--sp].i;
+      if (A != B) pc += offset; else pc += COND_SIZE;
+      DISPATCH();
+   }
+   
+   L_PUSHCONST_i: {
+      stack[sp].i = (*(INT_TP*)(&prog[pc+OP_SIZE]));
+      sp++;
+      pc += PUSHCONST_SIZE;
+      DISPATCH();
+   }
+   
+   L_LOAD_i: {
+      stack[sp-1].i = *(INT_TP*)(stack[sp-1].a);
+      pc += LOAD_SIZE;
+      DISPATCH();
+   }
+   
+   L_STORE_i: {
+      INT_TP val = stack[--sp].i;
+      *(INT_TP*)(stack[--sp].a) = val;
+      pc += STORE_i_SIZE;
+      DISPATCH();
+   }
+   
+   L_UMINUS_i: {
+      stack[sp-1].i = -stack[sp-1].i;
+      pc += UNARITH_SIZE;
+      DISPATCH();
+   }
+
+   /**********************************************/
+   /* Float arithmetic.                          */
+   /**********************************************/
+   
+   L_PLUS_f: {
+      FLOAT_TP B = stack[--sp].f;
+      stack[sp-1].f += B;
+      pc += BINARITH_SIZE;
+      DISPATCH();
+   }
+   L_MINUS_f: {
+      FLOAT_TP B = stack[--sp].f;
+      stack[sp-1].f -= B;
+      pc += BINARITH_SIZE;
+      DISPATCH();
+   }
+   L_MULT_f: {
+      FLOAT_TP B = stack[--sp].f;
+      stack[sp-1].f *= B;
+      pc += BINARITH_SIZE;
+      DISPATCH();
+   }
+   L_DIV_f: {
+      FLOAT_TP B = stack[--sp].f;
+      if (B == 0.0) {
+         printf("<RUNTIME_ERROR pos=\"X\" message=\"Division by zero\"/>\n");
+         exit(1);
+      }
+      stack[sp-1].f /= B;
+      pc += BINARITH_SIZE;
+      DISPATCH();
+   }
+   
+   L_EQ_f: {
+      INT_TP offset = (*(INT_TP*)(&prog[pc+OP_SIZE]));
+      FLOAT_TP B = stack[--sp].f; FLOAT_TP A = stack[--sp].f;
+      if (A == B) pc += offset; else pc += COND_SIZE;
+      DISPATCH();
+   }
+   L_GE_f: {
+      INT_TP offset = (*(INT_TP*)(&prog[pc+OP_SIZE]));
+      FLOAT_TP B = stack[--sp].f; FLOAT_TP A = stack[--sp].f;
+      if (A >= B) pc += offset; else pc += COND_SIZE;
+      DISPATCH();
+   }
+   L_GT_f: {
+      INT_TP offset = (*(INT_TP*)(&prog[pc+OP_SIZE]));
+      FLOAT_TP B = stack[--sp].f; FLOAT_TP A = stack[--sp].f;
+      if (A > B) pc += offset; else pc += COND_SIZE;
+      DISPATCH();
+   }
+   L_LT_f: {
+      INT_TP offset = (*(INT_TP*)(&prog[pc+OP_SIZE]));
+      FLOAT_TP B = stack[--sp].f; FLOAT_TP A = stack[--sp].f;
+      if (A < B) pc += offset; else pc += COND_SIZE;
+      DISPATCH();
+   }
+   L_LE_f: {
+      INT_TP offset = (*(INT_TP*)(&prog[pc+OP_SIZE]));
+      FLOAT_TP B = stack[--sp].f; FLOAT_TP A = stack[--sp].f;
+      if (A <= B) pc += offset; else pc += COND_SIZE;
+      DISPATCH();
+   }
+   L_NE_f: {
+      INT_TP offset = (*(INT_TP*)(&prog[pc+OP_SIZE]));
+      FLOAT_TP B = stack[--sp].f; FLOAT_TP A = stack[--sp].f;
+      if (A != B) pc += offset; else pc += COND_SIZE;
+      DISPATCH();
+   }
+   
+   L_PUSHCONST_f: {
+      stack[sp].f = *(FLOAT_TP*)(&prog[pc+OP_SIZE]);
+      sp++;
+      pc += PUSHCONST_SIZE;
+      DISPATCH();
+   }
+   L_LOAD_f: {
+      stack[sp-1].f = *(FLOAT_TP*)(stack[sp-1].a);
+      pc += LOAD_f_SIZE;
+      DISPATCH();
+   }
+   L_STORE_f: {
+      FLOAT_TP val = stack[--sp].f;
+      *(FLOAT_TP*)(stack[--sp].a) = val;
+      pc += STORE_f_SIZE;
+      DISPATCH();
+   }
+   L_UMINUS_f: {
+      stack[sp-1].f = -stack[sp-1].f;
+      pc += UNARITH_SIZE;
+      DISPATCH();
+   }
+
+   /**********************************************/
+   /* TRUNC/FLOAT.                               */
+   /**********************************************/
+   L_TRUNC: {
+      stack[sp-1].i = (INT_TP)stack[sp-1].f;
+      pc += TRUNC_SIZE;
+      DISPATCH();
+   }
+   L_FLOAT: {
+      stack[sp-1].f = (FLOAT_TP)stack[sp-1].i;
+      pc += FLOAT_SIZE;
+      DISPATCH();
+   }
+
+   /**********************************************/
+   /* PROCEDURE CALL.                            */
+   /**********************************************/
+   L_CALL:
+      pc += CALL_SIZE;
+      DISPATCH();
+   L_ACTUAL_i:
+      pc += ACTUAL_SIZE;
+      DISPATCH();
+   L_ACTUAL_f:
+      pc += ACTUAL_SIZE;
+      DISPATCH();
+
+   /**********************************************/
+   /* Branches.                                  */
+   /**********************************************/
+   L_JUMP: {
+      INT_TP offset = (*(INT_TP*)(&prog[pc+OP_SIZE]));
+      pc += offset;
+      DISPATCH();
+   }
+
+   /**********************************************/
+   /* IO.                                        */
+   /**********************************************/
+   L_WRITE_i:
+      printf("%ld", stack[--sp].i);
+      pc += WRITE_SIZE;
+      DISPATCH();
+   L_WRITE_f:
+      printf("%lf", stack[--sp].f);
+      pc += WRITE_SIZE;
+      DISPATCH();
+   L_WRITE_c:
+      printf("%c", (char)stack[--sp].i);
+      pc += WRITE_SIZE;
+      DISPATCH();
+
+   L_WRITE_s:
+      printf("%s", strings[(int)stack[--sp].i]);
+      pc += WRITE_SIZE;
+      DISPATCH();
+   L_READ_i: {
+      char* addr = stack[--sp].a;
+      scanf("%ld", (INT_TP*)addr);
+      pc += READ_SIZE;
+      DISPATCH();
+   }
+   L_READ_f: {
+      char* addr = stack[--sp].a;
+      scanf("%lf", (FLOAT_TP*)addr);
+      pc += READ_SIZE;
+      DISPATCH();
+   }
+   L_READ_c: {
+      char* addr = stack[--sp].a;
+      char c;
+      scanf(" %c", &c);
+      *(INT_TP*)addr = (INT_TP)(unsigned char)c;
+      pc += READ_SIZE;
+      DISPATCH();
+   }
+   L_WRITELN:
+      printf("\n");
+      pc += WRITELN_SIZE;
+      DISPATCH();
+
+   /**********************************************/
+   /* OO.  IGNORE.                               */
+   /**********************************************/
+   L_ISA:
+      pc += OP_SIZE;
+      DISPATCH();
+   L_NARROW:
+      pc += OP_SIZE;
+      DISPATCH();
+   L_NEW:
+      pc += OP_SIZE;
+      DISPATCH();
+
+   #undef DISPATCH
 }
 
 /*************************************************************/
