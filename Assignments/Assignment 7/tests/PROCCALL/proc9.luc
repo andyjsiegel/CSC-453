@@ -1,0 +1,22 @@
+PROGRAM P;
+
+TYPE T = RECORD[a : INTEGER; b : INTEGER];
+
+VAR r : T;
+VAR x : INTEGER;
+
+PROCEDURE Q (
+   a : INTEGER;
+   VAR b : T;
+   c : INTEGER);
+BEGIN
+   b.a := a; 
+   b.b := c;
+END;
+
+BEGIN
+   r.a := 15; 
+   r.b := 25; 
+   Q(13, r, 17);
+   WRITE r.a + r.b - 30; WRITELN;
+END.

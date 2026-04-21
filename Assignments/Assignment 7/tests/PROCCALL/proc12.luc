@@ -1,0 +1,21 @@
+PROGRAM P;
+
+TYPE T = ARRAY 100 OF INTEGER;
+
+VAR r : T;
+VAR x : INTEGER;
+
+PROCEDURE Q (
+   a : INTEGER;
+   VAR b : T;
+   c : INTEGER);
+BEGIN
+   b[10] := a + b[27] + c;
+END;
+
+BEGIN
+   r[10] := 55; 
+   r[27] := 99; 
+   Q(13, r, 17);
+   WRITE r[10] + r[27] - 228; WRITELN;
+END.

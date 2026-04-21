@@ -1,0 +1,142 @@
+PROGRAM P;
+
+TYPE R = RECORD [a: INTEGER; b: REAL];
+TYPE T = ARRAY 201 OF R;
+
+   PROCEDURE Create (
+      A : T;
+      max : INTEGER);
+   VAR i : INTEGER;
+   BEGIN
+      i := 1;
+      WHILE i <= max DO
+         A[i].a := i;
+         A[i].b := FLOAT (max - i); i := i + 1;
+      ENDDO;
+
+      i := 1;
+      WHILE i <= max DO
+         A[i].b := FLOAT i; 
+         A[i].a := i;
+         i := i + 2;
+      ENDDO;
+
+      i := 1;
+      WHILE i <= max DO
+         A[i].b := FLOAT ((max - i) * 3); 
+         A[i].a := i;
+         i := i + 4;
+      ENDDO;
+
+      i := 1;
+      WHILE i <= max DO
+         A[i].b := (23.0 + A[i].b) / (0.5 + (7.0 + FLOAT (17 - i))); 
+         A[i].a := i;
+         i := i + 1;
+      ENDDO;
+   END;
+
+   PROCEDURE IsSorted (
+      max : INTEGER;
+      A : T);
+   VAR i : INTEGER;
+   VAR r : INTEGER;
+   BEGIN
+      r := 0;
+      i := 1;
+      WHILE i < max DO
+         IF A[i].b > A[i + 1].b THEN r := 1; ENDIF;
+         i := i + 1;
+      ENDDO;
+      WRITE r; WRITELN;
+   END;
+
+   VAR PivotIndex : INTEGER;
+
+   PROCEDURE FindPivot (
+      A : T;
+      i : INTEGER; 
+      j : INTEGER);
+      VAR first : REAL;
+      VAR k : INTEGER;
+   BEGIN
+      first := A[i].b;
+      k := i+1;
+      PivotIndex := 0;
+      WHILE k <= j DO
+         IF A[k].b > first THEN
+            PivotIndex := k; k := j+1;
+         ELSE
+            IF A[k].b < first THEN
+               PivotIndex := i; k := j+1;
+            ENDIF;
+         ENDIF;
+         k := k + 1;
+      ENDDO;
+   END;
+
+   PROCEDURE Swap (
+      A : T;
+      x : INTEGER;
+      y : INTEGER);
+   VAR i : INTEGER;
+   VAR t : REAL;
+   BEGIN
+      t    := A[x].b;
+      A[x].b := A[y].b;
+      A[y].b := t;
+
+      i    := A[x].a;
+      A[x].a := A[y].a;
+      A[y].a := i;
+   END;
+
+
+   VAR PartElem : INTEGER;
+   PROCEDURE Partition (
+      A : T;
+      i : INTEGER;
+      j : INTEGER;
+      pivot : REAL);
+   VAR l : INTEGER;
+   VAR r : INTEGER;
+   BEGIN
+      l := i;
+      r := j;
+
+      Swap (A, l, r);
+      WHILE A[l].b < pivot  DO l := l + 1; ENDDO;
+      WHILE A[r].b >= pivot DO r := r - 1; ENDDO;
+
+      WHILE l <= r DO
+         Swap (A, l, r);
+         WHILE A[l].b < pivot  DO l := l + 1; ENDDO;
+         WHILE A[r].b >= pivot DO r := r - 1; ENDDO;
+      ENDDO;
+
+      PartElem := l;
+   END;
+
+
+   PROCEDURE Sort (
+      A : T;
+      i : INTEGER;
+      j : INTEGER);
+   VAR pivot : REAL;
+   BEGIN
+      FindPivot (A, i, j);
+      IF PivotIndex > 0 THEN
+         pivot := A[PivotIndex].b;
+         Partition (A, i, j, pivot);
+         Sort(A, i, PartElem-1);
+         Sort(A, PartElem, j);
+      ENDIF;
+   END;
+
+VAR a : T;
+VAR i : INTEGER;
+BEGIN
+   Create (a, 200);
+   Sort (a, 1, 200);
+   IsSorted(200, a);
+END.

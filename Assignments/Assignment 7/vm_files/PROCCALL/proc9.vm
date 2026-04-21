@@ -1,0 +1,43 @@
+55 24	 # [0] 0: DEF_GLOBALS;	 <ProcBegin symbol="ProcedureSy:id=0;name=$MAIN;level=0;Pos=1;formals={};locals={r,x};formalSize=0;localSize=24;" position="1"/>
+38 24 0	 # [1] 0: PROC_BEGIN;	 <ProcBegin symbol="ProcedureSy:id=18;name=Q;level=0;Pos=8;formals={b,a,c};locals={};formalSize=24;localSize=0;" position="8"/>
+4 8	 # [2] 17: PUSHADDR_formal;	 <AddressOf symbol="FormalSy:id=20;name=b;level=1;Pos=10;type=[id="13" name="T"];size=16;offset=8;number=2;mode=VAR;copy=[];" position="13"/>
+19	 # [3] 26: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="13"/>
+6 0	 # [4] 27: FIELD;	 <FieldOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" field="FieldSy:id=14;name=a;level=0;Pos=3;type=[id="1" name="INTEGER"];size=8;offset=0;parent=[id="13" name="T"];" record="RecordType:id=13;name=T;level=0;Pos=3;size=16;fields={a,b};size=16;" position="13"/>
+4 0	 # [5] 36: PUSHADDR_formal;	 <AddressOf symbol="FormalSy:id=19;name=a;level=1;Pos=9;type=[id="1" name="INTEGER"];size=8;offset=0;number=1;mode=VAL;copy=[];" position="13"/>
+19	 # [6] 45: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="13"/>
+20	 # [7] 46: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="13"/>
+4 8	 # [8] 47: PUSHADDR_formal;	 <AddressOf symbol="FormalSy:id=20;name=b;level=1;Pos=10;type=[id="13" name="T"];size=16;offset=8;number=2;mode=VAR;copy=[];" position="14"/>
+19	 # [9] 56: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="14"/>
+6 8	 # [10] 57: FIELD;	 <FieldOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" field="FieldSy:id=15;name=b;level=0;Pos=3;type=[id="1" name="INTEGER"];size=8;offset=8;parent=[id="13" name="T"];" record="RecordType:id=13;name=T;level=0;Pos=3;size=16;fields={a,b};size=16;" position="14"/>
+4 16	 # [11] 66: PUSHADDR_formal;	 <AddressOf symbol="FormalSy:id=21;name=c;level=1;Pos=11;type=[id="1" name="INTEGER"];size=8;offset=16;number=3;mode=VAL;copy=[];" position="14"/>
+19	 # [12] 75: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="14"/>
+20	 # [13] 76: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="14"/>
+39 24 0	 # [14] 77: PROC_END;	 <ProcEnd symbol="ProcedureSy:id=18;name=Q;level=0;Pos=8;formals={b,a,c};locals={};formalSize=24;localSize=0;" position="8"/>
+1	 # [15] 94: PROG_BEGIN;	 <ProcBegin symbol="ProcedureSy:id=0;name=$MAIN;level=0;Pos=1;formals={};locals={r,x};formalSize=0;localSize=24;" position="1"/>
+5 0	 # [16] 95: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=16;name=r;level=0;Pos=5;type=[id="13" name="T"];size=16;offset=0;" position="18"/>
+6 0	 # [17] 104: FIELD;	 <FieldOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" field="FieldSy:id=14;name=a;level=0;Pos=3;type=[id="1" name="INTEGER"];size=8;offset=0;parent=[id="13" name="T"];" record="RecordType:id=13;name=T;level=0;Pos=3;size=16;fields={a,b};size=16;" position="18"/>
+18 15	 # [18] 113: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[15]" position="18"/>
+20	 # [19] 122: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="18"/>
+5 0	 # [20] 123: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=16;name=r;level=0;Pos=5;type=[id="13" name="T"];size=16;offset=0;" position="19"/>
+6 8	 # [21] 132: FIELD;	 <FieldOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" field="FieldSy:id=15;name=b;level=0;Pos=3;type=[id="1" name="INTEGER"];size=8;offset=8;parent=[id="13" name="T"];" record="RecordType:id=13;name=T;level=0;Pos=3;size=16;fields={a,b};size=16;" position="19"/>
+18 25	 # [22] 141: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[25]" position="19"/>
+20	 # [23] 150: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="19"/>
+18 13	 # [24] 151: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[13]" position="20"/>
+42	 # [25] 160: ACTUAL_i;	 
+5 0	 # [26] 161: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=16;name=r;level=0;Pos=5;type=[id="13" name="T"];size=16;offset=0;" position="20"/>
+43	 # [27] 170: ACTUAL_f;	 
+18 17	 # [28] 171: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[17]" position="20"/>
+42	 # [29] 180: ACTUAL_i;	 
+40 -181 24	 # [30] 181: CALL;	 <ProcCall symbol="ProcedureSy:id=18;name=Q;level=0;Pos=8;formals={b,a,c};locals={};formalSize=24;localSize=0;" position="20"/>
+5 0	 # [31] 198: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=16;name=r;level=0;Pos=5;type=[id="13" name="T"];size=16;offset=0;" position="21"/>
+6 0	 # [32] 207: FIELD;	 <FieldOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" field="FieldSy:id=14;name=a;level=0;Pos=3;type=[id="1" name="INTEGER"];size=8;offset=0;parent=[id="13" name="T"];" record="RecordType:id=13;name=T;level=0;Pos=3;size=16;fields={a,b};size=16;" position="21"/>
+19	 # [33] 216: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="21"/>
+5 0	 # [34] 217: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=16;name=r;level=0;Pos=5;type=[id="13" name="T"];size=16;offset=0;" position="21"/>
+6 8	 # [35] 226: FIELD;	 <FieldOf type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" field="FieldSy:id=15;name=b;level=0;Pos=3;type=[id="1" name="INTEGER"];size=8;offset=8;parent=[id="13" name="T"];" record="RecordType:id=13;name=T;level=0;Pos=3;size=16;fields={a,b};size=16;" position="21"/>
+19	 # [36] 235: LOAD_i;	 <Load type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="21"/>
+8	 # [37] 236: PLUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="1" position="21"/>
+18 30	 # [38] 237: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[30]" position="21"/>
+9	 # [39] 246: MINUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="2" position="21"/>
+44	 # [40] 247: WRITE_i;	 <Write type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="21"/>
+51	 # [41] 248: WRITELN;	 <WriteLn position="21"/>
+2	 # [42] 249: PROG_END;	 <ProcEnd symbol="ProcedureSy:id=0;name=$MAIN;level=0;Pos=1;formals={};locals={r,x};formalSize=0;localSize=24;" position="1"/>

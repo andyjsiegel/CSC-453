@@ -1,0 +1,15 @@
+{
+  "assignment": "7",
+  "problem_1": [
+    {"PUSH_ACTIVATION_RECORD": ["m=2","n=0","ReturnAddr=[12]","a=_","b=_","ReturnVal=_"]},
+    {"PUSH_ACTIVATION_RECORD": ["m=1","n=1","ReturnAddr=[3]","a=_","b=_","ReturnVal=_"]},
+    {"PUSH_ACTIVATION_RECORD": ["m=1","n=0","ReturnAddr=[5]","a=_","b=_","ReturnVal=_"]},
+    {"PUSH_ACTIVATION_RECORD": ["m=0","n=1","ReturnAddr=[3]","a=_","b=_","ReturnVal=_"]},
+    {"POP_ACTIVATION_RECORD":  ["ReturnAddr=[3]","ReturnVal=2"]},
+    {"POP_ACTIVATION_RECORD":  ["ReturnAddr=[5]","ReturnVal=2"]},
+    {"PUSH_ACTIVATION_RECORD": ["m=0","n=2","ReturnAddr=[6]","a=2","b=_","ReturnVal=_"]},
+    {"POP_ACTIVATION_RECORD":  ["ReturnAddr=[6]","ReturnVal=3"]},
+    {"POP_ACTIVATION_RECORD":  ["ReturnAddr=[3]","ReturnVal=3"]},
+    {"POP_ACTIVATION_RECORD":  ["ReturnAddr=[12]","ReturnVal=3"]}
+  ]
+}

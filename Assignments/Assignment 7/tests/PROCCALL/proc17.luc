@@ -1,0 +1,17 @@
+PROGRAM P;
+
+VAR x : INTEGER;
+VAR a : INTEGER;
+
+PROCEDURE Q (
+   a : INTEGER;
+   b : INTEGER);
+BEGIN
+   x := x + a + b;
+END;
+
+BEGIN
+   x := 23; a := 34;
+   Q(a+1, x);
+   WRITE x - 81; WRITELN;
+END.

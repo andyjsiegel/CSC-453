@@ -1,0 +1,124 @@
+PROGRAM P;
+
+TYPE T = ARRAY 201 OF REAL;
+
+   PROCEDURE Create (
+      VAR A : T;
+      max : INTEGER);
+   VAR i : INTEGER;
+   BEGIN
+      i := 1;
+      WHILE i <= max DO
+         A[i] := FLOAT (max - i); i := i + 1;
+      ENDDO;
+
+      i := 1;
+      WHILE i <= max DO
+         A[i] := FLOAT i; i := i + 2;
+      ENDDO;
+
+      i := 1;
+      WHILE i <= max DO
+         A[i] := FLOAT ((max - i) * 3); i := i + 4;
+      ENDDO;
+   END;
+
+   PROCEDURE IsSorted (
+      max : INTEGER;
+      VAR A : T);
+   VAR i : INTEGER;
+   VAR r : INTEGER;
+   BEGIN
+      r := 0;
+      i := 1;
+      WHILE i < max DO
+         IF A[i] > A[i + 1] THEN r := 1; ENDIF;
+         i := i + 1;
+      ENDDO;
+      WRITE r; WRITELN;
+   END;
+
+   VAR PivotIndex : INTEGER;
+
+   PROCEDURE FindPivot (
+      VAR A : T;
+      i : INTEGER; 
+      j : INTEGER);
+      VAR first : REAL;
+      VAR k : INTEGER;
+   BEGIN
+      first := A[i];
+      k := i+1;
+      PivotIndex := 0;
+      WHILE k <= j DO
+         IF A[k] > first THEN
+            PivotIndex := k; k := j+1;
+         ELSE
+            IF A[k] < first THEN
+               PivotIndex := i; k := j+1;
+            ENDIF;
+         ENDIF;
+         k := k + 1;
+      ENDDO;
+   END;
+
+   PROCEDURE Swap (
+      VAR A : T;
+      x : INTEGER;
+      y : INTEGER);
+   VAR t : REAL;
+   BEGIN
+      t    := A[x];
+      A[x] := A[y];
+      A[y] := t;
+   END;
+
+
+   VAR PartElem : INTEGER;
+   PROCEDURE Partition (
+      VAR A : T;
+      i : INTEGER;
+      j : INTEGER;
+      pivot : REAL);
+   VAR l : INTEGER;
+   VAR r : INTEGER;
+   BEGIN
+      l := i;
+      r := j;
+
+      Swap (A, l, r);
+      WHILE A[l] < pivot  DO l := l + 1; ENDDO;
+      WHILE A[r] >= pivot DO r := r - 1; ENDDO;
+
+      WHILE l <= r DO
+         Swap (A, l, r);
+         WHILE A[l] < pivot  DO l := l + 1; ENDDO;
+         WHILE A[r] >= pivot DO r := r - 1; ENDDO;
+      ENDDO;
+
+      PartElem := l;
+   END;
+
+
+   PROCEDURE Sort (
+      VAR A : T;
+      i : INTEGER;
+      j : INTEGER);
+   VAR pivot : REAL;
+   BEGIN
+      FindPivot (A, i, j);
+      IF PivotIndex > 0 THEN
+         pivot := A[PivotIndex];
+         Partition (A, i, j, pivot);
+         Sort(A, i, PartElem-1);
+         Sort(A, PartElem, j);
+      ENDIF;
+   END;
+
+VAR a : T;
+VAR i : INTEGER;
+BEGIN
+   Create (a, 200);
+   Sort (a, 1, 200);
+   IsSorted(200, a);
+END.

@@ -1,0 +1,68 @@
+PROGRAM P;
+
+TYPE T = ARRAY 11 OF REAL;
+
+   PROCEDURE Create (
+      max : INTEGER;
+      VAR A : T);
+   VAR i : INTEGER;
+   BEGIN
+      i := 1;
+      WHILE i <= max DO
+         A[i] := FLOAT (max - i) + 0.5;
+         i := i + 1;
+      ENDDO;
+   END;
+
+   PROCEDURE IsSorted (
+      max : INTEGER;
+      VAR A : T);
+   VAR i : INTEGER;
+   VAR r : INTEGER;
+   BEGIN
+      r := 0;
+      i := 1;
+      WHILE i < max DO
+         IF A[i] > A[i + 1] THEN r := 1; ENDIF;
+         i := i + 1;
+      ENDDO;
+      WRITE r; WRITELN;
+   END;
+
+
+   PROCEDURE TestAndSwap (
+      VAR A : T;
+      x : INTEGER;
+      y : INTEGER);
+   VAR t : REAL;
+   BEGIN
+      IF A[x] < A[y] THEN
+         t := A[x];
+         A[x] := A[y];
+         A[y] := t;
+      ENDIF;
+   END;
+
+   PROCEDURE Sort (
+      i : INTEGER;
+      n : INTEGER;
+      VAR A : T);
+   VAR j : INTEGER;
+   BEGIN
+       WHILE i <= (n-1) DO
+          j := n;
+          WHILE j >= (i+1) DO
+             TestAndSwap (A, j, j-1);
+             j := j -1;  
+          ENDDO;
+          i := i + 1;
+       ENDDO;
+   END;
+
+VAR a : T;
+VAR i : INTEGER;
+BEGIN
+   Create (10, a);
+   Sort (1, 10, a);
+   IsSorted(10, a);
+END.

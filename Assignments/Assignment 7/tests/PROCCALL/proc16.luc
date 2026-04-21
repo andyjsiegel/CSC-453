@@ -1,0 +1,15 @@
+PROGRAM P;
+
+VAR x : INTEGER;
+
+PROCEDURE Q (
+   a : INTEGER);
+BEGIN
+   x := a;
+END;
+
+BEGIN
+   x := 23;
+   Q(0);
+   WRITE x; WRITELN;
+END.

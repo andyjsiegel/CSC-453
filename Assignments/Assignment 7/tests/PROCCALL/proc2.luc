@@ -1,0 +1,10 @@
+PROGRAM P2;
+VAR X:INTEGER;
+PROCEDURE Q();
+BEGIN
+	X:=5;
+	WRITE "In_procedure_Q";
+END;
+BEGIN
+	Q();
+END.

@@ -1,0 +1,11 @@
+{
+  "assignment": "7",
+  "problem_2": {
+    "POINT_A": [["d"], ["b","c","R","S"], ["a","x","Q","T"], ["i","P","main"], "STANDARD_ENV"],
+    "POINT_B": [["g"], ["e","f"], ["b","c","R","S"], ["a","x","Q","T"], ["i","P","main"], "STANDARD_ENV"],
+    "POINT_C": [["b","c","R","S"], ["a","x","Q","T"], ["i","P","main"], "STANDARD_ENV"],
+    "POINT_D": [["h","i"], ["a","x","Q","T"], ["i","P","main"], "STANDARD_ENV"],
+    "_comment": "Each list is one scope in the chain, innermost first. POINT_E is in main().",
+    "POINT_E": [["j"], ["i","P","main"], "STANDARD_ENV"]
+  }
+}

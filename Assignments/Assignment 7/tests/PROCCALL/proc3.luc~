@@ -1,0 +1,18 @@
+PROGRAM P;
+
+VAR x : INTEGER;
+VAR a : INTEGER;
+
+PROCEDURE Q (
+   a : INTEGER;
+   b : CHAR;
+   c : REAL);
+BEGIN
+   x := a + TRUNC(c);
+END;
+
+BEGIN
+   x := 23; a := 34;
+   Q(a+1, "0", 5.14);
+   WRITE x - 40; WRITELN;
+END.

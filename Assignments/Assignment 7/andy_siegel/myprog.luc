@@ -1,0 +1,73 @@
+PROGRAM BogoSort;
+
+TYPE T = ARRAY 8 OF INTEGER;
+
+VAR a      : T;
+VAR sorted : INTEGER;
+VAR seed   : INTEGER;
+VAR rnd    : INTEGER;
+VAR i      : INTEGER;
+
+PROCEDURE NextRand();
+BEGIN
+   seed := seed * 1103515245 + 676767;
+   IF seed < 0 THEN
+      seed := 0 - seed;
+   ENDIF;
+   rnd := seed;
+END;
+
+PROCEDURE Init(VAR arr : T);
+BEGIN
+   arr[1] := 5;
+   arr[2] := 3;
+   arr[3] := 8;
+   arr[4] := 1;
+   arr[5] := 9;
+   arr[6] := 2;
+   arr[7] := 67;
+END;
+
+PROCEDURE IsSorted(VAR arr : T);
+VAR j : INTEGER;
+BEGIN
+   sorted := 1;
+   j := 1;
+   WHILE j <= 6 DO
+      IF arr[j] > arr[j+1] THEN
+         sorted := 0;
+      ENDIF;
+      j := j + 1;
+   ENDDO;
+END;
+
+PROCEDURE Shuffle(VAR arr : T);
+VAR j   : INTEGER;
+VAR k   : INTEGER;
+VAR tmp : INTEGER;
+BEGIN
+   j := 7;
+   WHILE j >= 2 DO
+      NextRand();
+      k      := rnd - (rnd / j) * j + 1;
+      tmp    := arr[j];
+      arr[j] := arr[k];
+      arr[k] := tmp;
+      j      := j - 1;
+   ENDDO;
+END;
+
+BEGIN
+   seed := 67;
+   Init(a);
+   sorted := 0;
+   WHILE sorted = 0 DO
+      Shuffle(a);
+      IsSorted(a);
+   ENDDO;
+   i := 1;
+   WHILE i <= 7 DO
+      WRITE a[i]; WRITELN;
+      i := i + 1;
+   ENDDO;
+END.

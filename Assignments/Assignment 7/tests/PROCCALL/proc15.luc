@@ -1,0 +1,62 @@
+PROGRAM P;
+
+TYPE T = ARRAY 100 OF INTEGER;
+
+VAR r : T;
+VAR x1 : INTEGER;
+VAR x2 : INTEGER;
+
+PROCEDURE R (
+   a1 : INTEGER;
+   a2 : INTEGER;
+   a3 : INTEGER;
+   a4 : INTEGER;
+   a5 : INTEGER;
+   a6 : INTEGER;
+   a7 : INTEGER;
+   VAR b : T;
+   c : INTEGER);
+VAR v : T;
+VAR i : INTEGER;
+BEGIN
+   i := 0;
+   WHILE i <= 99 DO
+       v[i] := 777;
+       i := i + 1; 
+   ENDDO;
+
+   b[11] := b[10] + a2 + b[28] + c;
+
+   x1 := v[27];
+END;
+
+PROCEDURE Q (
+   a1 : INTEGER;
+   a2 : INTEGER;
+   a3 : INTEGER;
+   a4 : INTEGER;
+   a5 : INTEGER;
+   a6 : INTEGER;
+   a7 : INTEGER;
+   VAR b : T;
+   c : INTEGER);
+VAR v : T;
+VAR i : INTEGER;
+BEGIN
+   b[10] := a1 + b[27] + c;
+   i := 0;
+   WHILE i <= 99 DO
+       v[i] := 999;
+       i := i + 1; 
+   ENDDO;
+   R(13, 13, 1, 1, 1, 1, 1, r, 17);
+   x2 := v[27];
+END;
+
+BEGIN
+   r[10] := 55; 
+   r[27] := 99; 
+   r[28] := 31; 
+   Q(13, 1, 1, 1, 1, 1, 1, r, 17);
+   WRITE r[10] + r[27] + r[11] + x1 + x2 - 2194; WRITELN;
+END.

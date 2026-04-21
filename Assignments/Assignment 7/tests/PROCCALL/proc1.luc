@@ -1,0 +1,13 @@
+PROGRAM P1;
+	VAR X :INTEGER;
+	PROCEDURE Q();
+	BEGIN
+		X := 3;
+	END;
+BEGIN
+	Q();
+	X := X - 3;
+	WRITE X;
+	WRITELN;
+END.
+

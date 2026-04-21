@@ -1,0 +1,12 @@
+55 8	 # [0] 0: DEF_GLOBALS;	 <ProcBegin symbol="ProcedureSy:id=0;name=$MAIN;level=0;Pos=1;formals={};locals={X};formalSize=0;localSize=8;" position="1"/>
+0 0 "In_procedure_Q"	 # [1] 0: DEF_STRING;	 <LoadLit type="BasicType:id=4;name=STRING;level=0;Pos=0;size=0;" value="StringValue[In_procedure_Q]" position="6"/>
+38 0 0	 # [2] 0: PROC_BEGIN;	 <ProcBegin symbol="ProcedureSy:id=14;name=Q;level=0;Pos=3;formals={};locals={};formalSize=0;localSize=0;" position="3"/>
+5 0	 # [3] 17: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=13;name=X;level=0;Pos=2;type=[id="1" name="INTEGER"];size=8;offset=0;" position="5"/>
+18 5	 # [4] 26: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[5]" position="5"/>
+20	 # [5] 35: STORE_i;	 <Store type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="5"/>
+18 0	 # [6] 36: PUSHCONST_i;	 <LoadLit type="BasicType:id=4;name=STRING;level=0;Pos=0;size=0;" value="StringValue[In_procedure_Q]" position="6"/>
+47	 # [7] 45: WRITE_s;	 <Write type="BasicType:id=4;name=STRING;level=0;Pos=0;size=0;" position="6"/>
+39 0 0	 # [8] 46: PROC_END;	 <ProcEnd symbol="ProcedureSy:id=14;name=Q;level=0;Pos=3;formals={};locals={};formalSize=0;localSize=0;" position="3"/>
+1	 # [9] 63: PROG_BEGIN;	 <ProcBegin symbol="ProcedureSy:id=0;name=$MAIN;level=0;Pos=1;formals={};locals={X};formalSize=0;localSize=8;" position="1"/>
+40 -64 0	 # [10] 64: CALL;	 <ProcCall symbol="ProcedureSy:id=14;name=Q;level=0;Pos=3;formals={};locals={};formalSize=0;localSize=0;" position="9"/>
+2	 # [11] 81: PROG_END;	 <ProcEnd symbol="ProcedureSy:id=0;name=$MAIN;level=0;Pos=1;formals={};locals={X};formalSize=0;localSize=8;" position="1"/>

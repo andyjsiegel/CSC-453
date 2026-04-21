@@ -1,0 +1,63 @@
+55 8	 # [0] 0: DEF_GLOBALS;	 <ProcBegin symbol="ProcedureSy:id=0;name=$MAIN;level=0;Pos=1;formals={};locals={x};formalSize=0;localSize=8;" position="1"/>
+38 64 0	 # [1] 0: PROC_BEGIN;	 <ProcBegin symbol="ProcedureSy:id=14;name=Q;level=0;Pos=5;formals={c,h,d,a,f,b,g,e};locals={};formalSize=64;localSize=0;" position="5"/>
+4 8	 # [2] 17: PUSHADDR_formal;	 <AddressOf symbol="FormalSy:id=16;name=b;level=1;Pos=7;type=[id="2" name="REAL"];size=8;offset=8;number=2;mode=VAL;copy=[];" position="15"/>
+32 10.1	 # [3] 26: PUSHCONST_f;	 <LoadLit type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" value="RealValue[10.1]" position="15"/>
+34	 # [4] 35: STORE_f;	 <Store type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" position="15"/>
+4 48	 # [5] 36: PUSHADDR_formal;	 <AddressOf symbol="FormalSy:id=21;name=g;level=1;Pos=12;type=[id="2" name="REAL"];size=8;offset=48;number=7;mode=VAL;copy=[];" position="16"/>
+32 20.1	 # [6] 45: PUSHCONST_f;	 <LoadLit type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" value="RealValue[20.1]" position="16"/>
+34	 # [7] 54: STORE_f;	 <Store type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" position="16"/>
+5 0	 # [8] 55: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=13;name=x;level=0;Pos=3;type=[id="2" name="REAL"];size=8;offset=0;" position="17"/>
+4 0	 # [9] 64: PUSHADDR_formal;	 <AddressOf symbol="FormalSy:id=15;name=a;level=1;Pos=6;type=[id="2" name="REAL"];size=8;offset=0;number=1;mode=VAL;copy=[];" position="17"/>
+33	 # [10] 73: LOAD_f;	 <Load type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" position="17"/>
+4 8	 # [11] 74: PUSHADDR_formal;	 <AddressOf symbol="FormalSy:id=16;name=b;level=1;Pos=7;type=[id="2" name="REAL"];size=8;offset=8;number=2;mode=VAL;copy=[];" position="17"/>
+33	 # [12] 83: LOAD_f;	 <Load type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" position="17"/>
+22	 # [13] 84: PLUS_f;	 <BinExpr type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" op="1" position="17"/>
+4 16	 # [14] 85: PUSHADDR_formal;	 <AddressOf symbol="FormalSy:id=17;name=c;level=1;Pos=8;type=[id="2" name="REAL"];size=8;offset=16;number=3;mode=VAL;copy=[];" position="17"/>
+33	 # [15] 94: LOAD_f;	 <Load type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" position="17"/>
+22	 # [16] 95: PLUS_f;	 <BinExpr type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" op="1" position="17"/>
+4 24	 # [17] 96: PUSHADDR_formal;	 <AddressOf symbol="FormalSy:id=18;name=d;level=1;Pos=9;type=[id="2" name="REAL"];size=8;offset=24;number=4;mode=VAL;copy=[];" position="17"/>
+33	 # [18] 105: LOAD_f;	 <Load type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" position="17"/>
+22	 # [19] 106: PLUS_f;	 <BinExpr type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" op="1" position="17"/>
+4 32	 # [20] 107: PUSHADDR_formal;	 <AddressOf symbol="FormalSy:id=19;name=e;level=1;Pos=10;type=[id="2" name="REAL"];size=8;offset=32;number=5;mode=VAL;copy=[];" position="17"/>
+33	 # [21] 116: LOAD_f;	 <Load type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" position="17"/>
+22	 # [22] 117: PLUS_f;	 <BinExpr type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" op="1" position="17"/>
+4 40	 # [23] 118: PUSHADDR_formal;	 <AddressOf symbol="FormalSy:id=20;name=f;level=1;Pos=11;type=[id="2" name="REAL"];size=8;offset=40;number=6;mode=VAL;copy=[];" position="17"/>
+33	 # [24] 127: LOAD_f;	 <Load type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" position="17"/>
+22	 # [25] 128: PLUS_f;	 <BinExpr type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" op="1" position="17"/>
+4 48	 # [26] 129: PUSHADDR_formal;	 <AddressOf symbol="FormalSy:id=21;name=g;level=1;Pos=12;type=[id="2" name="REAL"];size=8;offset=48;number=7;mode=VAL;copy=[];" position="17"/>
+33	 # [27] 138: LOAD_f;	 <Load type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" position="17"/>
+22	 # [28] 139: PLUS_f;	 <BinExpr type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" op="1" position="17"/>
+4 56	 # [29] 140: PUSHADDR_formal;	 <AddressOf symbol="FormalSy:id=22;name=h;level=1;Pos=13;type=[id="2" name="REAL"];size=8;offset=56;number=8;mode=VAL;copy=[];" position="17"/>
+33	 # [30] 149: LOAD_f;	 <Load type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" position="17"/>
+22	 # [31] 150: PLUS_f;	 <BinExpr type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" op="1" position="17"/>
+34	 # [32] 151: STORE_f;	 <Store type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" position="17"/>
+39 64 0	 # [33] 152: PROC_END;	 <ProcEnd symbol="ProcedureSy:id=14;name=Q;level=0;Pos=5;formals={c,h,d,a,f,b,g,e};locals={};formalSize=64;localSize=0;" position="5"/>
+1	 # [34] 169: PROG_BEGIN;	 <ProcBegin symbol="ProcedureSy:id=0;name=$MAIN;level=0;Pos=1;formals={};locals={x};formalSize=0;localSize=8;" position="1"/>
+5 0	 # [35] 170: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=13;name=x;level=0;Pos=3;type=[id="2" name="REAL"];size=8;offset=0;" position="21"/>
+32 23.45	 # [36] 179: PUSHCONST_f;	 <LoadLit type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" value="RealValue[23.45]" position="21"/>
+34	 # [37] 188: STORE_f;	 <Store type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" position="21"/>
+32 1.1	 # [38] 189: PUSHCONST_f;	 <LoadLit type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" value="RealValue[1.1]" position="22"/>
+43	 # [39] 198: ACTUAL_f;	 
+32 2.1	 # [40] 199: PUSHCONST_f;	 <LoadLit type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" value="RealValue[2.1]" position="22"/>
+43	 # [41] 208: ACTUAL_f;	 
+32 3.1	 # [42] 209: PUSHCONST_f;	 <LoadLit type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" value="RealValue[3.1]" position="22"/>
+43	 # [43] 218: ACTUAL_f;	 
+32 4.1	 # [44] 219: PUSHCONST_f;	 <LoadLit type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" value="RealValue[4.1]" position="22"/>
+43	 # [45] 228: ACTUAL_f;	 
+32 5.1	 # [46] 229: PUSHCONST_f;	 <LoadLit type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" value="RealValue[5.1]" position="22"/>
+43	 # [47] 238: ACTUAL_f;	 
+32 6.1	 # [48] 239: PUSHCONST_f;	 <LoadLit type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" value="RealValue[6.1]" position="22"/>
+43	 # [49] 248: ACTUAL_f;	 
+32 7.1	 # [50] 249: PUSHCONST_f;	 <LoadLit type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" value="RealValue[7.1]" position="22"/>
+43	 # [51] 258: ACTUAL_f;	 
+32 8.1	 # [52] 259: PUSHCONST_f;	 <LoadLit type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" value="RealValue[8.1]" position="22"/>
+43	 # [53] 268: ACTUAL_f;	 
+40 -269 64	 # [54] 269: CALL;	 <ProcCall symbol="ProcedureSy:id=14;name=Q;level=0;Pos=5;formals={c,h,d,a,f,b,g,e};locals={};formalSize=64;localSize=0;" position="22"/>
+5 0	 # [55] 286: PUSHADDR_global;	 <AddressOf symbol="VariableSy:id=13;name=x;level=0;Pos=3;type=[id="2" name="REAL"];size=8;offset=0;" position="23"/>
+33	 # [56] 295: LOAD_f;	 <Load type="BasicType:id=2;name=REAL;level=0;Pos=0;size=8;" position="23"/>
+36	 # [57] 296: TRUNC;	 <UnaryExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="33" position="23"/>
+18 57	 # [58] 297: PUSHCONST_i;	 <LoadLit type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" value="IntValue[57]" position="23"/>
+9	 # [59] 306: MINUS_i;	 <BinExpr type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" op="2" position="23"/>
+44	 # [60] 307: WRITE_i;	 <Write type="BasicType:id=1;name=INTEGER;level=0;Pos=0;size=8;" position="23"/>
+51	 # [61] 308: WRITELN;	 <WriteLn position="23"/>
+2	 # [62] 309: PROG_END;	 <ProcEnd symbol="ProcedureSy:id=0;name=$MAIN;level=0;Pos=1;formals={};locals={x};formalSize=0;localSize=8;" position="1"/>
