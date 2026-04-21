@@ -1,0 +1,18 @@
+PROGRAM Euclid;
+
+VAR a     : INTEGER;
+VAR b     : INTEGER;
+VAR t     : INTEGER;
+VAR R     : INTEGER;
+BEGIN
+   a := 196418;
+   b := 317811;
+   WHILE b # 0 DO
+      t := a;
+      a := b;
+      b := t % b;
+   ENDDO;
+   R := a;
+   WRITE R-1;
+   WRITELN;
+END.

@@ -1,0 +1,15 @@
+PROGRAM P;
+
+TYPE A = ARRAY 100 OF INTEGER;
+
+VAR i : INTEGER;
+VAR x : A;
+VAR j : INTEGER;
+BEGIN
+   i := 0; j := 13;
+   WHILE i <= 99 DO
+      x[i] := i;
+      i := i + 1;
+   ENDDO;
+   WRITE x[0] + x[j] + x[99] + j + i - 225; WRITELN;
+END.

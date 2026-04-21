@@ -1,0 +1,15 @@
+PROGRAM P;
+
+VAR I : INTEGER;
+VAR J : INTEGER;
+VAR A : INTEGER;
+VAR B : INTEGER;
+BEGIN
+   A := 17; B := 5;
+   I := A % B - 2;
+
+   A := 23; B := 100;
+   J := A % B - 23;
+
+   WRITE I + J; WRITELN;
+END.

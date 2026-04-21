@@ -1,0 +1,33 @@
+TypeDecl	symbol=INTEGER	id=1	size=4	pos=0
+TypeDecl	symbol=CHAR	id=3	size=1	pos=0
+TypeDecl	symbol=REAL	id=2	size=4	pos=0
+TypeDecl	symbol=STRING	id=4	size=0	pos=0
+TypeDecl	symbol=$ADDRESS	id=7	size=4	pos=0
+TypeDecl	symbol=BOOLEAN	id=8	size=4	pos=0
+VarDecl	symbol=I	id=13	kind=global	typeId=1	offset=0	pos=3
+VarDecl	symbol=J	id=14	kind=global	typeId=1	offset=4	pos=4
+VarDecl	symbol=$0	id=15	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$1	id=16	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$2	id=17	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$3	id=18	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$4	id=19	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$5	id=20	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$6	id=21	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$7	id=22	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$8	id=23	kind=temp	typeId=7	offset=-1	pos=0
+Version	major=3	minor=0	pos=1
+ProcBegin	symbol=$MAIN	id=0	formalCount=0	formalSize=0	localCount=2	localSize=8	formalIds=	pos=1
+AddressOf	symbol=I	id=13	typeId=7	resultId=15	pos=6
+LoadLit	value=0	typeId=1	resultId=16	pos=6
+Store	typeId=1	leftId=15	rightId=16	pos=6
+AddressOf	symbol=J	id=14	typeId=7	resultId=17	pos=7
+LoadLit	value=0	typeId=1	resultId=18	pos=7
+Store	typeId=1	leftId=17	rightId=18	pos=7
+AddressOf	symbol=J	id=14	typeId=7	resultId=19	pos=8
+Load	typeId=1	resultId=20	desId=19	pos=8
+AddressOf	symbol=I	id=13	typeId=7	resultId=21	pos=8
+Load	typeId=1	resultId=22	desId=21	pos=8
+BinExpr	op=+	typeId=1	resultId=23	leftId=20	rightId=22	pos=8
+Write	typeId=1	exprId=23	pos=8
+WriteLn	pos=8
+ProcEnd	symbol=$MAIN	id=0	pos=1

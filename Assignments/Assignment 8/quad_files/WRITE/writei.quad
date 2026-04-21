@@ -1,0 +1,13 @@
+TypeDecl	symbol=INTEGER	id=1	size=4	pos=0
+TypeDecl	symbol=CHAR	id=3	size=1	pos=0
+TypeDecl	symbol=REAL	id=2	size=4	pos=0
+TypeDecl	symbol=STRING	id=4	size=0	pos=0
+TypeDecl	symbol=$ADDRESS	id=7	size=4	pos=0
+TypeDecl	symbol=BOOLEAN	id=8	size=4	pos=0
+VarDecl	symbol=$0	id=13	kind=temp	typeId=1	offset=-1	pos=0
+Version	major=3	minor=0	pos=1
+ProcBegin	symbol=$MAIN	id=0	formalCount=0	formalSize=0	localCount=0	localSize=0	formalIds=	pos=1
+LoadLit	value=0	typeId=1	resultId=13	pos=3
+Write	typeId=1	exprId=13	pos=3
+WriteLn	pos=3
+ProcEnd	symbol=$MAIN	id=0	pos=1

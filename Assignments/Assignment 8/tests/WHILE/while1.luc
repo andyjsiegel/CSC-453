@@ -1,0 +1,10 @@
+PROGRAM P;
+
+VAR i : INTEGER;
+BEGIN
+   i := 1;
+   WHILE i < 10 DO
+      i := i + 1;
+   ENDDO;
+   WRITE i - 10; WRITELN;
+END.

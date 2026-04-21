@@ -1,0 +1,22 @@
+PROGRAM P;
+
+VAR jj : INTEGER;
+VAR i : INTEGER;
+VAR r : INTEGER;
+BEGIN
+   i := 1; r := 0;
+   WHILE i <= 10 DO
+      jj := 1;
+      WHILE jj <= 20 DO
+         jj := jj + 1;
+         r := r + 1;
+      ENDDO;
+      i := i + 1;
+   ENDDO;
+   i := 1;
+   WHILE i # 101 DO
+      i := i + 1;
+      r := r - 2;
+   ENDDO;
+   WRITE r; WRITELN;
+END.

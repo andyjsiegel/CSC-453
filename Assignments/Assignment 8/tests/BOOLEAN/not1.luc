@@ -1,0 +1,12 @@
+PROGRAM P;
+
+VAR i : BOOLEAN;
+BEGIN
+   i := TRUE;
+   IF NOT i THEN
+      WRITE 99;
+   ELSE
+      WRITE 0;
+   ENDIF;
+   WRITELN;
+END.

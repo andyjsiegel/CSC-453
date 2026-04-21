@@ -1,0 +1,19 @@
+PROGRAM P;
+
+VAR jj : INTEGER;
+VAR i : INTEGER;
+VAR r : INTEGER;
+BEGIN
+   i := 1; r := 0;
+   LOOP
+      IF i > 10 THEN EXIT; ENDIF;
+      jj := 1;
+      LOOP
+         IF jj > 20 THEN EXIT; ENDIF;
+         jj := jj + 1;
+         r := r + 1;
+      ENDLOOP;
+      i := i + 1;
+   ENDLOOP;
+   WRITE r - 200; WRITELN;
+END.

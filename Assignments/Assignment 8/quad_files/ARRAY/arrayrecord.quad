@@ -1,0 +1,150 @@
+TypeDecl	symbol=INTEGER	id=1	size=4	pos=0
+TypeDecl	symbol=CHAR	id=3	size=1	pos=0
+TypeDecl	symbol=REAL	id=2	size=4	pos=0
+TypeDecl	symbol=STRING	id=4	size=0	pos=0
+TypeDecl	symbol=$ADDRESS	id=7	size=4	pos=0
+TypeDecl	symbol=BOOLEAN	id=8	size=4	pos=0
+RecordDecl	symbol=R	id=13	size=8	pos=3
+FieldDecl	symbol=b	id=15	recordId=13	typeId=1	offset=4	pos=3
+FieldDecl	symbol=a	id=14	recordId=13	typeId=1	offset=0	pos=3
+ArrayDecl	symbol=A	id=16	size=800	elementTypeId=13	elementCount=100	pos=4
+VarDecl	symbol=i	id=17	kind=global	typeId=1	offset=0	pos=6
+VarDecl	symbol=j	id=21	kind=global	typeId=1	offset=812	pos=10
+VarDecl	symbol=x	id=19	kind=global	typeId=16	offset=8	pos=8
+VarDecl	symbol=r	id=22	kind=global	typeId=1	offset=816	pos=11
+VarDecl	symbol=m	id=20	kind=global	typeId=1	offset=808	pos=9
+VarDecl	symbol=k	id=18	kind=global	typeId=1	offset=4	pos=7
+VarDecl	symbol=$0	id=23	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$1	id=24	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$2	id=25	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$3	id=26	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$4	id=27	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$5	id=28	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$6	id=29	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$7	id=30	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$8	id=31	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$9	id=32	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$10	id=33	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$11	id=34	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$12	id=35	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$13	id=36	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$14	id=37	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$15	id=38	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$16	id=39	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$17	id=40	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$18	id=41	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$19	id=42	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$20	id=43	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$21	id=44	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$22	id=45	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$23	id=46	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$24	id=47	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$25	id=48	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$26	id=49	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$27	id=50	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$28	id=51	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$29	id=52	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$30	id=53	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$31	id=54	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$32	id=55	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$33	id=56	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$34	id=57	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$35	id=58	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$36	id=59	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$37	id=60	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$38	id=61	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$39	id=62	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$40	id=63	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$41	id=64	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$42	id=65	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$43	id=66	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$44	id=67	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$45	id=68	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$46	id=69	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$47	id=70	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$48	id=71	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$49	id=72	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$50	id=73	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$51	id=74	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$52	id=75	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$53	id=76	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$54	id=77	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$55	id=78	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$56	id=79	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$57	id=80	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$58	id=81	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$59	id=82	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$60	id=83	kind=temp	typeId=7	offset=-1	pos=0
+Version	major=3	minor=0	pos=1
+ProcBegin	symbol=$MAIN	id=0	formalCount=0	formalSize=0	localCount=6	localSize=820	formalIds=	pos=1
+AddressOf	symbol=i	id=17	typeId=7	resultId=23	pos=13
+LoadLit	value=23	typeId=1	resultId=24	pos=13
+Store	typeId=1	leftId=23	rightId=24	pos=13
+AddressOf	symbol=i	id=17	typeId=7	resultId=25	pos=14
+Load	typeId=1	resultId=26	desId=25	pos=14
+AddressOf	symbol=x	id=19	typeId=7	resultId=27	pos=14
+IndexOf	typeId=7	arrayId=16	resultId=28	baseId=27	indexId=26	pos=14
+FieldOf	field=a	record=R	fieldId=14	recordId=13	typeId=7	resultId=29	baseId=28	pos=14
+LoadLit	value=17	typeId=1	resultId=30	pos=14
+Store	typeId=1	leftId=29	rightId=30	pos=14
+AddressOf	symbol=i	id=17	typeId=7	resultId=31	pos=15
+Load	typeId=1	resultId=32	desId=31	pos=15
+AddressOf	symbol=x	id=19	typeId=7	resultId=33	pos=15
+IndexOf	typeId=7	arrayId=16	resultId=34	baseId=33	indexId=32	pos=15
+FieldOf	field=b	record=R	fieldId=15	recordId=13	typeId=7	resultId=35	baseId=34	pos=15
+LoadLit	value=483	typeId=1	resultId=36	pos=15
+Store	typeId=1	leftId=35	rightId=36	pos=15
+AddressOf	symbol=i	id=17	typeId=7	resultId=37	pos=16
+Load	typeId=1	resultId=38	desId=37	pos=16
+LoadLit	value=1	typeId=1	resultId=39	pos=16
+BinExpr	op=-	typeId=1	resultId=40	leftId=38	rightId=39	pos=16
+AddressOf	symbol=x	id=19	typeId=7	resultId=41	pos=16
+IndexOf	typeId=7	arrayId=16	resultId=42	baseId=41	indexId=40	pos=16
+FieldOf	field=a	record=R	fieldId=14	recordId=13	typeId=7	resultId=43	baseId=42	pos=16
+LoadLit	value=34	typeId=1	resultId=44	pos=16
+Store	typeId=1	leftId=43	rightId=44	pos=16
+AddressOf	symbol=i	id=17	typeId=7	resultId=45	pos=17
+Load	typeId=1	resultId=46	desId=45	pos=17
+LoadLit	value=1	typeId=1	resultId=47	pos=17
+BinExpr	op=-	typeId=1	resultId=48	leftId=46	rightId=47	pos=17
+AddressOf	symbol=x	id=19	typeId=7	resultId=49	pos=17
+IndexOf	typeId=7	arrayId=16	resultId=50	baseId=49	indexId=48	pos=17
+FieldOf	field=b	record=R	fieldId=15	recordId=13	typeId=7	resultId=51	baseId=50	pos=17
+LoadLit	value=89	typeId=1	resultId=52	pos=17
+Store	typeId=1	leftId=51	rightId=52	pos=17
+AddressOf	symbol=i	id=17	typeId=7	resultId=53	pos=18
+Load	typeId=1	resultId=54	desId=53	pos=18
+LoadLit	value=1	typeId=1	resultId=55	pos=18
+BinExpr	op=+	typeId=1	resultId=56	leftId=54	rightId=55	pos=18
+AddressOf	symbol=x	id=19	typeId=7	resultId=57	pos=18
+IndexOf	typeId=7	arrayId=16	resultId=58	baseId=57	indexId=56	pos=18
+FieldOf	field=a	record=R	fieldId=14	recordId=13	typeId=7	resultId=59	baseId=58	pos=18
+LoadLit	value=34	typeId=1	resultId=60	pos=18
+Store	typeId=1	leftId=59	rightId=60	pos=18
+AddressOf	symbol=i	id=17	typeId=7	resultId=61	pos=19
+Load	typeId=1	resultId=62	desId=61	pos=19
+LoadLit	value=1	typeId=1	resultId=63	pos=19
+BinExpr	op=+	typeId=1	resultId=64	leftId=62	rightId=63	pos=19
+AddressOf	symbol=x	id=19	typeId=7	resultId=65	pos=19
+IndexOf	typeId=7	arrayId=16	resultId=66	baseId=65	indexId=64	pos=19
+FieldOf	field=b	record=R	fieldId=15	recordId=13	typeId=7	resultId=67	baseId=66	pos=19
+LoadLit	value=89	typeId=1	resultId=68	pos=19
+Store	typeId=1	leftId=67	rightId=68	pos=19
+AddressOf	symbol=i	id=17	typeId=7	resultId=69	pos=20
+Load	typeId=1	resultId=70	desId=69	pos=20
+AddressOf	symbol=x	id=19	typeId=7	resultId=71	pos=20
+IndexOf	typeId=7	arrayId=16	resultId=72	baseId=71	indexId=70	pos=20
+FieldOf	field=a	record=R	fieldId=14	recordId=13	typeId=7	resultId=73	baseId=72	pos=20
+Load	typeId=1	resultId=74	desId=73	pos=20
+AddressOf	symbol=i	id=17	typeId=7	resultId=75	pos=20
+Load	typeId=1	resultId=76	desId=75	pos=20
+AddressOf	symbol=x	id=19	typeId=7	resultId=77	pos=20
+IndexOf	typeId=7	arrayId=16	resultId=78	baseId=77	indexId=76	pos=20
+FieldOf	field=b	record=R	fieldId=15	recordId=13	typeId=7	resultId=79	baseId=78	pos=20
+Load	typeId=1	resultId=80	desId=79	pos=20
+BinExpr	op=+	typeId=1	resultId=81	leftId=74	rightId=80	pos=20
+LoadLit	value=500	typeId=1	resultId=82	pos=20
+BinExpr	op=-	typeId=1	resultId=83	leftId=81	rightId=82	pos=20
+Write	typeId=1	exprId=83	pos=20
+WriteLn	pos=20
+ProcEnd	symbol=$MAIN	id=0	pos=1

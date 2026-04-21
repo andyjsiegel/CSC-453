@@ -1,0 +1,67 @@
+PROGRAM Interpret;
+
+TYPE StackT = ARRAY 100 OF INTEGER;
+TYPE ProgT  = ARRAY 100 OF INTEGER;
+
+VAR Prog : ProgT;
+VAR Stack : StackT;
+VAR sp    : INTEGER;
+VAR pc    : INTEGER;
+VAR Op    : INTEGER;
+VAR Result : INTEGER;
+BEGIN
+   Prog[1] := 0;
+   Prog[2] := 100;
+   Prog[3] := 0;
+   Prog[4] := 200;
+   Prog[5] := 0;
+   Prog[6] := 300;
+   Prog[7] := 1;
+   Prog[8] := 0;
+   Prog[9] := 400;
+   Prog[10] := 3;
+   Prog[11] := 1;
+   Prog[12] := 5;
+   Prog[13] := 99;
+
+   Result := -1;
+
+   pc := 0;
+   sp := 0;
+   WHILE Prog[pc] # 99 DO
+      pc := pc + 1;
+      Op := Prog[pc];
+      IF Op = 0 THEN
+         sp := sp + 1;
+         pc := pc + 1;
+         Stack[sp] := Prog[pc];
+      ELSE 
+         IF Op = 1 THEN
+            Stack[sp-1] := Stack[sp-1] + Stack[sp];
+            sp := sp - 1;
+         ELSE 
+            IF Op = 2 THEN
+               Stack[sp-1] := Stack[sp-1] - Stack[sp];
+               sp := sp - 1;
+            ELSE 
+               IF Op = 3 THEN
+                  Stack[sp-1] := Stack[sp-1] * Stack[sp];
+                  sp := sp - 1;
+               ELSE 
+                  IF Op = 4 THEN
+                     Stack[sp-1] := Stack[sp-1] / Stack[sp];
+                     sp := sp - 1;
+                  ELSE 
+                     IF Op = 5 THEN
+                        Result := Stack[sp]; 
+                        sp := sp - 1;
+                     ENDIF;
+                  ENDIF;
+               ENDIF;
+            ENDIF;
+         ENDIF;
+      ENDIF;
+   ENDDO;
+   WRITE Result - 200100;
+   WRITELN;
+END.

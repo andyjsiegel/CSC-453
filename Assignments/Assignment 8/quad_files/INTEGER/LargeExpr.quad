@@ -1,0 +1,423 @@
+TypeDecl	symbol=INTEGER	id=1	size=4	pos=0
+TypeDecl	symbol=CHAR	id=3	size=1	pos=0
+TypeDecl	symbol=REAL	id=2	size=4	pos=0
+TypeDecl	symbol=STRING	id=4	size=0	pos=0
+TypeDecl	symbol=$ADDRESS	id=7	size=4	pos=0
+TypeDecl	symbol=BOOLEAN	id=8	size=4	pos=0
+VarDecl	symbol=I	id=13	kind=global	typeId=1	offset=0	pos=3
+VarDecl	symbol=J	id=14	kind=global	typeId=1	offset=4	pos=4
+VarDecl	symbol=$0	id=15	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$1	id=16	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$2	id=17	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$3	id=18	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$4	id=19	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$5	id=20	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$6	id=21	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$7	id=22	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$8	id=23	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$9	id=24	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$10	id=25	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$11	id=26	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$12	id=27	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$13	id=28	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$14	id=29	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$15	id=30	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$16	id=31	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$17	id=32	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$18	id=33	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$19	id=34	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$20	id=35	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$21	id=36	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$22	id=37	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$23	id=38	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$24	id=39	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$25	id=40	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$26	id=41	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$27	id=42	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$28	id=43	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$29	id=44	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$30	id=45	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$31	id=46	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$32	id=47	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$33	id=48	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$34	id=49	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$35	id=50	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$36	id=51	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$37	id=52	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$38	id=53	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$39	id=54	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$40	id=55	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$41	id=56	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$42	id=57	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$43	id=58	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$44	id=59	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$45	id=60	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$46	id=61	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$47	id=62	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$48	id=63	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$49	id=64	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$50	id=65	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$51	id=66	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$52	id=67	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$53	id=68	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$54	id=69	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$55	id=70	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$56	id=71	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$57	id=72	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$58	id=73	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$59	id=74	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$60	id=75	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$61	id=76	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$62	id=77	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$63	id=78	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$64	id=79	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$65	id=80	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$66	id=81	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$67	id=82	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$68	id=83	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$69	id=84	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$70	id=85	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$71	id=86	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$72	id=87	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$73	id=88	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$74	id=89	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$75	id=90	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$76	id=91	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$77	id=92	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$78	id=93	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$79	id=94	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$80	id=95	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$81	id=96	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$82	id=97	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$83	id=98	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$84	id=99	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$85	id=100	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$86	id=101	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$87	id=102	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$88	id=103	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$89	id=104	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$90	id=105	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$91	id=106	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$92	id=107	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$93	id=108	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$94	id=109	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$95	id=110	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$96	id=111	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$97	id=112	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$98	id=113	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$99	id=114	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$100	id=115	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$101	id=116	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$102	id=117	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$103	id=118	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$104	id=119	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$105	id=120	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$106	id=121	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$107	id=122	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$108	id=123	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$109	id=124	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$110	id=125	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$111	id=126	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$112	id=127	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$113	id=128	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$114	id=129	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$115	id=130	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$116	id=131	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$117	id=132	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$118	id=133	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$119	id=134	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$120	id=135	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$121	id=136	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$122	id=137	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$123	id=138	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$124	id=139	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$125	id=140	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$126	id=141	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$127	id=142	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$128	id=143	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$129	id=144	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$130	id=145	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$131	id=146	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$132	id=147	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$133	id=148	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$134	id=149	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$135	id=150	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$136	id=151	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$137	id=152	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$138	id=153	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$139	id=154	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$140	id=155	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$141	id=156	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$142	id=157	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$143	id=158	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$144	id=159	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$145	id=160	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$146	id=161	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$147	id=162	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$148	id=163	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$149	id=164	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$150	id=165	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$151	id=166	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$152	id=167	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$153	id=168	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$154	id=169	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$155	id=170	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$156	id=171	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$157	id=172	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$158	id=173	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$159	id=174	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$160	id=175	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$161	id=176	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$162	id=177	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$163	id=178	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$164	id=179	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$165	id=180	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$166	id=181	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$167	id=182	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$168	id=183	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$169	id=184	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$170	id=185	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$171	id=186	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$172	id=187	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$173	id=188	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$174	id=189	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$175	id=190	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$176	id=191	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$177	id=192	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$178	id=193	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$179	id=194	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$180	id=195	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$181	id=196	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$182	id=197	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$183	id=198	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$184	id=199	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$185	id=200	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$186	id=201	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$187	id=202	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$188	id=203	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$189	id=204	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$190	id=205	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$191	id=206	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$192	id=207	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$193	id=208	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$194	id=209	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$195	id=210	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$196	id=211	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$197	id=212	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$198	id=213	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$199	id=214	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$200	id=215	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$201	id=216	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$202	id=217	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$203	id=218	kind=temp	typeId=7	offset=-1	pos=0
+Version	major=3	minor=0	pos=1
+ProcBegin	symbol=$MAIN	id=0	formalCount=0	formalSize=0	localCount=2	localSize=8	formalIds=	pos=1
+AddressOf	symbol=J	id=14	typeId=7	resultId=15	pos=6
+LoadLit	value=2	typeId=1	resultId=16	pos=6
+Store	typeId=1	leftId=15	rightId=16	pos=6
+AddressOf	symbol=I	id=13	typeId=7	resultId=17	pos=7
+AddressOf	symbol=J	id=14	typeId=7	resultId=18	pos=8
+Load	typeId=1	resultId=19	desId=18	pos=8
+LoadLit	value=1	typeId=1	resultId=20	pos=8
+BinExpr	op=+	typeId=1	resultId=21	leftId=19	rightId=20	pos=8
+AddressOf	symbol=J	id=14	typeId=7	resultId=22	pos=9
+Load	typeId=1	resultId=23	desId=22	pos=9
+LoadLit	value=2	typeId=1	resultId=24	pos=9
+BinExpr	op=+	typeId=1	resultId=25	leftId=23	rightId=24	pos=9
+BinExpr	op=*	typeId=1	resultId=26	leftId=21	rightId=25	pos=8
+AddressOf	symbol=J	id=14	typeId=7	resultId=27	pos=10
+Load	typeId=1	resultId=28	desId=27	pos=10
+LoadLit	value=3	typeId=1	resultId=29	pos=10
+BinExpr	op=+	typeId=1	resultId=30	leftId=28	rightId=29	pos=10
+BinExpr	op=*	typeId=1	resultId=31	leftId=26	rightId=30	pos=9
+AddressOf	symbol=J	id=14	typeId=7	resultId=32	pos=11
+Load	typeId=1	resultId=33	desId=32	pos=11
+LoadLit	value=4	typeId=1	resultId=34	pos=11
+BinExpr	op=+	typeId=1	resultId=35	leftId=33	rightId=34	pos=11
+BinExpr	op=*	typeId=1	resultId=36	leftId=31	rightId=35	pos=10
+AddressOf	symbol=J	id=14	typeId=7	resultId=37	pos=12
+Load	typeId=1	resultId=38	desId=37	pos=12
+LoadLit	value=5	typeId=1	resultId=39	pos=12
+BinExpr	op=+	typeId=1	resultId=40	leftId=38	rightId=39	pos=12
+BinExpr	op=*	typeId=1	resultId=41	leftId=36	rightId=40	pos=11
+AddressOf	symbol=J	id=14	typeId=7	resultId=42	pos=13
+Load	typeId=1	resultId=43	desId=42	pos=13
+LoadLit	value=6	typeId=1	resultId=44	pos=13
+BinExpr	op=+	typeId=1	resultId=45	leftId=43	rightId=44	pos=13
+BinExpr	op=*	typeId=1	resultId=46	leftId=41	rightId=45	pos=12
+AddressOf	symbol=J	id=14	typeId=7	resultId=47	pos=14
+Load	typeId=1	resultId=48	desId=47	pos=14
+LoadLit	value=7	typeId=1	resultId=49	pos=14
+BinExpr	op=+	typeId=1	resultId=50	leftId=48	rightId=49	pos=14
+BinExpr	op=*	typeId=1	resultId=51	leftId=46	rightId=50	pos=13
+AddressOf	symbol=J	id=14	typeId=7	resultId=52	pos=15
+Load	typeId=1	resultId=53	desId=52	pos=15
+LoadLit	value=8	typeId=1	resultId=54	pos=15
+BinExpr	op=+	typeId=1	resultId=55	leftId=53	rightId=54	pos=15
+BinExpr	op=*	typeId=1	resultId=56	leftId=51	rightId=55	pos=14
+AddressOf	symbol=J	id=14	typeId=7	resultId=57	pos=16
+Load	typeId=1	resultId=58	desId=57	pos=16
+LoadLit	value=9	typeId=1	resultId=59	pos=16
+BinExpr	op=+	typeId=1	resultId=60	leftId=58	rightId=59	pos=16
+BinExpr	op=*	typeId=1	resultId=61	leftId=56	rightId=60	pos=15
+AddressOf	symbol=J	id=14	typeId=7	resultId=62	pos=17
+Load	typeId=1	resultId=63	desId=62	pos=17
+LoadLit	value=10	typeId=1	resultId=64	pos=17
+BinExpr	op=+	typeId=1	resultId=65	leftId=63	rightId=64	pos=17
+BinExpr	op=*	typeId=1	resultId=66	leftId=61	rightId=65	pos=16
+AddressOf	symbol=J	id=14	typeId=7	resultId=67	pos=18
+Load	typeId=1	resultId=68	desId=67	pos=18
+LoadLit	value=11	typeId=1	resultId=69	pos=18
+BinExpr	op=+	typeId=1	resultId=70	leftId=68	rightId=69	pos=18
+BinExpr	op=*	typeId=1	resultId=71	leftId=66	rightId=70	pos=17
+AddressOf	symbol=J	id=14	typeId=7	resultId=72	pos=19
+Load	typeId=1	resultId=73	desId=72	pos=19
+LoadLit	value=12	typeId=1	resultId=74	pos=19
+BinExpr	op=+	typeId=1	resultId=75	leftId=73	rightId=74	pos=19
+BinExpr	op=*	typeId=1	resultId=76	leftId=71	rightId=75	pos=18
+AddressOf	symbol=J	id=14	typeId=7	resultId=77	pos=20
+Load	typeId=1	resultId=78	desId=77	pos=20
+LoadLit	value=13	typeId=1	resultId=79	pos=20
+BinExpr	op=+	typeId=1	resultId=80	leftId=78	rightId=79	pos=20
+BinExpr	op=*	typeId=1	resultId=81	leftId=76	rightId=80	pos=19
+AddressOf	symbol=J	id=14	typeId=7	resultId=82	pos=21
+Load	typeId=1	resultId=83	desId=82	pos=21
+LoadLit	value=14	typeId=1	resultId=84	pos=21
+BinExpr	op=+	typeId=1	resultId=85	leftId=83	rightId=84	pos=21
+BinExpr	op=*	typeId=1	resultId=86	leftId=81	rightId=85	pos=20
+AddressOf	symbol=J	id=14	typeId=7	resultId=87	pos=22
+Load	typeId=1	resultId=88	desId=87	pos=22
+LoadLit	value=15	typeId=1	resultId=89	pos=22
+BinExpr	op=+	typeId=1	resultId=90	leftId=88	rightId=89	pos=22
+BinExpr	op=*	typeId=1	resultId=91	leftId=86	rightId=90	pos=21
+AddressOf	symbol=J	id=14	typeId=7	resultId=92	pos=23
+Load	typeId=1	resultId=93	desId=92	pos=23
+LoadLit	value=16	typeId=1	resultId=94	pos=23
+BinExpr	op=+	typeId=1	resultId=95	leftId=93	rightId=94	pos=23
+BinExpr	op=*	typeId=1	resultId=96	leftId=91	rightId=95	pos=22
+AddressOf	symbol=J	id=14	typeId=7	resultId=97	pos=24
+Load	typeId=1	resultId=98	desId=97	pos=24
+LoadLit	value=17	typeId=1	resultId=99	pos=24
+BinExpr	op=+	typeId=1	resultId=100	leftId=98	rightId=99	pos=24
+BinExpr	op=*	typeId=1	resultId=101	leftId=96	rightId=100	pos=23
+AddressOf	symbol=J	id=14	typeId=7	resultId=102	pos=25
+Load	typeId=1	resultId=103	desId=102	pos=25
+LoadLit	value=18	typeId=1	resultId=104	pos=25
+BinExpr	op=+	typeId=1	resultId=105	leftId=103	rightId=104	pos=25
+BinExpr	op=*	typeId=1	resultId=106	leftId=101	rightId=105	pos=24
+AddressOf	symbol=J	id=14	typeId=7	resultId=107	pos=26
+Load	typeId=1	resultId=108	desId=107	pos=26
+LoadLit	value=19	typeId=1	resultId=109	pos=26
+BinExpr	op=+	typeId=1	resultId=110	leftId=108	rightId=109	pos=26
+BinExpr	op=*	typeId=1	resultId=111	leftId=106	rightId=110	pos=25
+AddressOf	symbol=J	id=14	typeId=7	resultId=112	pos=27
+Load	typeId=1	resultId=113	desId=112	pos=27
+LoadLit	value=20	typeId=1	resultId=114	pos=27
+BinExpr	op=+	typeId=1	resultId=115	leftId=113	rightId=114	pos=27
+BinExpr	op=*	typeId=1	resultId=116	leftId=111	rightId=115	pos=26
+AddressOf	symbol=J	id=14	typeId=7	resultId=117	pos=28
+Load	typeId=1	resultId=118	desId=117	pos=28
+LoadLit	value=1	typeId=1	resultId=119	pos=28
+BinExpr	op=+	typeId=1	resultId=120	leftId=118	rightId=119	pos=28
+AddressOf	symbol=J	id=14	typeId=7	resultId=121	pos=29
+Load	typeId=1	resultId=122	desId=121	pos=29
+LoadLit	value=2	typeId=1	resultId=123	pos=29
+BinExpr	op=+	typeId=1	resultId=124	leftId=122	rightId=123	pos=29
+BinExpr	op=*	typeId=1	resultId=125	leftId=120	rightId=124	pos=28
+AddressOf	symbol=J	id=14	typeId=7	resultId=126	pos=30
+Load	typeId=1	resultId=127	desId=126	pos=30
+LoadLit	value=3	typeId=1	resultId=128	pos=30
+BinExpr	op=+	typeId=1	resultId=129	leftId=127	rightId=128	pos=30
+BinExpr	op=*	typeId=1	resultId=130	leftId=125	rightId=129	pos=29
+AddressOf	symbol=J	id=14	typeId=7	resultId=131	pos=31
+Load	typeId=1	resultId=132	desId=131	pos=31
+LoadLit	value=4	typeId=1	resultId=133	pos=31
+BinExpr	op=+	typeId=1	resultId=134	leftId=132	rightId=133	pos=31
+BinExpr	op=*	typeId=1	resultId=135	leftId=130	rightId=134	pos=30
+AddressOf	symbol=J	id=14	typeId=7	resultId=136	pos=32
+Load	typeId=1	resultId=137	desId=136	pos=32
+LoadLit	value=5	typeId=1	resultId=138	pos=32
+BinExpr	op=+	typeId=1	resultId=139	leftId=137	rightId=138	pos=32
+BinExpr	op=*	typeId=1	resultId=140	leftId=135	rightId=139	pos=31
+AddressOf	symbol=J	id=14	typeId=7	resultId=141	pos=33
+Load	typeId=1	resultId=142	desId=141	pos=33
+LoadLit	value=6	typeId=1	resultId=143	pos=33
+BinExpr	op=+	typeId=1	resultId=144	leftId=142	rightId=143	pos=33
+BinExpr	op=*	typeId=1	resultId=145	leftId=140	rightId=144	pos=32
+AddressOf	symbol=J	id=14	typeId=7	resultId=146	pos=34
+Load	typeId=1	resultId=147	desId=146	pos=34
+LoadLit	value=7	typeId=1	resultId=148	pos=34
+BinExpr	op=+	typeId=1	resultId=149	leftId=147	rightId=148	pos=34
+BinExpr	op=*	typeId=1	resultId=150	leftId=145	rightId=149	pos=33
+AddressOf	symbol=J	id=14	typeId=7	resultId=151	pos=35
+Load	typeId=1	resultId=152	desId=151	pos=35
+LoadLit	value=8	typeId=1	resultId=153	pos=35
+BinExpr	op=+	typeId=1	resultId=154	leftId=152	rightId=153	pos=35
+BinExpr	op=*	typeId=1	resultId=155	leftId=150	rightId=154	pos=34
+AddressOf	symbol=J	id=14	typeId=7	resultId=156	pos=36
+Load	typeId=1	resultId=157	desId=156	pos=36
+LoadLit	value=9	typeId=1	resultId=158	pos=36
+BinExpr	op=+	typeId=1	resultId=159	leftId=157	rightId=158	pos=36
+BinExpr	op=*	typeId=1	resultId=160	leftId=155	rightId=159	pos=35
+AddressOf	symbol=J	id=14	typeId=7	resultId=161	pos=37
+Load	typeId=1	resultId=162	desId=161	pos=37
+LoadLit	value=10	typeId=1	resultId=163	pos=37
+BinExpr	op=+	typeId=1	resultId=164	leftId=162	rightId=163	pos=37
+BinExpr	op=*	typeId=1	resultId=165	leftId=160	rightId=164	pos=36
+AddressOf	symbol=J	id=14	typeId=7	resultId=166	pos=38
+Load	typeId=1	resultId=167	desId=166	pos=38
+LoadLit	value=11	typeId=1	resultId=168	pos=38
+BinExpr	op=+	typeId=1	resultId=169	leftId=167	rightId=168	pos=38
+BinExpr	op=*	typeId=1	resultId=170	leftId=165	rightId=169	pos=37
+AddressOf	symbol=J	id=14	typeId=7	resultId=171	pos=39
+Load	typeId=1	resultId=172	desId=171	pos=39
+LoadLit	value=12	typeId=1	resultId=173	pos=39
+BinExpr	op=+	typeId=1	resultId=174	leftId=172	rightId=173	pos=39
+BinExpr	op=*	typeId=1	resultId=175	leftId=170	rightId=174	pos=38
+AddressOf	symbol=J	id=14	typeId=7	resultId=176	pos=40
+Load	typeId=1	resultId=177	desId=176	pos=40
+LoadLit	value=13	typeId=1	resultId=178	pos=40
+BinExpr	op=+	typeId=1	resultId=179	leftId=177	rightId=178	pos=40
+BinExpr	op=*	typeId=1	resultId=180	leftId=175	rightId=179	pos=39
+AddressOf	symbol=J	id=14	typeId=7	resultId=181	pos=41
+Load	typeId=1	resultId=182	desId=181	pos=41
+LoadLit	value=14	typeId=1	resultId=183	pos=41
+BinExpr	op=+	typeId=1	resultId=184	leftId=182	rightId=183	pos=41
+BinExpr	op=*	typeId=1	resultId=185	leftId=180	rightId=184	pos=40
+AddressOf	symbol=J	id=14	typeId=7	resultId=186	pos=42
+Load	typeId=1	resultId=187	desId=186	pos=42
+LoadLit	value=15	typeId=1	resultId=188	pos=42
+BinExpr	op=+	typeId=1	resultId=189	leftId=187	rightId=188	pos=42
+BinExpr	op=*	typeId=1	resultId=190	leftId=185	rightId=189	pos=41
+AddressOf	symbol=J	id=14	typeId=7	resultId=191	pos=43
+Load	typeId=1	resultId=192	desId=191	pos=43
+LoadLit	value=16	typeId=1	resultId=193	pos=43
+BinExpr	op=+	typeId=1	resultId=194	leftId=192	rightId=193	pos=43
+BinExpr	op=*	typeId=1	resultId=195	leftId=190	rightId=194	pos=42
+AddressOf	symbol=J	id=14	typeId=7	resultId=196	pos=44
+Load	typeId=1	resultId=197	desId=196	pos=44
+LoadLit	value=17	typeId=1	resultId=198	pos=44
+BinExpr	op=+	typeId=1	resultId=199	leftId=197	rightId=198	pos=44
+BinExpr	op=*	typeId=1	resultId=200	leftId=195	rightId=199	pos=43
+AddressOf	symbol=J	id=14	typeId=7	resultId=201	pos=45
+Load	typeId=1	resultId=202	desId=201	pos=45
+LoadLit	value=18	typeId=1	resultId=203	pos=45
+BinExpr	op=+	typeId=1	resultId=204	leftId=202	rightId=203	pos=45
+BinExpr	op=*	typeId=1	resultId=205	leftId=200	rightId=204	pos=44
+AddressOf	symbol=J	id=14	typeId=7	resultId=206	pos=46
+Load	typeId=1	resultId=207	desId=206	pos=46
+LoadLit	value=19	typeId=1	resultId=208	pos=46
+BinExpr	op=+	typeId=1	resultId=209	leftId=207	rightId=208	pos=46
+BinExpr	op=*	typeId=1	resultId=210	leftId=205	rightId=209	pos=45
+AddressOf	symbol=J	id=14	typeId=7	resultId=211	pos=47
+Load	typeId=1	resultId=212	desId=211	pos=47
+LoadLit	value=20	typeId=1	resultId=213	pos=47
+BinExpr	op=+	typeId=1	resultId=214	leftId=212	rightId=213	pos=47
+BinExpr	op=*	typeId=1	resultId=215	leftId=210	rightId=214	pos=46
+BinExpr	op=-	typeId=1	resultId=216	leftId=116	rightId=215	pos=27
+Store	typeId=1	leftId=17	rightId=216	pos=7
+AddressOf	symbol=I	id=13	typeId=7	resultId=217	pos=48
+Load	typeId=1	resultId=218	desId=217	pos=48
+Write	typeId=1	exprId=218	pos=48
+WriteLn	pos=48
+ProcEnd	symbol=$MAIN	id=0	pos=1

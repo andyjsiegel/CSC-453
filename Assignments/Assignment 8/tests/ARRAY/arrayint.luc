@@ -1,0 +1,11 @@
+PROGRAM P;
+
+TYPE A = ARRAY 100 OF INTEGER;
+
+VAR x : A;
+VAR i : INTEGER;
+BEGIN
+   i := 23;
+   x[i] := 45;
+   WRITE x[i] - 45; WRITELN;
+END.

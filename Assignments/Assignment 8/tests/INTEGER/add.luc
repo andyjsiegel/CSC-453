@@ -1,0 +1,9 @@
+PROGRAM P;
+ 
+VAR I : INTEGER;
+VAR J : INTEGER;
+BEGIN
+   I := 0;
+   J := 0;
+   WRITE J+I; WRITELN;
+END.

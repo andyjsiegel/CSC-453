@@ -1,0 +1,17 @@
+PROGRAM P;
+
+VAR jj : INTEGER;
+VAR i : INTEGER;
+BEGIN
+   i := 10; jj := 2;
+   IF i = 10 THEN
+      jj := jj - 1;
+   ENDIF;
+   IF i >= 30 THEN
+      jj := jj - 1;
+   ENDIF;
+   IF i <= 15 THEN
+      jj := jj - 1;
+   ENDIF;
+   WRITE jj; WRITELN;
+END.

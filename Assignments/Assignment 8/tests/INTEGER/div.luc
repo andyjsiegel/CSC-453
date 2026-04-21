@@ -1,0 +1,10 @@
+PROGRAM P;
+ 
+VAR I : INTEGER;
+VAR J : INTEGER;
+BEGIN
+   I := 333;
+   J := I / 3 + 111;
+   J := J - 222 ;
+   WRITE J; WRITELN;
+END.

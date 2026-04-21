@@ -1,0 +1,11 @@
+PROGRAM P;
+
+VAR i : INTEGER;
+BEGIN
+   i := 1;
+   LOOP
+      IF i >= 10 THEN EXIT; ENDIF;
+      i := i + 1;
+   ENDLOOP;
+   WRITE i - 10; WRITELN;
+END.

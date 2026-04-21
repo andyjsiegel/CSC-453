@@ -1,0 +1,148 @@
+TypeDecl	symbol=INTEGER	id=1	size=4	pos=0
+TypeDecl	symbol=CHAR	id=3	size=1	pos=0
+TypeDecl	symbol=REAL	id=2	size=4	pos=0
+TypeDecl	symbol=STRING	id=4	size=0	pos=0
+TypeDecl	symbol=$ADDRESS	id=7	size=4	pos=0
+TypeDecl	symbol=BOOLEAN	id=8	size=4	pos=0
+ArrayDecl	symbol=A	id=13	size=400	elementTypeId=1	elementCount=100	pos=3
+ArrayDecl	symbol=B	id=14	size=8000	elementTypeId=13	elementCount=20	pos=4
+VarDecl	symbol=m	id=18	kind=global	typeId=1	offset=8008	pos=9
+VarDecl	symbol=i	id=15	kind=global	typeId=1	offset=0	pos=6
+VarDecl	symbol=r	id=20	kind=global	typeId=1	offset=8016	pos=11
+VarDecl	symbol=j	id=19	kind=global	typeId=1	offset=8012	pos=10
+VarDecl	symbol=x	id=17	kind=global	typeId=14	offset=8	pos=8
+VarDecl	symbol=k	id=16	kind=global	typeId=1	offset=4	pos=7
+VarDecl	symbol=$0	id=21	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$1	id=22	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$2	id=23	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$3	id=24	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$4	id=25	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$5	id=26	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$6	id=27	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$7	id=28	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$8	id=29	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$9	id=30	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$10	id=31	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$11	id=32	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$12	id=33	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$13	id=34	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$14	id=35	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$15	id=36	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$16	id=37	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$17	id=38	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$18	id=39	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$19	id=40	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$20	id=41	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$21	id=42	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$22	id=43	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$23	id=44	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$24	id=45	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$25	id=46	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$26	id=47	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$27	id=48	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$28	id=49	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$29	id=50	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$30	id=51	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$31	id=52	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$32	id=53	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$33	id=54	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$34	id=55	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$35	id=56	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$36	id=57	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$37	id=58	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$38	id=59	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$39	id=60	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$40	id=61	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$41	id=62	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$42	id=63	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$43	id=64	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$44	id=65	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$45	id=66	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$46	id=67	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$47	id=68	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$48	id=69	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$49	id=70	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$50	id=71	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$51	id=72	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$52	id=73	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$53	id=74	kind=temp	typeId=7	offset=-1	pos=0
+Version	major=3	minor=0	pos=1
+ProcBegin	symbol=$MAIN	id=0	formalCount=0	formalSize=0	localCount=6	localSize=8020	formalIds=	pos=1
+AddressOf	symbol=m	id=18	typeId=7	resultId=21	pos=13
+LoadLit	value=97	typeId=1	resultId=22	pos=13
+Store	typeId=1	leftId=21	rightId=22	pos=13
+AddressOf	symbol=k	id=16	typeId=7	resultId=23	pos=13
+LoadLit	value=103	typeId=1	resultId=24	pos=13
+Store	typeId=1	leftId=23	rightId=24	pos=13
+AddressOf	symbol=i	id=15	typeId=7	resultId=25	pos=14
+LoadLit	value=0	typeId=1	resultId=26	pos=14
+Store	typeId=1	leftId=25	rightId=26	pos=14
+AddressOf	symbol=r	id=20	typeId=7	resultId=27	pos=14
+LoadLit	value=1	typeId=1	resultId=28	pos=14
+Store	typeId=1	leftId=27	rightId=28	pos=14
+Label	label=55	pos=23
+AddressOf	symbol=i	id=15	typeId=7	resultId=29	pos=15
+Load	typeId=1	resultId=30	desId=29	pos=15
+LoadLit	value=19	typeId=1	resultId=31	pos=15
+Branch	type=INTEGER	op=<=	label=56	leftId=30	rightId=31	pos=15
+Goto	label=36	pos=15
+Label	label=56	pos=15
+AddressOf	symbol=j	id=19	typeId=7	resultId=32	pos=16
+LoadLit	value=0	typeId=1	resultId=33	pos=16
+Store	typeId=1	leftId=32	rightId=33	pos=16
+Label	label=60	pos=21
+AddressOf	symbol=j	id=19	typeId=7	resultId=34	pos=17
+Load	typeId=1	resultId=35	desId=34	pos=17
+LoadLit	value=99	typeId=1	resultId=36	pos=17
+Branch	type=INTEGER	op=<=	label=61	leftId=35	rightId=36	pos=17
+Goto	label=26	pos=17
+Label	label=61	pos=17
+AddressOf	symbol=j	id=19	typeId=7	resultId=37	pos=18
+Load	typeId=1	resultId=38	desId=37	pos=18
+AddressOf	symbol=i	id=15	typeId=7	resultId=39	pos=18
+Load	typeId=1	resultId=40	desId=39	pos=18
+AddressOf	symbol=x	id=17	typeId=7	resultId=41	pos=18
+IndexOf	typeId=7	arrayId=14	resultId=42	baseId=41	indexId=40	pos=18
+IndexOf	typeId=7	arrayId=13	resultId=43	baseId=42	indexId=38	pos=18
+AddressOf	symbol=r	id=20	typeId=7	resultId=44	pos=18
+Load	typeId=1	resultId=45	desId=44	pos=18
+Store	typeId=1	leftId=43	rightId=45	pos=18
+AddressOf	symbol=j	id=19	typeId=7	resultId=46	pos=19
+AddressOf	symbol=j	id=19	typeId=7	resultId=47	pos=19
+Load	typeId=1	resultId=48	desId=47	pos=19
+LoadLit	value=1	typeId=1	resultId=49	pos=19
+BinExpr	op=+	typeId=1	resultId=50	leftId=48	rightId=49	pos=19
+Store	typeId=1	leftId=46	rightId=50	pos=19
+AddressOf	symbol=r	id=20	typeId=7	resultId=51	pos=20
+AddressOf	symbol=r	id=20	typeId=7	resultId=52	pos=20
+Load	typeId=1	resultId=53	desId=52	pos=20
+LoadLit	value=1	typeId=1	resultId=54	pos=20
+BinExpr	op=+	typeId=1	resultId=55	leftId=53	rightId=54	pos=20
+Store	typeId=1	leftId=51	rightId=55	pos=20
+Goto	label=60	pos=17
+Label	label=26	pos=22
+AddressOf	symbol=i	id=15	typeId=7	resultId=56	pos=22
+AddressOf	symbol=i	id=15	typeId=7	resultId=57	pos=22
+Load	typeId=1	resultId=58	desId=57	pos=22
+LoadLit	value=1	typeId=1	resultId=59	pos=22
+BinExpr	op=+	typeId=1	resultId=60	leftId=58	rightId=59	pos=22
+Store	typeId=1	leftId=56	rightId=60	pos=22
+Goto	label=55	pos=15
+Label	label=36	pos=24
+AddressOf	symbol=m	id=18	typeId=7	resultId=61	pos=24
+Load	typeId=1	resultId=62	desId=61	pos=24
+AddressOf	symbol=k	id=16	typeId=7	resultId=63	pos=24
+Load	typeId=1	resultId=64	desId=63	pos=24
+BinExpr	op=+	typeId=1	resultId=65	leftId=62	rightId=64	pos=24
+LoadLit	value=99	typeId=1	resultId=66	pos=24
+LoadLit	value=1	typeId=1	resultId=67	pos=24
+AddressOf	symbol=x	id=17	typeId=7	resultId=68	pos=24
+IndexOf	typeId=7	arrayId=14	resultId=69	baseId=68	indexId=67	pos=24
+IndexOf	typeId=7	arrayId=13	resultId=70	baseId=69	indexId=66	pos=24
+Load	typeId=1	resultId=71	desId=70	pos=24
+BinExpr	op=+	typeId=1	resultId=72	leftId=65	rightId=71	pos=24
+LoadLit	value=400	typeId=1	resultId=73	pos=24
+BinExpr	op=-	typeId=1	resultId=74	leftId=72	rightId=73	pos=24
+Write	typeId=1	exprId=74	pos=24
+WriteLn	pos=24
+ProcEnd	symbol=$MAIN	id=0	pos=1

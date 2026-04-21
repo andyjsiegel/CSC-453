@@ -1,0 +1,52 @@
+TypeDecl	symbol=INTEGER	id=1	size=4	pos=0
+TypeDecl	symbol=CHAR	id=3	size=1	pos=0
+TypeDecl	symbol=REAL	id=2	size=4	pos=0
+TypeDecl	symbol=STRING	id=4	size=0	pos=0
+TypeDecl	symbol=$ADDRESS	id=7	size=4	pos=0
+TypeDecl	symbol=BOOLEAN	id=8	size=4	pos=0
+RecordDecl	symbol=R	id=13	size=8	pos=3
+FieldDecl	symbol=b	id=14	recordId=13	typeId=1	offset=0	pos=3
+FieldDecl	symbol=a	id=15	recordId=13	typeId=1	offset=4	pos=3
+RecordDecl	symbol=S	id=16	size=12	pos=4
+FieldDecl	symbol=a	id=18	recordId=16	typeId=1	offset=8	pos=4
+FieldDecl	symbol=b	id=17	recordId=16	typeId=13	offset=0	pos=4
+VarDecl	symbol=x	id=19	kind=global	typeId=16	offset=0	pos=6
+VarDecl	symbol=i	id=20	kind=global	typeId=1	offset=12	pos=7
+VarDecl	symbol=$0	id=21	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$1	id=22	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$2	id=23	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$3	id=24	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$4	id=25	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$5	id=26	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$6	id=27	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$7	id=28	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$8	id=29	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$9	id=30	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$10	id=31	kind=temp	typeId=1	offset=-1	pos=0
+VarDecl	symbol=$11	id=32	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$12	id=33	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$13	id=34	kind=temp	typeId=7	offset=-1	pos=0
+VarDecl	symbol=$14	id=35	kind=temp	typeId=7	offset=-1	pos=0
+Version	major=3	minor=0	pos=1
+ProcBegin	symbol=$MAIN	id=0	formalCount=0	formalSize=0	localCount=2	localSize=16	formalIds=	pos=1
+AddressOf	symbol=x	id=19	typeId=7	resultId=21	pos=9
+FieldOf	field=b	record=S	fieldId=17	recordId=16	typeId=7	resultId=22	baseId=21	pos=9
+FieldOf	field=b	record=R	fieldId=14	recordId=13	typeId=7	resultId=23	baseId=22	pos=9
+LoadLit	value=99	typeId=1	resultId=24	pos=9
+Store	typeId=1	leftId=23	rightId=24	pos=9
+AddressOf	symbol=x	id=19	typeId=7	resultId=25	pos=10
+FieldOf	field=a	record=S	fieldId=18	recordId=16	typeId=7	resultId=26	baseId=25	pos=10
+LoadLit	value=256723434	typeId=1	resultId=27	pos=10
+Store	typeId=1	leftId=26	rightId=27	pos=10
+AddressOf	symbol=x	id=19	typeId=7	resultId=28	pos=11
+FieldOf	field=b	record=S	fieldId=17	recordId=16	typeId=7	resultId=29	baseId=28	pos=11
+FieldOf	field=a	record=R	fieldId=15	recordId=13	typeId=7	resultId=30	baseId=29	pos=11
+LoadLit	value=256723446	typeId=1	resultId=31	pos=11
+Store	typeId=1	leftId=30	rightId=31	pos=11
+AddressOf	symbol=x	id=19	typeId=7	resultId=32	pos=12
+FieldOf	field=b	record=S	fieldId=17	recordId=16	typeId=7	resultId=33	baseId=32	pos=12
+FieldOf	field=b	record=R	fieldId=14	recordId=13	typeId=7	resultId=34	baseId=33	pos=12
+Load	typeId=1	resultId=35	desId=34	pos=12
+Write	typeId=1	exprId=35	pos=12
+WriteLn	pos=12
+ProcEnd	symbol=$MAIN	id=0	pos=1

@@ -1,0 +1,21 @@
+PROGRAM P;
+
+TYPE R = RECORD [a : INTEGER; b : INTEGER];
+TYPE A = ARRAY 100 OF R;
+
+VAR i : INTEGER;
+VAR k : INTEGER;
+VAR x : A;
+VAR m : INTEGER;
+VAR j : INTEGER;
+VAR r : INTEGER;
+BEGIN
+   i := 23;
+   x[i].a := 17;
+   x[i].b := 483;
+   x[i-1].a := 34;
+   x[i-1].b := 89;
+   x[i+1].a := 34;
+   x[i+1].b := 89;
+   WRITE x[i].a + x[i].b - 500; WRITELN;
+END.
